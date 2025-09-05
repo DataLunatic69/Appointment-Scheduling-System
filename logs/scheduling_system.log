@@ -1285,3 +1285,839 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0x92 in position 2943: inval
 2025-09-05 18:49:04 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-09-05 18:49:06 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-09-05 18:49:07 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 19:26:32 | [32mINFO[0m | agents.patient_agent | <module>       :16   | Initializing patient agent
+2025-09-05 19:26:32 | [32mINFO[0m | agents.patient_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "patient_agent",
+  "tools": [
+    "get_patient_info",
+    "update_patient_info",
+    "create_patient",
+    "search_patients"
+  ],
+  "timestamp": "2025-09-05T19:26:32.417202"
+}
+2025-09-05 19:26:33 | [32mINFO[0m | agents.patient_agent | <module>       :36   | Patient agent initialized successfully
+2025-09-05 19:26:33 | [32mINFO[0m | agents.scheduling_agent | <module>       :16   | Initializing scheduling agent
+2025-09-05 19:26:33 | [32mINFO[0m | agents.scheduling_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "scheduling_agent",
+  "tools": [
+    "get_doctor_schedule",
+    "check_availability",
+    "schedule_appointment",
+    "reschedule_appointment",
+    "cancel_appointment",
+    "get_appointments"
+  ],
+  "timestamp": "2025-09-05T19:26:33.629748"
+}
+2025-09-05 19:26:33 | [32mINFO[0m | agents.scheduling_agent | <module>       :36   | Scheduling agent initialized successfully
+2025-09-05 19:26:33 | [32mINFO[0m | agents.insurance_agent | <module>       :16   | Initializing insurance agent
+2025-09-05 19:26:33 | [32mINFO[0m | agents.insurance_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "insurance_agent",
+  "tools": [
+    "verify_insurance",
+    "check_coverage",
+    "get_copay_info"
+  ],
+  "timestamp": "2025-09-05T19:26:33.656470"
+}
+2025-09-05 19:26:33 | [32mINFO[0m | agents.insurance_agent | <module>       :36   | Insurance agent initialized successfully
+2025-09-05 19:26:33 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:9    | Initializing communication agent
+2025-09-05 19:26:33 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T19:26:33.677448'}
+2025-09-05 19:26:33 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:37   | Communication agent initialized successfully
+2025-09-05 19:26:33 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:9    | Initializing data export agent
+2025-09-05 19:26:33 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T19:26:33.695959'}
+2025-09-05 19:26:33 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:37   | Data export agent initialized successfully
+2025-09-05 19:26:33 | [32mINFO[0m | agents.supervisor    | <module>       :27   | Initialized memory saver for conversation tracking
+2025-09-05 19:26:33 | [32mINFO[0m | agents.supervisor    | <module>       :79   | Initializing supervisor agent instance
+2025-09-05 19:26:33 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:31   | Creating supervisor agent
+2025-09-05 19:26:33 | [32mINFO[0m | agents.supervisor    | log_agent_operation:195  | Operation: supervisor_creation | Details: {
+  "model": "openai:gpt-4.1",
+  "agent_count": 5,
+  "timestamp": "2025-09-05T19:26:33.703756"
+}
+2025-09-05 19:26:33 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:46   | Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']
+2025-09-05 19:26:33 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:71   | Supervisor agent created successfully
+2025-09-05 19:26:33 | [32mINFO[0m | agents.supervisor    | <module>       :81   | Supervisor agent ready for operation
+2025-09-05 19:26:45 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'HELLO', 'thread_id': '8b5c1d16-3571-4d95-af63-3ea13df66c36', 'timestamp': '2025-09-05T19:26:45.476606'}
+2025-09-05 19:38:24 | [32mINFO[0m | agents.patient_agent | <module>       :16   | Initializing patient agent
+2025-09-05 19:38:24 | [32mINFO[0m | agents.patient_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "patient_agent",
+  "tools": [
+    "get_patient_info",
+    "update_patient_info",
+    "create_patient",
+    "search_patients"
+  ],
+  "timestamp": "2025-09-05T19:38:24.995316"
+}
+2025-09-05 19:38:28 | [32mINFO[0m | agents.patient_agent | <module>       :36   | Patient agent initialized successfully
+2025-09-05 19:38:29 | [32mINFO[0m | agents.scheduling_agent | <module>       :16   | Initializing scheduling agent
+2025-09-05 19:38:29 | [32mINFO[0m | agents.scheduling_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "scheduling_agent",
+  "tools": [
+    "get_doctor_schedule",
+    "check_availability",
+    "schedule_appointment",
+    "reschedule_appointment",
+    "cancel_appointment",
+    "get_appointments"
+  ],
+  "timestamp": "2025-09-05T19:38:29.025670"
+}
+2025-09-05 19:38:29 | [32mINFO[0m | agents.scheduling_agent | <module>       :36   | Scheduling agent initialized successfully
+2025-09-05 19:38:29 | [32mINFO[0m | agents.insurance_agent | <module>       :16   | Initializing insurance agent
+2025-09-05 19:38:29 | [32mINFO[0m | agents.insurance_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "insurance_agent",
+  "tools": [
+    "verify_insurance",
+    "check_coverage",
+    "get_copay_info"
+  ],
+  "timestamp": "2025-09-05T19:38:29.087767"
+}
+2025-09-05 19:38:29 | [32mINFO[0m | agents.insurance_agent | <module>       :36   | Insurance agent initialized successfully
+2025-09-05 19:38:29 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:9    | Initializing communication agent
+2025-09-05 19:38:29 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T19:38:29.140185'}
+2025-09-05 19:38:29 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:37   | Communication agent initialized successfully
+2025-09-05 19:38:29 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:9    | Initializing data export agent
+2025-09-05 19:38:29 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T19:38:29.181743'}
+2025-09-05 19:38:29 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:37   | Data export agent initialized successfully
+2025-09-05 19:38:29 | [32mINFO[0m | agents.supervisor    | <module>       :27   | Initialized memory saver for conversation tracking
+2025-09-05 19:38:29 | [32mINFO[0m | agents.supervisor    | <module>       :79   | Initializing supervisor agent instance
+2025-09-05 19:38:29 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:31   | Creating supervisor agent
+2025-09-05 19:38:29 | [32mINFO[0m | agents.supervisor    | log_agent_operation:195  | Operation: supervisor_creation | Details: {
+  "model": "openai:gpt-4.1",
+  "agent_count": 5,
+  "timestamp": "2025-09-05T19:38:29.207356"
+}
+2025-09-05 19:38:29 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:46   | Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']
+2025-09-05 19:38:29 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:71   | Supervisor agent created successfully
+2025-09-05 19:38:29 | [32mINFO[0m | agents.supervisor    | <module>       :81   | Supervisor agent ready for operation
+2025-09-05 22:35:06 | [32mINFO[0m | agents.patient_agent | <module>       :16   | Initializing patient agent
+2025-09-05 22:35:06 | [32mINFO[0m | agents.patient_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "patient_agent",
+  "tools": [
+    "get_patient_info",
+    "update_patient_info",
+    "create_patient",
+    "search_patients"
+  ],
+  "timestamp": "2025-09-05T22:35:06.638786"
+}
+2025-09-05 22:35:10 | [32mINFO[0m | agents.patient_agent | <module>       :36   | Patient agent initialized successfully
+2025-09-05 22:35:10 | [32mINFO[0m | agents.scheduling_agent | <module>       :16   | Initializing scheduling agent
+2025-09-05 22:35:10 | [32mINFO[0m | agents.scheduling_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "scheduling_agent",
+  "tools": [
+    "get_doctor_schedule",
+    "check_availability",
+    "schedule_appointment",
+    "reschedule_appointment",
+    "cancel_appointment",
+    "get_appointments"
+  ],
+  "timestamp": "2025-09-05T22:35:10.591975"
+}
+2025-09-05 22:35:10 | [32mINFO[0m | agents.scheduling_agent | <module>       :36   | Scheduling agent initialized successfully
+2025-09-05 22:35:10 | [32mINFO[0m | agents.insurance_agent | <module>       :16   | Initializing insurance agent
+2025-09-05 22:35:10 | [32mINFO[0m | agents.insurance_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "insurance_agent",
+  "tools": [
+    "verify_insurance",
+    "check_coverage",
+    "get_copay_info"
+  ],
+  "timestamp": "2025-09-05T22:35:10.669741"
+}
+2025-09-05 22:35:10 | [32mINFO[0m | agents.insurance_agent | <module>       :36   | Insurance agent initialized successfully
+2025-09-05 22:35:10 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:9    | Initializing communication agent
+2025-09-05 22:35:10 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T22:35:10.727395'}
+2025-09-05 22:35:10 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:37   | Communication agent initialized successfully
+2025-09-05 22:35:10 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:9    | Initializing data export agent
+2025-09-05 22:35:10 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T22:35:10.767097'}
+2025-09-05 22:35:10 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:37   | Data export agent initialized successfully
+2025-09-05 22:35:10 | [32mINFO[0m | agents.supervisor    | <module>       :27   | Initialized memory saver for conversation tracking
+2025-09-05 22:35:10 | [32mINFO[0m | agents.supervisor    | <module>       :79   | Initializing supervisor agent instance
+2025-09-05 22:35:10 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:31   | Creating supervisor agent
+2025-09-05 22:35:10 | [32mINFO[0m | agents.supervisor    | log_agent_operation:195  | Operation: supervisor_creation | Details: {
+  "model": "openai:gpt-4.1",
+  "agent_count": 5,
+  "timestamp": "2025-09-05T22:35:10.797045"
+}
+2025-09-05 22:35:10 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:46   | Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']
+2025-09-05 22:35:10 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:71   | Supervisor agent created successfully
+2025-09-05 22:35:10 | [32mINFO[0m | agents.supervisor    | <module>       :81   | Supervisor agent ready for operation
+2025-09-05 22:35:24 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'hi', 'thread_id': 'abb6a7a1-21e7-404b-830c-b2eb1c71d60c', 'timestamp': '2025-09-05T22:35:24.238375'}
+2025-09-05 22:35:26 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 22:54:05 | [32mINFO[0m | agents.patient_agent | <module>       :16   | Initializing patient agent
+2025-09-05 22:54:05 | [32mINFO[0m | agents.patient_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "patient_agent",
+  "tools": [
+    "get_patient_info",
+    "update_patient_info",
+    "create_patient",
+    "search_patients"
+  ],
+  "timestamp": "2025-09-05T22:54:05.585049"
+}
+2025-09-05 22:54:09 | [32mINFO[0m | agents.patient_agent | <module>       :36   | Patient agent initialized successfully
+2025-09-05 22:54:09 | [32mINFO[0m | agents.scheduling_agent | <module>       :16   | Initializing scheduling agent
+2025-09-05 22:54:09 | [32mINFO[0m | agents.scheduling_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "scheduling_agent",
+  "tools": [
+    "get_doctor_schedule",
+    "check_availability",
+    "schedule_appointment",
+    "reschedule_appointment",
+    "cancel_appointment",
+    "get_appointments"
+  ],
+  "timestamp": "2025-09-05T22:54:09.038541"
+}
+2025-09-05 22:54:09 | [32mINFO[0m | agents.scheduling_agent | <module>       :36   | Scheduling agent initialized successfully
+2025-09-05 22:54:09 | [32mINFO[0m | agents.insurance_agent | <module>       :16   | Initializing insurance agent
+2025-09-05 22:54:09 | [32mINFO[0m | agents.insurance_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "insurance_agent",
+  "tools": [
+    "verify_insurance",
+    "check_coverage",
+    "get_copay_info"
+  ],
+  "timestamp": "2025-09-05T22:54:09.099339"
+}
+2025-09-05 22:54:09 | [32mINFO[0m | agents.insurance_agent | <module>       :36   | Insurance agent initialized successfully
+2025-09-05 22:54:09 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:9    | Initializing communication agent
+2025-09-05 22:54:09 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T22:54:09.154272'}
+2025-09-05 22:54:09 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:37   | Communication agent initialized successfully
+2025-09-05 22:54:09 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:9    | Initializing data export agent
+2025-09-05 22:54:09 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T22:54:09.185114'}
+2025-09-05 22:54:09 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:37   | Data export agent initialized successfully
+2025-09-05 22:54:09 | [32mINFO[0m | agents.supervisor    | <module>       :27   | Initialized memory saver for conversation tracking
+2025-09-05 22:54:09 | [32mINFO[0m | agents.supervisor    | <module>       :79   | Initializing supervisor agent instance
+2025-09-05 22:54:09 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:31   | Creating supervisor agent
+2025-09-05 22:54:09 | [32mINFO[0m | agents.supervisor    | log_agent_operation:195  | Operation: supervisor_creation | Details: {
+  "model": "openai:gpt-4.1",
+  "agent_count": 5,
+  "timestamp": "2025-09-05T22:54:09.214899"
+}
+2025-09-05 22:54:09 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:46   | Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']
+2025-09-05 22:54:09 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:71   | Supervisor agent created successfully
+2025-09-05 22:54:09 | [32mINFO[0m | agents.supervisor    | <module>       :81   | Supervisor agent ready for operation
+2025-09-05 23:03:16 | [32mINFO[0m | agents.patient_agent | <module>       :16   | Initializing patient agent
+2025-09-05 23:03:16 | [32mINFO[0m | agents.patient_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "patient_agent",
+  "tools": [
+    "get_patient_info",
+    "update_patient_info",
+    "create_patient",
+    "search_patients"
+  ],
+  "timestamp": "2025-09-05T23:03:16.114921"
+}
+2025-09-05 23:03:19 | [32mINFO[0m | agents.patient_agent | <module>       :36   | Patient agent initialized successfully
+2025-09-05 23:03:19 | [32mINFO[0m | agents.scheduling_agent | <module>       :16   | Initializing scheduling agent
+2025-09-05 23:03:19 | [32mINFO[0m | agents.scheduling_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "scheduling_agent",
+  "tools": [
+    "get_doctor_schedule",
+    "check_availability",
+    "schedule_appointment",
+    "reschedule_appointment",
+    "cancel_appointment",
+    "get_appointments"
+  ],
+  "timestamp": "2025-09-05T23:03:19.510030"
+}
+2025-09-05 23:03:19 | [32mINFO[0m | agents.scheduling_agent | <module>       :36   | Scheduling agent initialized successfully
+2025-09-05 23:03:19 | [32mINFO[0m | agents.insurance_agent | <module>       :16   | Initializing insurance agent
+2025-09-05 23:03:19 | [32mINFO[0m | agents.insurance_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "insurance_agent",
+  "tools": [
+    "verify_insurance",
+    "check_coverage",
+    "get_copay_info"
+  ],
+  "timestamp": "2025-09-05T23:03:19.557153"
+}
+2025-09-05 23:03:19 | [32mINFO[0m | agents.insurance_agent | <module>       :36   | Insurance agent initialized successfully
+2025-09-05 23:03:19 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:9    | Initializing communication agent
+2025-09-05 23:03:19 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T23:03:19.612855'}
+2025-09-05 23:03:19 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:37   | Communication agent initialized successfully
+2025-09-05 23:03:19 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:9    | Initializing data export agent
+2025-09-05 23:03:19 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T23:03:19.663106'}
+2025-09-05 23:03:19 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:37   | Data export agent initialized successfully
+2025-09-05 23:03:19 | [32mINFO[0m | agents.supervisor    | <module>       :27   | Initialized memory saver for conversation tracking
+2025-09-05 23:03:19 | [32mINFO[0m | agents.supervisor    | <module>       :79   | Initializing supervisor agent instance
+2025-09-05 23:03:19 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:31   | Creating supervisor agent
+2025-09-05 23:03:19 | [32mINFO[0m | agents.supervisor    | log_agent_operation:195  | Operation: supervisor_creation | Details: {
+  "model": "openai:gpt-4.1",
+  "agent_count": 5,
+  "timestamp": "2025-09-05T23:03:19.687711"
+}
+2025-09-05 23:03:19 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:46   | Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']
+2025-09-05 23:03:19 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:71   | Supervisor agent created successfully
+2025-09-05 23:03:19 | [32mINFO[0m | agents.supervisor    | <module>       :81   | Supervisor agent ready for operation
+2025-09-05 23:05:22 | [32mINFO[0m | agents.patient_agent | <module>       :16   | Initializing patient agent
+2025-09-05 23:05:22 | [32mINFO[0m | agents.patient_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "patient_agent",
+  "tools": [
+    "get_patient_info",
+    "update_patient_info",
+    "create_patient",
+    "search_patients"
+  ],
+  "timestamp": "2025-09-05T23:05:22.748206"
+}
+2025-09-05 23:05:26 | [32mINFO[0m | agents.patient_agent | <module>       :36   | Patient agent initialized successfully
+2025-09-05 23:05:26 | [32mINFO[0m | agents.scheduling_agent | <module>       :16   | Initializing scheduling agent
+2025-09-05 23:05:26 | [32mINFO[0m | agents.scheduling_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "scheduling_agent",
+  "tools": [
+    "get_doctor_schedule",
+    "check_availability",
+    "schedule_appointment",
+    "reschedule_appointment",
+    "cancel_appointment",
+    "get_appointments"
+  ],
+  "timestamp": "2025-09-05T23:05:26.327749"
+}
+2025-09-05 23:05:26 | [32mINFO[0m | agents.scheduling_agent | <module>       :36   | Scheduling agent initialized successfully
+2025-09-05 23:05:26 | [32mINFO[0m | agents.insurance_agent | <module>       :16   | Initializing insurance agent
+2025-09-05 23:05:26 | [32mINFO[0m | agents.insurance_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "insurance_agent",
+  "tools": [
+    "verify_insurance",
+    "check_coverage",
+    "get_copay_info"
+  ],
+  "timestamp": "2025-09-05T23:05:26.388985"
+}
+2025-09-05 23:05:26 | [32mINFO[0m | agents.insurance_agent | <module>       :36   | Insurance agent initialized successfully
+2025-09-05 23:05:26 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:9    | Initializing communication agent
+2025-09-05 23:05:26 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T23:05:26.451650'}
+2025-09-05 23:05:26 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:37   | Communication agent initialized successfully
+2025-09-05 23:05:26 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:9    | Initializing data export agent
+2025-09-05 23:05:26 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T23:05:26.496023'}
+2025-09-05 23:05:26 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:37   | Data export agent initialized successfully
+2025-09-05 23:05:26 | [32mINFO[0m | agents.supervisor    | <module>       :27   | Initialized memory saver for conversation tracking
+2025-09-05 23:05:26 | [32mINFO[0m | agents.supervisor    | <module>       :79   | Initializing supervisor agent instance
+2025-09-05 23:05:26 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:31   | Creating supervisor agent
+2025-09-05 23:05:26 | [32mINFO[0m | agents.supervisor    | log_agent_operation:195  | Operation: supervisor_creation | Details: {
+  "model": "openai:gpt-4.1",
+  "agent_count": 5,
+  "timestamp": "2025-09-05T23:05:26.536550"
+}
+2025-09-05 23:05:26 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:46   | Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']
+2025-09-05 23:05:26 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:71   | Supervisor agent created successfully
+2025-09-05 23:05:26 | [32mINFO[0m | agents.supervisor    | <module>       :81   | Supervisor agent ready for operation
+2025-09-05 23:05:38 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'hi', 'thread_id': '85f05fb2-d283-4b89-a132-f13d4e5db045', 'timestamp': '2025-09-05T23:05:38.060153'}
+2025-09-05 23:05:39 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 23:34:15 | [32mINFO[0m | agents.patient_agent | <module>       :16   | Initializing patient agent
+2025-09-05 23:34:15 | [32mINFO[0m | agents.patient_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "patient_agent",
+  "tools": [
+    "get_patient_info",
+    "update_patient_info",
+    "create_patient",
+    "search_patients"
+  ],
+  "timestamp": "2025-09-05T23:34:15.399237"
+}
+2025-09-05 23:34:19 | [32mINFO[0m | agents.patient_agent | <module>       :36   | Patient agent initialized successfully
+2025-09-05 23:34:19 | [32mINFO[0m | agents.scheduling_agent | <module>       :16   | Initializing scheduling agent
+2025-09-05 23:34:19 | [32mINFO[0m | agents.scheduling_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "scheduling_agent",
+  "tools": [
+    "get_doctor_schedule",
+    "check_availability",
+    "schedule_appointment",
+    "reschedule_appointment",
+    "cancel_appointment",
+    "get_appointments"
+  ],
+  "timestamp": "2025-09-05T23:34:19.030627"
+}
+2025-09-05 23:34:19 | [32mINFO[0m | agents.scheduling_agent | <module>       :36   | Scheduling agent initialized successfully
+2025-09-05 23:34:19 | [32mINFO[0m | agents.insurance_agent | <module>       :16   | Initializing insurance agent
+2025-09-05 23:34:19 | [32mINFO[0m | agents.insurance_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "insurance_agent",
+  "tools": [
+    "verify_insurance",
+    "check_coverage",
+    "get_copay_info"
+  ],
+  "timestamp": "2025-09-05T23:34:19.107015"
+}
+2025-09-05 23:34:19 | [32mINFO[0m | agents.insurance_agent | <module>       :36   | Insurance agent initialized successfully
+2025-09-05 23:34:19 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:9    | Initializing communication agent
+2025-09-05 23:34:19 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T23:34:19.161223'}
+2025-09-05 23:34:19 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:37   | Communication agent initialized successfully
+2025-09-05 23:34:19 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:9    | Initializing data export agent
+2025-09-05 23:34:19 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T23:34:19.195460'}
+2025-09-05 23:34:19 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:37   | Data export agent initialized successfully
+2025-09-05 23:34:19 | [32mINFO[0m | agents.supervisor    | <module>       :27   | Initialized memory saver for conversation tracking
+2025-09-05 23:34:19 | [32mINFO[0m | agents.supervisor    | <module>       :79   | Initializing supervisor agent instance
+2025-09-05 23:34:19 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:31   | Creating supervisor agent
+2025-09-05 23:34:19 | [32mINFO[0m | agents.supervisor    | log_agent_operation:195  | Operation: supervisor_creation | Details: {
+  "model": "openai:gpt-4.1",
+  "agent_count": 5,
+  "timestamp": "2025-09-05T23:34:19.226258"
+}
+2025-09-05 23:34:19 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:46   | Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']
+2025-09-05 23:34:19 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:71   | Supervisor agent created successfully
+2025-09-05 23:34:19 | [32mINFO[0m | agents.supervisor    | <module>       :81   | Supervisor agent ready for operation
+2025-09-05 23:34:36 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'hi', 'thread_id': '1e665e72-7fd6-46be-ba32-b2a0da2663c8', 'timestamp': '2025-09-05T23:34:36.018403'}
+2025-09-05 23:34:38 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 23:55:14 | [32mINFO[0m | agents.patient_agent | <module>       :16   | Initializing patient agent
+2025-09-05 23:55:14 | [32mINFO[0m | agents.patient_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "patient_agent",
+  "tools": [
+    "get_patient_info",
+    "update_patient_info",
+    "create_patient",
+    "search_patients"
+  ],
+  "timestamp": "2025-09-05T23:55:14.766329"
+}
+2025-09-05 23:55:14 | [32mINFO[0m | agents.patient_agent | <module>       :36   | Patient agent initialized successfully
+2025-09-05 23:55:14 | [32mINFO[0m | agents.scheduling_agent | <module>       :16   | Initializing scheduling agent
+2025-09-05 23:55:14 | [32mINFO[0m | agents.scheduling_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "scheduling_agent",
+  "tools": [
+    "get_doctor_schedule",
+    "check_availability",
+    "schedule_appointment",
+    "reschedule_appointment",
+    "cancel_appointment",
+    "get_appointments"
+  ],
+  "timestamp": "2025-09-05T23:55:14.840978"
+}
+2025-09-05 23:55:14 | [32mINFO[0m | agents.scheduling_agent | <module>       :36   | Scheduling agent initialized successfully
+2025-09-05 23:55:14 | [32mINFO[0m | agents.insurance_agent | <module>       :16   | Initializing insurance agent
+2025-09-05 23:55:14 | [32mINFO[0m | agents.insurance_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "insurance_agent",
+  "tools": [
+    "verify_insurance",
+    "check_coverage",
+    "get_copay_info"
+  ],
+  "timestamp": "2025-09-05T23:55:14.882063"
+}
+2025-09-05 23:55:14 | [32mINFO[0m | agents.insurance_agent | <module>       :36   | Insurance agent initialized successfully
+2025-09-05 23:55:14 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:9    | Initializing communication agent
+2025-09-05 23:55:14 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T23:55:14.915667'}
+2025-09-05 23:55:14 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:37   | Communication agent initialized successfully
+2025-09-05 23:55:14 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:9    | Initializing data export agent
+2025-09-05 23:55:14 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T23:55:14.945742'}
+2025-09-05 23:55:14 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:37   | Data export agent initialized successfully
+2025-09-05 23:55:14 | [32mINFO[0m | agents.supervisor    | <module>       :27   | Initialized memory saver for conversation tracking
+2025-09-05 23:55:14 | [32mINFO[0m | agents.supervisor    | <module>       :79   | Initializing supervisor agent instance
+2025-09-05 23:55:14 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:31   | Creating supervisor agent
+2025-09-05 23:55:14 | [32mINFO[0m | agents.supervisor    | log_agent_operation:195  | Operation: supervisor_creation | Details: {
+  "model": "openai:gpt-4.1",
+  "agent_count": 5,
+  "timestamp": "2025-09-05T23:55:14.967882"
+}
+2025-09-05 23:55:14 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:46   | Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']
+2025-09-05 23:55:15 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:71   | Supervisor agent created successfully
+2025-09-05 23:55:15 | [32mINFO[0m | agents.supervisor    | <module>       :81   | Supervisor agent ready for operation
+2025-09-05 23:55:50 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'hey', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-05T23:55:50.986120'}
+2025-09-05 23:55:52 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 23:57:41 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'Update the phone number for patient P10002 to 555-9967', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-05T23:57:41.190993'}
+2025-09-05 23:57:43 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 23:57:44 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 23:57:46 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 23:57:46 | [32mINFO[0m | healthcare_scheduler | get_patient_info:15   | Getting patient info for ID: P10002
+2025-09-05 23:57:46 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_patient_info | Parameters: {'patient_id': 'P10002'} | Result: [
+  {
+    "patient_id":"P10002",
+    "first_name":"Jane",
+    "last_name":"Smith",
+    "date_of_birth":"1990-08-22",
+    "phone":"555-9999",
+    "email":"jane.smith@email.com",
+    "insurance_provider":"MedCare",
+    "insurance_id":"INS1002",
+    "primary_doctor":"D10002",
+    "created_date":"2024-02-20"
+  }
+]
+2025-09-05 23:57:48 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 23:57:50 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 23:57:52 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 23:58:51 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'this is patient id ..this should be enough', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-05T23:58:51.371388'}
+2025-09-05 23:58:53 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 23:58:55 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 23:58:55 | [32mINFO[0m | healthcare_scheduler | update_patient_info:42   | Updating patient info for ID: P10002 with updates: {'phone': '555-9967'}
+2025-09-05 23:58:55 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: update_patient_info | Parameters: {'patient_id': 'P10002', 'updates': {'phone': '555-9967'}} | Result: Patient P10002 information updated successfully.
+2025-09-05 23:58:56 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 23:58:58 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 23:59:38 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'Schedule an appointment for patient P10001 with doctor D10001 tomorrow at 2 PM', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-05T23:59:38.344428'}
+2025-09-05 23:59:40 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 23:59:42 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 23:59:42 | [32mINFO[0m | healthcare_scheduler | check_availability:56   | Checking availability for doctor D10001 at 2024-06-10T14:00:00
+2025-09-05 23:59:43 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 23:59:43 | [32mINFO[0m | healthcare_scheduler | check_availability:56   | Checking availability for doctor D10001 at 2024-06-10 14:00
+2025-09-05 23:59:43 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: check_availability | Parameters: {'doctor_id': 'D10001', 'datetime': '2024-06-10 14:00'} | Result: Doctor D10001 is not available on 2024-06-10.
+2025-09-05 23:59:44 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 23:59:44 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-10
+2025-09-05 23:59:45 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-10'} | Result: No schedule found for doctor D10001 on 2024-06-10.
+2025-09-05 23:59:46 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 23:59:48 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:00:48 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'what are his available slots?', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:00:48.538614'}
+2025-09-06 00:00:48 | [32mINFO[0m | openai._base_client  | _sleep_for_retry:1071 | Retrying request to /chat/completions in 0.429388 seconds
+2025-09-06 00:00:49 | [32mINFO[0m | openai._base_client  | _sleep_for_retry:1071 | Retrying request to /chat/completions in 0.857801 seconds
+2025-09-06 00:01:31 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'hi', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:01:31.431085'}
+2025-09-06 00:01:33 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:01:34 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:01:34 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-10
+2025-09-06 00:01:35 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-10'} | Result: No schedule found for doctor D10001 on 2024-06-10.
+2025-09-06 00:01:37 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:01:37 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-11
+2025-09-06 00:01:38 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-11'} | Result: No schedule found for doctor D10001 on 2024-06-11.
+2025-09-06 00:01:39 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:01:39 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-12
+2025-09-06 00:01:39 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-12'} | Result: No schedule found for doctor D10001 on 2024-06-12.
+2025-09-06 00:01:40 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:01:40 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-13
+2025-09-06 00:01:41 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-13'} | Result: No schedule found for doctor D10001 on 2024-06-13.
+2025-09-06 00:01:42 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:01:42 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-14
+2025-09-06 00:01:42 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-14'} | Result: No schedule found for doctor D10001 on 2024-06-14.
+2025-09-06 00:01:44 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:01:46 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:02:12 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'yes check for the further avaibility', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:02:12.125313'}
+2025-09-06 00:02:14 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:02:17 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:02:17 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-17
+2025-09-06 00:02:17 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-20
+2025-09-06 00:02:17 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-19
+2025-09-06 00:02:17 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-17'} | Result: No schedule found for doctor D10001 on 2024-06-17.
+2025-09-06 00:02:17 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-21
+2025-09-06 00:02:17 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-18
+2025-09-06 00:02:17 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-20'} | Result: No schedule found for doctor D10001 on 2024-06-20.
+2025-09-06 00:02:17 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-19'} | Result: No schedule found for doctor D10001 on 2024-06-19.
+2025-09-06 00:02:17 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-21'} | Result: No schedule found for doctor D10001 on 2024-06-21.
+2025-09-06 00:02:17 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-18'} | Result: No schedule found for doctor D10001 on 2024-06-18.
+2025-09-06 00:02:19 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:02:22 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:02:43 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'get any of his availbale slots', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:02:43.345750'}
+2025-09-06 00:02:45 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:02:46 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:02:46 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-24
+2025-09-06 00:02:47 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-24'} | Result: No schedule found for doctor D10001 on 2024-06-24.
+2025-09-06 00:02:48 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:02:48 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-26
+2025-09-06 00:02:48 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-25
+2025-09-06 00:02:48 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-27
+2025-09-06 00:02:48 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-28
+2025-09-06 00:02:48 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-07-01
+2025-09-06 00:02:49 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-25'} | Result: No schedule found for doctor D10001 on 2024-06-25.
+2025-09-06 00:02:49 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-26'} | Result: No schedule found for doctor D10001 on 2024-06-26.
+2025-09-06 00:02:49 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-27'} | Result: No schedule found for doctor D10001 on 2024-06-27.
+2025-09-06 00:02:49 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-28'} | Result: No schedule found for doctor D10001 on 2024-06-28.
+2025-09-06 00:02:49 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-07-01'} | Result: No schedule found for doctor D10001 on 2024-07-01.
+2025-09-06 00:02:50 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:02:52 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:03:11 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'yes please look for other options', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:03:11.066303'}
+2025-09-06 00:03:12 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:03:14 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:03:14 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10002 on 2024-06-10
+2025-09-06 00:03:14 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10002', 'schedule_date': '2024-06-10'} | Result: No schedule found for doctor D10002 on 2024-06-10.
+2025-09-06 00:03:16 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:03:16 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10002 on 2024-06-11
+2025-09-06 00:03:16 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10002 on 2024-06-12
+2025-09-06 00:03:16 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10002 on 2024-06-13
+2025-09-06 00:03:16 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10002 on 2024-06-14
+2025-09-06 00:03:17 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10002', 'schedule_date': '2024-06-11'} | Result: No schedule found for doctor D10002 on 2024-06-11.
+2025-09-06 00:03:17 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10002', 'schedule_date': '2024-06-14'} | Result: No schedule found for doctor D10002 on 2024-06-14.
+2025-09-06 00:03:17 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10002', 'schedule_date': '2024-06-12'} | Result: No schedule found for doctor D10002 on 2024-06-12.
+2025-09-06 00:03:17 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10002', 'schedule_date': '2024-06-13'} | Result: No schedule found for doctor D10002 on 2024-06-13.
+2025-09-06 00:03:20 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:03:20 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10003 on 2024-06-13
+2025-09-06 00:03:20 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10003 on 2024-06-10
+2025-09-06 00:03:20 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10003 on 2024-06-11
+2025-09-06 00:03:20 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10003 on 2024-06-12
+2025-09-06 00:03:20 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10003 on 2024-06-14
+2025-09-06 00:03:20 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10003', 'schedule_date': '2024-06-13'} | Result: No schedule found for doctor D10003 on 2024-06-13.
+2025-09-06 00:03:20 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10003', 'schedule_date': '2024-06-10'} | Result: No schedule found for doctor D10003 on 2024-06-10.
+2025-09-06 00:03:20 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10003', 'schedule_date': '2024-06-11'} | Result: No schedule found for doctor D10003 on 2024-06-11.
+2025-09-06 00:03:20 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10003', 'schedule_date': '2024-06-14'} | Result: No schedule found for doctor D10003 on 2024-06-14.
+2025-09-06 00:03:20 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10003', 'schedule_date': '2024-06-12'} | Result: No schedule found for doctor D10003 on 2024-06-12.
+2025-09-06 00:03:22 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:03:22 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10004 on 2024-06-10
+2025-09-06 00:03:22 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10004', 'schedule_date': '2024-06-10'} | Result: No schedule found for doctor D10004 on 2024-06-10.
+2025-09-06 00:03:30 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:03:30 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10004 on 2024-06-11
+2025-09-06 00:03:30 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10004 on 2024-06-12
+2025-09-06 00:03:30 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10004 on 2024-06-13
+2025-09-06 00:03:30 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10004 on 2024-06-14
+2025-09-06 00:03:30 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10004', 'schedule_date': '2024-06-11'} | Result: No schedule found for doctor D10004 on 2024-06-11.
+2025-09-06 00:03:30 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10004', 'schedule_date': '2024-06-12'} | Result: No schedule found for doctor D10004 on 2024-06-12.
+2025-09-06 00:03:30 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10004', 'schedule_date': '2024-06-13'} | Result: No schedule found for doctor D10004 on 2024-06-13.
+2025-09-06 00:03:30 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10004', 'schedule_date': '2024-06-14'} | Result: No schedule found for doctor D10004 on 2024-06-14.
+2025-09-06 00:03:32 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:03:32 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10005 on 2024-06-10
+2025-09-06 00:03:33 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:03:33 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-07-08
+2025-09-06 00:03:33 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-07-08'} | Result: No schedule found for doctor D10001 on 2024-07-08.
+2025-09-06 00:03:35 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:03:37 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:16:17 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'Check coverage for procedure CPT-12345 for patient P10002', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:16:17.070550'}
+2025-09-06 00:16:18 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:16:22 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:16:22 | [32mINFO[0m | healthcare_scheduler | check_coverage :68   | Checking coverage for patient P10002, procedure CPT-12345
+2025-09-06 00:16:22 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: check_coverage | Parameters: {'patient_id': 'P10002', 'procedure_code': 'CPT-12345'} | Result: Procedure CPT-12345 is covered for patient P10002.
+2025-09-06 00:16:24 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:16:27 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:16:58 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'What is the copay for patient P10003?', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:16:58.712927'}
+2025-09-06 00:17:00 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:17:02 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:17:02 | [32mINFO[0m | healthcare_scheduler | get_copay_info :112  | Getting copay info for patient P10003
+2025-09-06 00:17:02 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_copay_info | Parameters: {'patient_id': 'P10003'} | Result: Copay amount for patient P10003 is $0.
+2025-09-06 00:17:03 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:17:05 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:17:44 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'Export all appointments for this month', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:17:44.475032'}
+2025-09-06 00:17:46 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:17:48 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:17:48 | [32mINFO[0m | healthcare_scheduler | export_appointments:104  | Exporting appointments for date range: 2024-06-01 to 2024-06-30
+2025-09-06 00:17:50 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:17:50 | [32mINFO[0m | healthcare_scheduler | export_appointments:104  | Exporting appointments for date range: 2024-06-01,2024-06-30
+2025-09-06 00:17:50 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: export_appointments | Parameters: {'date_range': '2024-06-01,2024-06-30'} | Result: No appointments found between 2024-06-01 and 2024-06-30.
+2025-09-06 00:17:54 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:17:54 | [32mINFO[0m | healthcare_scheduler | export_appointments:104  | Exporting appointments for date range: 2024-06-01,2024-06-30
+2025-09-06 00:17:54 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: export_appointments | Parameters: {'date_range': '2024-06-01,2024-06-30'} | Result: No appointments found between 2024-06-01 and 2024-06-30.
+2025-09-06 00:17:56 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:17:58 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:19:52 | [32mINFO[0m | agents.patient_agent | <module>       :16   | Initializing patient agent
+2025-09-06 00:19:52 | [32mINFO[0m | agents.patient_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "patient_agent",
+  "tools": [
+    "get_patient_info",
+    "update_patient_info",
+    "create_patient",
+    "search_patients"
+  ],
+  "timestamp": "2025-09-06T00:19:52.627091"
+}
+2025-09-06 00:19:52 | [32mINFO[0m | agents.patient_agent | <module>       :36   | Patient agent initialized successfully
+2025-09-06 00:19:52 | [32mINFO[0m | agents.scheduling_agent | <module>       :16   | Initializing scheduling agent
+2025-09-06 00:19:52 | [32mINFO[0m | agents.scheduling_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "scheduling_agent",
+  "tools": [
+    "get_doctor_schedule",
+    "check_availability",
+    "schedule_appointment",
+    "reschedule_appointment",
+    "cancel_appointment",
+    "get_appointments"
+  ],
+  "timestamp": "2025-09-06T00:19:52.732953"
+}
+2025-09-06 00:19:52 | [32mINFO[0m | agents.scheduling_agent | <module>       :36   | Scheduling agent initialized successfully
+2025-09-06 00:19:52 | [32mINFO[0m | agents.insurance_agent | <module>       :16   | Initializing insurance agent
+2025-09-06 00:19:52 | [32mINFO[0m | agents.insurance_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "insurance_agent",
+  "tools": [
+    "verify_insurance",
+    "check_coverage",
+    "get_copay_info"
+  ],
+  "timestamp": "2025-09-06T00:19:52.795372"
+}
+2025-09-06 00:19:52 | [32mINFO[0m | agents.insurance_agent | <module>       :36   | Insurance agent initialized successfully
+2025-09-06 00:19:52 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:9    | Initializing communication agent
+2025-09-06 00:19:52 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T00:19:52.824806'}
+2025-09-06 00:19:52 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:37   | Communication agent initialized successfully
+2025-09-06 00:19:52 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:9    | Initializing data export agent
+2025-09-06 00:19:52 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T00:19:52.859375'}
+2025-09-06 00:19:52 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:37   | Data export agent initialized successfully
+2025-09-06 00:19:52 | [32mINFO[0m | agents.supervisor    | <module>       :27   | Initialized memory saver for conversation tracking
+2025-09-06 00:19:52 | [32mINFO[0m | agents.supervisor    | <module>       :79   | Initializing supervisor agent instance
+2025-09-06 00:19:52 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:31   | Creating supervisor agent
+2025-09-06 00:19:52 | [32mINFO[0m | agents.supervisor    | log_agent_operation:195  | Operation: supervisor_creation | Details: {
+  "model": "openai:gpt-4.1",
+  "agent_count": 5,
+  "timestamp": "2025-09-06T00:19:52.903198"
+}
+2025-09-06 00:19:52 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:46   | Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']
+2025-09-06 00:19:52 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:71   | Supervisor agent created successfully
+2025-09-06 00:19:52 | [32mINFO[0m | agents.supervisor    | <module>       :81   | Supervisor agent ready for operation
+2025-09-06 00:20:42 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'hey', 'thread_id': '256a134f-8622-4cd3-b847-2e3fb1ed30a1', 'timestamp': '2025-09-06T00:20:42.867321'}
+2025-09-06 00:20:44 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:21:18 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'Create a new patient named Alex Turner born on 1992-03-15', 'thread_id': '256a134f-8622-4cd3-b847-2e3fb1ed30a1', 'timestamp': '2025-09-06T00:21:18.567416'}
+2025-09-06 00:21:21 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:21:22 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:21:24 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:21:25 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:27:01 | [32mINFO[0m | agents.patient_agent | <module>       :16   | Initializing patient agent
+2025-09-06 00:27:01 | [32mINFO[0m | agents.patient_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "patient_agent",
+  "tools": [
+    "get_patient_info",
+    "update_patient_info",
+    "create_patient",
+    "search_patients"
+  ],
+  "timestamp": "2025-09-06T00:27:01.349153"
+}
+2025-09-06 00:27:01 | [32mINFO[0m | agents.patient_agent | <module>       :36   | Patient agent initialized successfully
+2025-09-06 00:27:01 | [32mINFO[0m | agents.scheduling_agent | <module>       :16   | Initializing scheduling agent
+2025-09-06 00:27:01 | [32mINFO[0m | agents.scheduling_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "scheduling_agent",
+  "tools": [
+    "get_doctor_schedule",
+    "check_availability",
+    "schedule_appointment",
+    "reschedule_appointment",
+    "cancel_appointment",
+    "get_appointments"
+  ],
+  "timestamp": "2025-09-06T00:27:01.375803"
+}
+2025-09-06 00:27:01 | [32mINFO[0m | agents.scheduling_agent | <module>       :36   | Scheduling agent initialized successfully
+2025-09-06 00:27:01 | [32mINFO[0m | agents.insurance_agent | <module>       :16   | Initializing insurance agent
+2025-09-06 00:27:01 | [32mINFO[0m | agents.insurance_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "insurance_agent",
+  "tools": [
+    "verify_insurance",
+    "check_coverage",
+    "get_copay_info"
+  ],
+  "timestamp": "2025-09-06T00:27:01.395565"
+}
+2025-09-06 00:27:01 | [32mINFO[0m | agents.insurance_agent | <module>       :36   | Insurance agent initialized successfully
+2025-09-06 00:27:01 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:9    | Initializing communication agent
+2025-09-06 00:27:01 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T00:27:01.408489'}
+2025-09-06 00:27:01 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:37   | Communication agent initialized successfully
+2025-09-06 00:27:01 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:9    | Initializing data export agent
+2025-09-06 00:27:01 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T00:27:01.421081'}
+2025-09-06 00:27:01 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:37   | Data export agent initialized successfully
+2025-09-06 00:27:01 | [32mINFO[0m | agents.supervisor    | <module>       :27   | Initialized memory saver for conversation tracking
+2025-09-06 00:27:01 | [32mINFO[0m | agents.supervisor    | <module>       :79   | Initializing supervisor agent instance
+2025-09-06 00:27:01 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:31   | Creating supervisor agent
+2025-09-06 00:27:01 | [32mINFO[0m | agents.supervisor    | log_agent_operation:195  | Operation: supervisor_creation | Details: {
+  "model": "openai:gpt-4.1",
+  "agent_count": 5,
+  "timestamp": "2025-09-06T00:27:01.432062"
+}
+2025-09-06 00:27:01 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:46   | Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']
+2025-09-06 00:27:01 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:71   | Supervisor agent created successfully
+2025-09-06 00:27:01 | [32mINFO[0m | agents.supervisor    | <module>       :81   | Supervisor agent ready for operation
+2025-09-06 00:36:57 | [32mINFO[0m | agents.patient_agent | <module>       :16   | Initializing patient agent
+2025-09-06 00:36:57 | [32mINFO[0m | agents.patient_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "patient_agent",
+  "tools": [
+    "get_patient_info",
+    "update_patient_info",
+    "create_patient",
+    "search_patients"
+  ],
+  "timestamp": "2025-09-06T00:36:57.863190"
+}
+2025-09-06 00:37:01 | [32mINFO[0m | agents.patient_agent | <module>       :36   | Patient agent initialized successfully
+2025-09-06 00:37:01 | [32mINFO[0m | agents.scheduling_agent | <module>       :16   | Initializing scheduling agent
+2025-09-06 00:37:01 | [32mINFO[0m | agents.scheduling_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "scheduling_agent",
+  "tools": [
+    "get_doctor_schedule",
+    "check_availability",
+    "schedule_appointment",
+    "reschedule_appointment",
+    "cancel_appointment",
+    "get_appointments"
+  ],
+  "timestamp": "2025-09-06T00:37:01.441732"
+}
+2025-09-06 00:37:01 | [32mINFO[0m | agents.scheduling_agent | <module>       :36   | Scheduling agent initialized successfully
+2025-09-06 00:37:01 | [32mINFO[0m | agents.insurance_agent | <module>       :16   | Initializing insurance agent
+2025-09-06 00:37:01 | [32mINFO[0m | agents.insurance_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "insurance_agent",
+  "tools": [
+    "verify_insurance",
+    "check_coverage",
+    "get_copay_info"
+  ],
+  "timestamp": "2025-09-06T00:37:01.551305"
+}
+2025-09-06 00:37:01 | [32mINFO[0m | agents.insurance_agent | <module>       :36   | Insurance agent initialized successfully
+2025-09-06 00:37:01 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:9    | Initializing communication agent
+2025-09-06 00:37:01 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T00:37:01.614925'}
+2025-09-06 00:37:01 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:37   | Communication agent initialized successfully
+2025-09-06 00:37:01 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:9    | Initializing data export agent
+2025-09-06 00:37:01 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T00:37:01.656852'}
+2025-09-06 00:37:01 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:37   | Data export agent initialized successfully
+2025-09-06 00:37:01 | [32mINFO[0m | agents.supervisor    | <module>       :27   | Initialized memory saver for conversation tracking
+2025-09-06 00:37:01 | [32mINFO[0m | agents.supervisor    | <module>       :79   | Initializing supervisor agent instance
+2025-09-06 00:37:01 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:31   | Creating supervisor agent
+2025-09-06 00:37:01 | [32mINFO[0m | agents.supervisor    | log_agent_operation:195  | Operation: supervisor_creation | Details: {
+  "model": "openai:gpt-4.1",
+  "agent_count": 5,
+  "timestamp": "2025-09-06T00:37:01.684869"
+}
+2025-09-06 00:37:01 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:46   | Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']
+2025-09-06 00:37:01 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:71   | Supervisor agent created successfully
+2025-09-06 00:37:01 | [32mINFO[0m | agents.supervisor    | <module>       :81   | Supervisor agent ready for operation
+2025-09-06 00:40:44 | [32mINFO[0m | agents.patient_agent | <module>       :16   | Initializing patient agent
+2025-09-06 00:40:44 | [32mINFO[0m | agents.patient_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "patient_agent",
+  "tools": [
+    "get_patient_info",
+    "update_patient_info",
+    "create_patient",
+    "search_patients"
+  ],
+  "timestamp": "2025-09-06T00:40:44.627150"
+}
+2025-09-06 00:40:44 | [32mINFO[0m | agents.patient_agent | <module>       :36   | Patient agent initialized successfully
+2025-09-06 00:40:44 | [32mINFO[0m | agents.scheduling_agent | <module>       :16   | Initializing scheduling agent
+2025-09-06 00:40:44 | [32mINFO[0m | agents.scheduling_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "scheduling_agent",
+  "tools": [
+    "get_doctor_schedule",
+    "check_availability",
+    "schedule_appointment",
+    "reschedule_appointment",
+    "cancel_appointment",
+    "get_appointments"
+  ],
+  "timestamp": "2025-09-06T00:40:44.680023"
+}
+2025-09-06 00:40:44 | [32mINFO[0m | agents.scheduling_agent | <module>       :36   | Scheduling agent initialized successfully
+2025-09-06 00:40:44 | [32mINFO[0m | agents.insurance_agent | <module>       :16   | Initializing insurance agent
+2025-09-06 00:40:44 | [32mINFO[0m | agents.insurance_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "insurance_agent",
+  "tools": [
+    "verify_insurance",
+    "check_coverage",
+    "get_copay_info"
+  ],
+  "timestamp": "2025-09-06T00:40:44.717767"
+}
+2025-09-06 00:40:44 | [32mINFO[0m | agents.insurance_agent | <module>       :36   | Insurance agent initialized successfully
+2025-09-06 00:40:44 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:9    | Initializing communication agent
+2025-09-06 00:40:44 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T00:40:44.746969'}
+2025-09-06 00:40:44 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:37   | Communication agent initialized successfully
+2025-09-06 00:40:44 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:9    | Initializing data export agent
+2025-09-06 00:40:44 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T00:40:44.771523'}
+2025-09-06 00:40:44 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:37   | Data export agent initialized successfully
+2025-09-06 00:40:44 | [32mINFO[0m | agents.supervisor    | <module>       :27   | Initialized memory saver for conversation tracking
+2025-09-06 00:40:44 | [32mINFO[0m | agents.supervisor    | <module>       :79   | Initializing supervisor agent instance
+2025-09-06 00:40:44 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:31   | Creating supervisor agent
+2025-09-06 00:40:44 | [32mINFO[0m | agents.supervisor    | log_agent_operation:195  | Operation: supervisor_creation | Details: {
+  "model": "openai:gpt-4.1",
+  "agent_count": 5,
+  "timestamp": "2025-09-06T00:40:44.796758"
+}
+2025-09-06 00:40:44 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:46   | Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']
+2025-09-06 00:40:44 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:71   | Supervisor agent created successfully
+2025-09-06 00:40:44 | [32mINFO[0m | agents.supervisor    | <module>       :81   | Supervisor agent ready for operation
+2025-09-06 00:42:46 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'hey', 'thread_id': '8a1201d1-daaf-4858-8f40-7895eba33874', 'timestamp': '2025-09-06T00:42:46.734740'}
+2025-09-06 00:42:48 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:43:12 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'help me book an appointment', 'thread_id': '8a1201d1-daaf-4858-8f40-7895eba33874', 'timestamp': '2025-09-06T00:43:12.995204'}
+2025-09-06 00:43:15 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:43:18 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 00:43:20 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

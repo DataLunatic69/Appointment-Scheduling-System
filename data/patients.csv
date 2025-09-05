@@ -1,6 +1,6 @@
 patient_id,first_name,last_name,date_of_birth,phone,email,insurance_provider,insurance_id,primary_doctor,created_date
 P10001,John,Doe,1980-05-15,555-1234,john.doe@email.com,HealthPlus,INS1001,D10001,2024-01-15
-P10002,Jane,Smith,1990-08-22,555-9999,jane.smith@email.com,MedCare,INS1002,D10002,2024-02-20
+P10002,Jane,Smith,1990-08-22,555-9967,jane.smith@email.com,MedCare,INS1002,D10002,2024-02-20
 P10003,Robert,Johnson,1975-12-03,555-9012,robert.j@email.com,HealthPlus,INS1003,D10001,2024-03-10
 P10004,Sarah,Williams,1988-04-18,555-3456,sarah.w@email.com,WellnessInc,INS1004,D10003,2024-04-05
 P10005,Michael,Brown,1965-11-30,555-7890,michael.b@email.com,MedCare,INS1005,D10002,2024-05-22

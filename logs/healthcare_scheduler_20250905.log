@@ -72,3 +72,166 @@
 2025-09-05 18:40:14,091 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-06-10
 2025-09-05 18:40:14,129 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-10'} | Result: No schedule found for doctor D10001 on 2024-06-10.
 2025-09-05 18:49:03,294 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'Schedule an appointment for patient P10001 with doctor D10001 tomorrow at 2 PM', 'thread_id': 'f49d9678-64b6-4744-9746-1c605c011bfa', 'timestamp': '2025-09-05T18:49:03.294060'}
+2025-09-05 19:26:33,676 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-05 19:26:33,677 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T19:26:33.677448'}
+2025-09-05 19:26:33,683 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-05 19:26:33,695 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-05 19:26:33,695 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T19:26:33.695959'}
+2025-09-05 19:26:33,700 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-05 19:26:45,476 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'HELLO', 'thread_id': '8b5c1d16-3571-4d95-af63-3ea13df66c36', 'timestamp': '2025-09-05T19:26:45.476606'}
+2025-09-05 19:36:49,037 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-05 19:36:49,038 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T19:36:49.038114'}
+2025-09-05 19:36:52,488 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-05 19:38:29,139 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-05 19:38:29,140 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T19:38:29.140185'}
+2025-09-05 19:38:29,165 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-05 19:38:29,180 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-05 19:38:29,181 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T19:38:29.181743'}
+2025-09-05 19:38:29,201 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-05 22:35:10,726 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-05 22:35:10,727 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T22:35:10.727395'}
+2025-09-05 22:35:10,748 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-05 22:35:10,765 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-05 22:35:10,767 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T22:35:10.767097'}
+2025-09-05 22:35:10,789 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-05 22:35:24,238 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'hi', 'thread_id': 'abb6a7a1-21e7-404b-830c-b2eb1c71d60c', 'timestamp': '2025-09-05T22:35:24.238375'}
+2025-09-05 22:54:09,152 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-05 22:54:09,154 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T22:54:09.154272'}
+2025-09-05 22:54:09,172 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-05 22:54:09,184 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-05 22:54:09,185 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T22:54:09.185114'}
+2025-09-05 22:54:09,203 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-05 23:03:19,611 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-05 23:03:19,612 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T23:03:19.612855'}
+2025-09-05 23:03:19,647 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-05 23:03:19,662 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-05 23:03:19,663 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T23:03:19.663106'}
+2025-09-05 23:03:19,679 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-05 23:05:26,449 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-05 23:05:26,451 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T23:05:26.451650'}
+2025-09-05 23:05:26,475 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-05 23:05:26,494 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-05 23:05:26,496 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T23:05:26.496023'}
+2025-09-05 23:05:26,520 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-05 23:05:38,060 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'hi', 'thread_id': '85f05fb2-d283-4b89-a132-f13d4e5db045', 'timestamp': '2025-09-05T23:05:38.060153'}
+2025-09-05 23:34:19,160 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-05 23:34:19,161 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T23:34:19.161223'}
+2025-09-05 23:34:19,176 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-05 23:34:19,193 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-05 23:34:19,195 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T23:34:19.195460'}
+2025-09-05 23:34:19,217 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-05 23:34:36,018 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'hi', 'thread_id': '1e665e72-7fd6-46be-ba32-b2a0da2663c8', 'timestamp': '2025-09-05T23:34:36.018403'}
+2025-09-05 23:55:14,914 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-05 23:55:14,915 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T23:55:14.915667'}
+2025-09-05 23:55:14,929 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-05 23:55:14,944 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-05 23:55:14,945 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T23:55:14.945742'}
+2025-09-05 23:55:14,961 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-05 23:55:50,986 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'hey', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-05T23:55:50.986120'}
+2025-09-05 23:57:41,191 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'Update the phone number for patient P10002 to 555-9967', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-05T23:57:41.190993'}
+2025-09-05 23:57:46,378 | INFO | healthcare_scheduler | get_patient_info | Getting patient info for ID: P10002
+2025-09-05 23:57:46,416 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_patient_info | Parameters: {'patient_id': 'P10002'} | Result: [
+  {
+    "patient_id":"P10002",
+    "first_name":"Jane",
+    "last_name":"Smith",
+    "date_of_birth":"1990-08-22",
+    "phone":"555-9999",
+    "email":"jane.smith@email.com",
+    "insurance_provider":"MedCare",
+    "insurance_id":"INS1002",
+    "primary_doctor":"D10002",
+    "created_date":"2024-02-20"
+  }
+]
+2025-09-05 23:58:51,371 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'this is patient id ..this should be enough', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-05T23:58:51.371388'}
+2025-09-05 23:58:55,911 | INFO | healthcare_scheduler | update_patient_info | Updating patient info for ID: P10002 with updates: {'phone': '555-9967'}
+2025-09-05 23:58:55,927 | INFO | healthcare_scheduler | log_tool_execution | Tool: update_patient_info | Parameters: {'patient_id': 'P10002', 'updates': {'phone': '555-9967'}} | Result: Patient P10002 information updated successfully.
+2025-09-05 23:59:38,344 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'Schedule an appointment for patient P10001 with doctor D10001 tomorrow at 2 PM', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-05T23:59:38.344428'}
+2025-09-05 23:59:42,261 | INFO | healthcare_scheduler | check_availability | Checking availability for doctor D10001 at 2024-06-10T14:00:00
+2025-09-05 23:59:43,606 | INFO | healthcare_scheduler | check_availability | Checking availability for doctor D10001 at 2024-06-10 14:00
+2025-09-05 23:59:43,638 | INFO | healthcare_scheduler | log_tool_execution | Tool: check_availability | Parameters: {'doctor_id': 'D10001', 'datetime': '2024-06-10 14:00'} | Result: Doctor D10001 is not available on 2024-06-10.
+2025-09-05 23:59:44,970 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-06-10
+2025-09-05 23:59:45,005 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-10'} | Result: No schedule found for doctor D10001 on 2024-06-10.
+2025-09-06 00:00:48,538 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'what are his available slots?', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:00:48.538614'}
+2025-09-06 00:01:31,431 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'hi', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:01:31.431085'}
+2025-09-06 00:01:34,993 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-06-10
+2025-09-06 00:01:35,038 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-10'} | Result: No schedule found for doctor D10001 on 2024-06-10.
+2025-09-06 00:01:37,957 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-06-11
+2025-09-06 00:01:38,007 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-11'} | Result: No schedule found for doctor D10001 on 2024-06-11.
+2025-09-06 00:01:39,484 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-06-12
+2025-09-06 00:01:39,519 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-12'} | Result: No schedule found for doctor D10001 on 2024-06-12.
+2025-09-06 00:01:40,969 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-06-13
+2025-09-06 00:01:41,027 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-13'} | Result: No schedule found for doctor D10001 on 2024-06-13.
+2025-09-06 00:01:42,396 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-06-14
+2025-09-06 00:01:42,453 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-14'} | Result: No schedule found for doctor D10001 on 2024-06-14.
+2025-09-06 00:02:12,125 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'yes check for the further avaibility', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:02:12.125313'}
+2025-09-06 00:02:17,142 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-06-17
+2025-09-06 00:02:17,152 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-06-20
+2025-09-06 00:02:17,153 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-06-19
+2025-09-06 00:02:17,154 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-06-18
+2025-09-06 00:02:17,155 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-06-21
+2025-09-06 00:02:17,177 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-17'} | Result: No schedule found for doctor D10001 on 2024-06-17.
+2025-09-06 00:02:17,256 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-20'} | Result: No schedule found for doctor D10001 on 2024-06-20.
+2025-09-06 00:02:17,266 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-19'} | Result: No schedule found for doctor D10001 on 2024-06-19.
+2025-09-06 00:02:17,273 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-21'} | Result: No schedule found for doctor D10001 on 2024-06-21.
+2025-09-06 00:02:17,286 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-18'} | Result: No schedule found for doctor D10001 on 2024-06-18.
+2025-09-06 00:02:43,345 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'get any of his availbale slots', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:02:43.345750'}
+2025-09-06 00:02:46,969 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-06-24
+2025-09-06 00:02:47,001 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-24'} | Result: No schedule found for doctor D10001 on 2024-06-24.
+2025-09-06 00:02:48,936 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-06-26
+2025-09-06 00:02:48,938 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-06-25
+2025-09-06 00:02:48,941 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-06-27
+2025-09-06 00:02:48,963 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-06-28
+2025-09-06 00:02:48,977 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-07-01
+2025-09-06 00:02:49,027 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-25'} | Result: No schedule found for doctor D10001 on 2024-06-25.
+2025-09-06 00:02:49,078 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-26'} | Result: No schedule found for doctor D10001 on 2024-06-26.
+2025-09-06 00:02:49,089 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-27'} | Result: No schedule found for doctor D10001 on 2024-06-27.
+2025-09-06 00:02:49,101 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-28'} | Result: No schedule found for doctor D10001 on 2024-06-28.
+2025-09-06 00:02:49,118 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-07-01'} | Result: No schedule found for doctor D10001 on 2024-07-01.
+2025-09-06 00:03:11,066 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'yes please look for other options', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:03:11.066303'}
+2025-09-06 00:03:14,855 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10002 on 2024-06-10
+2025-09-06 00:03:14,883 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10002', 'schedule_date': '2024-06-10'} | Result: No schedule found for doctor D10002 on 2024-06-10.
+2025-09-06 00:03:16,929 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10002 on 2024-06-11
+2025-09-06 00:03:16,932 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10002 on 2024-06-12
+2025-09-06 00:03:16,934 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10002 on 2024-06-13
+2025-09-06 00:03:16,935 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10002 on 2024-06-14
+2025-09-06 00:03:17,020 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10002', 'schedule_date': '2024-06-11'} | Result: No schedule found for doctor D10002 on 2024-06-11.
+2025-09-06 00:03:17,028 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10002', 'schedule_date': '2024-06-14'} | Result: No schedule found for doctor D10002 on 2024-06-14.
+2025-09-06 00:03:17,034 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10002', 'schedule_date': '2024-06-12'} | Result: No schedule found for doctor D10002 on 2024-06-12.
+2025-09-06 00:03:17,050 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10002', 'schedule_date': '2024-06-13'} | Result: No schedule found for doctor D10002 on 2024-06-13.
+2025-09-06 00:03:20,518 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10003 on 2024-06-13
+2025-09-06 00:03:20,521 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10003 on 2024-06-10
+2025-09-06 00:03:20,528 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10003 on 2024-06-11
+2025-09-06 00:03:20,534 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10003 on 2024-06-12
+2025-09-06 00:03:20,538 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10003 on 2024-06-14
+2025-09-06 00:03:20,707 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10003', 'schedule_date': '2024-06-13'} | Result: No schedule found for doctor D10003 on 2024-06-13.
+2025-09-06 00:03:20,733 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10003', 'schedule_date': '2024-06-10'} | Result: No schedule found for doctor D10003 on 2024-06-10.
+2025-09-06 00:03:20,735 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10003', 'schedule_date': '2024-06-11'} | Result: No schedule found for doctor D10003 on 2024-06-11.
+2025-09-06 00:03:20,765 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10003', 'schedule_date': '2024-06-14'} | Result: No schedule found for doctor D10003 on 2024-06-14.
+2025-09-06 00:03:20,774 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10003', 'schedule_date': '2024-06-12'} | Result: No schedule found for doctor D10003 on 2024-06-12.
+2025-09-06 00:03:22,047 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10004 on 2024-06-10
+2025-09-06 00:03:22,118 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10004', 'schedule_date': '2024-06-10'} | Result: No schedule found for doctor D10004 on 2024-06-10.
+2025-09-06 00:03:30,667 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10004 on 2024-06-11
+2025-09-06 00:03:30,668 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10004 on 2024-06-12
+2025-09-06 00:03:30,671 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10004 on 2024-06-13
+2025-09-06 00:03:30,673 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10004 on 2024-06-14
+2025-09-06 00:03:30,745 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10004', 'schedule_date': '2024-06-11'} | Result: No schedule found for doctor D10004 on 2024-06-11.
+2025-09-06 00:03:30,757 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10004', 'schedule_date': '2024-06-12'} | Result: No schedule found for doctor D10004 on 2024-06-12.
+2025-09-06 00:03:30,769 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10004', 'schedule_date': '2024-06-13'} | Result: No schedule found for doctor D10004 on 2024-06-13.
+2025-09-06 00:03:30,786 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10004', 'schedule_date': '2024-06-14'} | Result: No schedule found for doctor D10004 on 2024-06-14.
+2025-09-06 00:03:32,300 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10005 on 2024-06-10
+2025-09-06 00:03:33,727 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-07-08
+2025-09-06 00:03:33,757 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-07-08'} | Result: No schedule found for doctor D10001 on 2024-07-08.
+2025-09-06 00:16:17,070 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'Check coverage for procedure CPT-12345 for patient P10002', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:16:17.070550'}
+2025-09-06 00:16:22,738 | INFO | healthcare_scheduler | check_coverage | Checking coverage for patient P10002, procedure CPT-12345
+2025-09-06 00:16:22,770 | INFO | healthcare_scheduler | log_tool_execution | Tool: check_coverage | Parameters: {'patient_id': 'P10002', 'procedure_code': 'CPT-12345'} | Result: Procedure CPT-12345 is covered for patient P10002.
+2025-09-06 00:16:58,713 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'What is the copay for patient P10003?', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:16:58.712927'}
+2025-09-06 00:17:02,322 | INFO | healthcare_scheduler | get_copay_info | Getting copay info for patient P10003
+2025-09-06 00:17:02,358 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_copay_info | Parameters: {'patient_id': 'P10003'} | Result: Copay amount for patient P10003 is $0.
+2025-09-06 00:17:44,475 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'Export all appointments for this month', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:17:44.475032'}
+2025-09-06 00:17:48,660 | INFO | healthcare_scheduler | export_appointments | Exporting appointments for date range: 2024-06-01 to 2024-06-30
+2025-09-06 00:17:50,442 | INFO | healthcare_scheduler | export_appointments | Exporting appointments for date range: 2024-06-01,2024-06-30
+2025-09-06 00:17:50,462 | INFO | healthcare_scheduler | log_tool_execution | Tool: export_appointments | Parameters: {'date_range': '2024-06-01,2024-06-30'} | Result: No appointments found between 2024-06-01 and 2024-06-30.
+2025-09-06 00:17:54,181 | INFO | healthcare_scheduler | export_appointments | Exporting appointments for date range: 2024-06-01,2024-06-30
+2025-09-06 00:17:54,200 | INFO | healthcare_scheduler | log_tool_execution | Tool: export_appointments | Parameters: {'date_range': '2024-06-01,2024-06-30'} | Result: No appointments found between 2024-06-01 and 2024-06-30.

@@ -5563,3 +5563,5271 @@
   "agent_name": "supervisor_agent",
   "operation": null
 }
+{
+  "timestamp": "2025-09-05T19:26:32.416367",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing patient agent",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:26:32.417269",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"patient_agent\",\n  \"tools\": [\n    \"get_patient_info\",\n    \"update_patient_info\",\n    \"create_patient\",\n    \"search_patients\"\n  ],\n  \"timestamp\": \"2025-09-05T19:26:32.417202\"\n}",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T19:26:33.613971",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Patient agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:26:33.629484",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing scheduling agent",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:26:33.629772",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"scheduling_agent\",\n  \"tools\": [\n    \"get_doctor_schedule\",\n    \"check_availability\",\n    \"schedule_appointment\",\n    \"reschedule_appointment\",\n    \"cancel_appointment\",\n    \"get_appointments\"\n  ],\n  \"timestamp\": \"2025-09-05T19:26:33.629748\"\n}",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T19:26:33.637891",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Scheduling agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:26:33.656132",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing insurance agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:26:33.656492",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"insurance_agent\",\n  \"tools\": [\n    \"verify_insurance\",\n    \"check_coverage\",\n    \"get_copay_info\"\n  ],\n  \"timestamp\": \"2025-09-05T19:26:33.656470\"\n}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T19:26:33.663286",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Insurance agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:26:33.676752",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 9,
+  "message": "Initializing communication agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:26:33.677492",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T19:26:33.677448'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:26:33.683660",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 37,
+  "message": "Communication agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:26:33.695444",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 9,
+  "message": "Initializing data export agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:26:33.695976",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T19:26:33.695959'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:26:33.700659",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 37,
+  "message": "Data export agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:26:33.703342",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 27,
+  "message": "Initialized memory saver for conversation tracking",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:26:33.703528",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 79,
+  "message": "Initializing supervisor agent instance",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:26:33.703639",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 31,
+  "message": "Creating supervisor agent",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:26:33.703776",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: supervisor_creation | Details: {\n  \"model\": \"openai:gpt-4.1\",\n  \"agent_count\": 5,\n  \"timestamp\": \"2025-09-05T19:26:33.703756\"\n}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": "supervisor_creation"
+}
+{
+  "timestamp": "2025-09-05T19:26:33.704159",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 46,
+  "message": "Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:26:33.718082",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 71,
+  "message": "Supervisor agent created successfully",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:26:33.718771",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 81,
+  "message": "Supervisor agent ready for operation",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:26:45.476723",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'HELLO', 'thread_id': '8b5c1d16-3571-4d95-af63-3ea13df66c36', 'timestamp': '2025-09-05T19:26:45.476606'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:38:24.992845",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing patient agent",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:38:24.995400",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"patient_agent\",\n  \"tools\": [\n    \"get_patient_info\",\n    \"update_patient_info\",\n    \"create_patient\",\n    \"search_patients\"\n  ],\n  \"timestamp\": \"2025-09-05T19:38:24.995316\"\n}",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T19:38:28.991561",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Patient agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:38:29.024546",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing scheduling agent",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:38:29.025749",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"scheduling_agent\",\n  \"tools\": [\n    \"get_doctor_schedule\",\n    \"check_availability\",\n    \"schedule_appointment\",\n    \"reschedule_appointment\",\n    \"cancel_appointment\",\n    \"get_appointments\"\n  ],\n  \"timestamp\": \"2025-09-05T19:38:29.025670\"\n}",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T19:38:29.064915",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Scheduling agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:38:29.087173",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing insurance agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:38:29.087825",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"insurance_agent\",\n  \"tools\": [\n    \"verify_insurance\",\n    \"check_coverage\",\n    \"get_copay_info\"\n  ],\n  \"timestamp\": \"2025-09-05T19:38:29.087767\"\n}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T19:38:29.108263",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Insurance agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:38:29.139345",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 9,
+  "message": "Initializing communication agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:38:29.140232",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T19:38:29.140185'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:38:29.165277",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 37,
+  "message": "Communication agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:38:29.180229",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 9,
+  "message": "Initializing data export agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:38:29.181789",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T19:38:29.181743'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:38:29.201071",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 37,
+  "message": "Data export agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:38:29.206009",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 27,
+  "message": "Initialized memory saver for conversation tracking",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:38:29.206507",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 79,
+  "message": "Initializing supervisor agent instance",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:38:29.206920",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 31,
+  "message": "Creating supervisor agent",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:38:29.207402",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: supervisor_creation | Details: {\n  \"model\": \"openai:gpt-4.1\",\n  \"agent_count\": 5,\n  \"timestamp\": \"2025-09-05T19:38:29.207356\"\n}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": "supervisor_creation"
+}
+{
+  "timestamp": "2025-09-05T19:38:29.208709",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 46,
+  "message": "Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:38:29.264149",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 71,
+  "message": "Supervisor agent created successfully",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T19:38:29.265495",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 81,
+  "message": "Supervisor agent ready for operation",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:06.637707",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing patient agent",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:06.638850",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"patient_agent\",\n  \"tools\": [\n    \"get_patient_info\",\n    \"update_patient_info\",\n    \"create_patient\",\n    \"search_patients\"\n  ],\n  \"timestamp\": \"2025-09-05T22:35:06.638786\"\n}",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T22:35:10.556867",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Patient agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:10.590821",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing scheduling agent",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:10.592141",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"scheduling_agent\",\n  \"tools\": [\n    \"get_doctor_schedule\",\n    \"check_availability\",\n    \"schedule_appointment\",\n    \"reschedule_appointment\",\n    \"cancel_appointment\",\n    \"get_appointments\"\n  ],\n  \"timestamp\": \"2025-09-05T22:35:10.591975\"\n}",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T22:35:10.643717",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Scheduling agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:10.668950",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing insurance agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:10.669804",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"insurance_agent\",\n  \"tools\": [\n    \"verify_insurance\",\n    \"check_coverage\",\n    \"get_copay_info\"\n  ],\n  \"timestamp\": \"2025-09-05T22:35:10.669741\"\n}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T22:35:10.693755",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Insurance agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:10.726195",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 9,
+  "message": "Initializing communication agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:10.727444",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T22:35:10.727395'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:10.748310",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 37,
+  "message": "Communication agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:10.765483",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 9,
+  "message": "Initializing data export agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:10.767218",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T22:35:10.767097'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:10.789175",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 37,
+  "message": "Data export agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:10.795308",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 27,
+  "message": "Initialized memory saver for conversation tracking",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:10.796027",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 79,
+  "message": "Initializing supervisor agent instance",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:10.796580",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 31,
+  "message": "Creating supervisor agent",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:10.797101",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: supervisor_creation | Details: {\n  \"model\": \"openai:gpt-4.1\",\n  \"agent_count\": 5,\n  \"timestamp\": \"2025-09-05T22:35:10.797045\"\n}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": "supervisor_creation"
+}
+{
+  "timestamp": "2025-09-05T22:35:10.798558",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 46,
+  "message": "Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:10.848463",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 71,
+  "message": "Supervisor agent created successfully",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:10.849483",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 81,
+  "message": "Supervisor agent ready for operation",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:24.238473",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'hi', 'thread_id': 'abb6a7a1-21e7-404b-830c-b2eb1c71d60c', 'timestamp': '2025-09-05T22:35:24.238375'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:35:26.556823",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:54:05.584193",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing patient agent",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:54:05.585121",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"patient_agent\",\n  \"tools\": [\n    \"get_patient_info\",\n    \"update_patient_info\",\n    \"create_patient\",\n    \"search_patients\"\n  ],\n  \"timestamp\": \"2025-09-05T22:54:05.585049\"\n}",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T22:54:09.012609",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Patient agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:54:09.036469",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing scheduling agent",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:54:09.038626",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"scheduling_agent\",\n  \"tools\": [\n    \"get_doctor_schedule\",\n    \"check_availability\",\n    \"schedule_appointment\",\n    \"reschedule_appointment\",\n    \"cancel_appointment\",\n    \"get_appointments\"\n  ],\n  \"timestamp\": \"2025-09-05T22:54:09.038541\"\n}",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T22:54:09.075843",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Scheduling agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:54:09.098269",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing insurance agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:54:09.099517",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"insurance_agent\",\n  \"tools\": [\n    \"verify_insurance\",\n    \"check_coverage\",\n    \"get_copay_info\"\n  ],\n  \"timestamp\": \"2025-09-05T22:54:09.099339\"\n}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T22:54:09.120522",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Insurance agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:54:09.152937",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 9,
+  "message": "Initializing communication agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:54:09.154451",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T22:54:09.154272'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:54:09.172738",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 37,
+  "message": "Communication agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:54:09.184135",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 9,
+  "message": "Initializing data export agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:54:09.185161",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T22:54:09.185114'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:54:09.203204",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 37,
+  "message": "Data export agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:54:09.211295",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 27,
+  "message": "Initialized memory saver for conversation tracking",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:54:09.213389",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 79,
+  "message": "Initializing supervisor agent instance",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:54:09.214141",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 31,
+  "message": "Creating supervisor agent",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:54:09.214962",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: supervisor_creation | Details: {\n  \"model\": \"openai:gpt-4.1\",\n  \"agent_count\": 5,\n  \"timestamp\": \"2025-09-05T22:54:09.214899\"\n}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": "supervisor_creation"
+}
+{
+  "timestamp": "2025-09-05T22:54:09.216699",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 46,
+  "message": "Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:54:09.258898",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 71,
+  "message": "Supervisor agent created successfully",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T22:54:09.259732",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 81,
+  "message": "Supervisor agent ready for operation",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:03:16.114032",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing patient agent",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:03:16.114986",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"patient_agent\",\n  \"tools\": [\n    \"get_patient_info\",\n    \"update_patient_info\",\n    \"create_patient\",\n    \"search_patients\"\n  ],\n  \"timestamp\": \"2025-09-05T23:03:16.114921\"\n}",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T23:03:19.486778",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Patient agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:03:19.509430",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing scheduling agent",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:03:19.510091",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"scheduling_agent\",\n  \"tools\": [\n    \"get_doctor_schedule\",\n    \"check_availability\",\n    \"schedule_appointment\",\n    \"reschedule_appointment\",\n    \"cancel_appointment\",\n    \"get_appointments\"\n  ],\n  \"timestamp\": \"2025-09-05T23:03:19.510030\"\n}",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T23:03:19.536489",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Scheduling agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:03:19.555522",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing insurance agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:03:19.557213",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"insurance_agent\",\n  \"tools\": [\n    \"verify_insurance\",\n    \"check_coverage\",\n    \"get_copay_info\"\n  ],\n  \"timestamp\": \"2025-09-05T23:03:19.557153\"\n}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T23:03:19.573018",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Insurance agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:03:19.611362",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 9,
+  "message": "Initializing communication agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:03:19.612912",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T23:03:19.612855'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:03:19.647109",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 37,
+  "message": "Communication agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:03:19.662177",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 9,
+  "message": "Initializing data export agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:03:19.663154",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T23:03:19.663106'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:03:19.679902",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 37,
+  "message": "Data export agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:03:19.684628",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 27,
+  "message": "Initialized memory saver for conversation tracking",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:03:19.686129",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 79,
+  "message": "Initializing supervisor agent instance",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:03:19.686919",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 31,
+  "message": "Creating supervisor agent",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:03:19.687856",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: supervisor_creation | Details: {\n  \"model\": \"openai:gpt-4.1\",\n  \"agent_count\": 5,\n  \"timestamp\": \"2025-09-05T23:03:19.687711\"\n}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": "supervisor_creation"
+}
+{
+  "timestamp": "2025-09-05T23:03:19.689599",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 46,
+  "message": "Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:03:19.743393",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 71,
+  "message": "Supervisor agent created successfully",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:03:19.744116",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 81,
+  "message": "Supervisor agent ready for operation",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:22.747353",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing patient agent",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:22.748279",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"patient_agent\",\n  \"tools\": [\n    \"get_patient_info\",\n    \"update_patient_info\",\n    \"create_patient\",\n    \"search_patients\"\n  ],\n  \"timestamp\": \"2025-09-05T23:05:22.748206\"\n}",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T23:05:26.294031",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Patient agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:26.326720",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing scheduling agent",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:26.327913",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"scheduling_agent\",\n  \"tools\": [\n    \"get_doctor_schedule\",\n    \"check_availability\",\n    \"schedule_appointment\",\n    \"reschedule_appointment\",\n    \"cancel_appointment\",\n    \"get_appointments\"\n  ],\n  \"timestamp\": \"2025-09-05T23:05:26.327749\"\n}",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T23:05:26.368648",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Scheduling agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:26.388076",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing insurance agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:26.389072",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"insurance_agent\",\n  \"tools\": [\n    \"verify_insurance\",\n    \"check_coverage\",\n    \"get_copay_info\"\n  ],\n  \"timestamp\": \"2025-09-05T23:05:26.388985\"\n}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T23:05:26.418547",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Insurance agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:26.449023",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 9,
+  "message": "Initializing communication agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:26.451710",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T23:05:26.451650'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:26.475837",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 37,
+  "message": "Communication agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:26.494809",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 9,
+  "message": "Initializing data export agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:26.496076",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T23:05:26.496023'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:26.520292",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 37,
+  "message": "Data export agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:26.531303",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 27,
+  "message": "Initialized memory saver for conversation tracking",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:26.532278",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 79,
+  "message": "Initializing supervisor agent instance",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:26.535953",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 31,
+  "message": "Creating supervisor agent",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:26.536623",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: supervisor_creation | Details: {\n  \"model\": \"openai:gpt-4.1\",\n  \"agent_count\": 5,\n  \"timestamp\": \"2025-09-05T23:05:26.536550\"\n}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": "supervisor_creation"
+}
+{
+  "timestamp": "2025-09-05T23:05:26.538341",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 46,
+  "message": "Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:26.596035",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 71,
+  "message": "Supervisor agent created successfully",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:26.597048",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 81,
+  "message": "Supervisor agent ready for operation",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:38.060289",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'hi', 'thread_id': '85f05fb2-d283-4b89-a132-f13d4e5db045', 'timestamp': '2025-09-05T23:05:38.060153'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:05:39.956899",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:15.398387",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing patient agent",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:15.399301",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"patient_agent\",\n  \"tools\": [\n    \"get_patient_info\",\n    \"update_patient_info\",\n    \"create_patient\",\n    \"search_patients\"\n  ],\n  \"timestamp\": \"2025-09-05T23:34:15.399237\"\n}",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T23:34:19.006691",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Patient agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:19.030035",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing scheduling agent",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:19.030693",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"scheduling_agent\",\n  \"tools\": [\n    \"get_doctor_schedule\",\n    \"check_availability\",\n    \"schedule_appointment\",\n    \"reschedule_appointment\",\n    \"cancel_appointment\",\n    \"get_appointments\"\n  ],\n  \"timestamp\": \"2025-09-05T23:34:19.030627\"\n}",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T23:34:19.084008",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Scheduling agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:19.105233",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing insurance agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:19.107113",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"insurance_agent\",\n  \"tools\": [\n    \"verify_insurance\",\n    \"check_coverage\",\n    \"get_copay_info\"\n  ],\n  \"timestamp\": \"2025-09-05T23:34:19.107015\"\n}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T23:34:19.128325",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Insurance agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:19.160096",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 9,
+  "message": "Initializing communication agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:19.161264",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T23:34:19.161223'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:19.176731",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 37,
+  "message": "Communication agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:19.193542",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 9,
+  "message": "Initializing data export agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:19.195542",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T23:34:19.195460'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:19.217964",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 37,
+  "message": "Data export agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:19.224077",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 27,
+  "message": "Initialized memory saver for conversation tracking",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:19.225009",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 79,
+  "message": "Initializing supervisor agent instance",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:19.225696",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 31,
+  "message": "Creating supervisor agent",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:19.226318",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: supervisor_creation | Details: {\n  \"model\": \"openai:gpt-4.1\",\n  \"agent_count\": 5,\n  \"timestamp\": \"2025-09-05T23:34:19.226258\"\n}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": "supervisor_creation"
+}
+{
+  "timestamp": "2025-09-05T23:34:19.227942",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 46,
+  "message": "Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:19.271650",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 71,
+  "message": "Supervisor agent created successfully",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:19.272556",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 81,
+  "message": "Supervisor agent ready for operation",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:36.018521",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'hi', 'thread_id': '1e665e72-7fd6-46be-ba32-b2a0da2663c8', 'timestamp': '2025-09-05T23:34:36.018403'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:34:38.013781",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:14.765601",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing patient agent",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:14.766392",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"patient_agent\",\n  \"tools\": [\n    \"get_patient_info\",\n    \"update_patient_info\",\n    \"create_patient\",\n    \"search_patients\"\n  ],\n  \"timestamp\": \"2025-09-05T23:55:14.766329\"\n}",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T23:55:14.815405",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Patient agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:14.840029",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing scheduling agent",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:14.841063",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"scheduling_agent\",\n  \"tools\": [\n    \"get_doctor_schedule\",\n    \"check_availability\",\n    \"schedule_appointment\",\n    \"reschedule_appointment\",\n    \"cancel_appointment\",\n    \"get_appointments\"\n  ],\n  \"timestamp\": \"2025-09-05T23:55:14.840978\"\n}",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T23:55:14.865144",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Scheduling agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:14.881383",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing insurance agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:14.882126",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"insurance_agent\",\n  \"tools\": [\n    \"verify_insurance\",\n    \"check_coverage\",\n    \"get_copay_info\"\n  ],\n  \"timestamp\": \"2025-09-05T23:55:14.882063\"\n}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-05T23:55:14.898906",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Insurance agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:14.914696",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 9,
+  "message": "Initializing communication agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:14.915715",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T23:55:14.915667'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:14.929549",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 37,
+  "message": "Communication agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:14.944837",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 9,
+  "message": "Initializing data export agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:14.945786",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T23:55:14.945742'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:14.961138",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 37,
+  "message": "Data export agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:14.965767",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 27,
+  "message": "Initialized memory saver for conversation tracking",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:14.966436",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 79,
+  "message": "Initializing supervisor agent instance",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:14.966751",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 31,
+  "message": "Creating supervisor agent",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:14.967943",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: supervisor_creation | Details: {\n  \"model\": \"openai:gpt-4.1\",\n  \"agent_count\": 5,\n  \"timestamp\": \"2025-09-05T23:55:14.967882\"\n}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": "supervisor_creation"
+}
+{
+  "timestamp": "2025-09-05T23:55:14.969293",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 46,
+  "message": "Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:15.008209",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 71,
+  "message": "Supervisor agent created successfully",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:15.009068",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 81,
+  "message": "Supervisor agent ready for operation",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:50.986268",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'hey', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-05T23:55:50.986120'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:55:52.144660",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:57:41.191102",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'Update the phone number for patient P10002 to 555-9967', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-05T23:57:41.190993'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:57:43.265791",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:57:44.519535",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:57:46.359774",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:57:46.378850",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "patient_tools",
+  "function": "get_patient_info",
+  "line": 15,
+  "message": "Getting patient info for ID: P10002",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:57:46.416282",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_patient_info | Parameters: {'patient_id': 'P10002'} | Result: [\n  {\n    \"patient_id\":\"P10002\",\n    \"first_name\":\"Jane\",\n    \"last_name\":\"Smith\",\n    \"date_of_birth\":\"1990-08-22\",\n    \"phone\":\"555-9999\",\n    \"email\":\"jane.smith@email.com\",\n    \"insurance_provider\":\"MedCare\",\n    \"insurance_id\":\"INS1002\",\n    \"primary_doctor\":\"D10002\",\n    \"created_date\":\"2024-02-20\"\n  }\n]",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:57:48.123742",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:57:50.097824",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:57:52.011804",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:58:51.371482",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'this is patient id ..this should be enough', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-05T23:58:51.371388'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:58:53.804364",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:58:55.895538",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:58:55.911444",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "patient_tools",
+  "function": "update_patient_info",
+  "line": 42,
+  "message": "Updating patient info for ID: P10002 with updates: {'phone': '555-9967'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:58:55.927845",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: update_patient_info | Parameters: {'patient_id': 'P10002', 'updates': {'phone': '555-9967'}} | Result: Patient P10002 information updated successfully.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:58:56.881314",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:58:58.204549",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:59:38.344556",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'Schedule an appointment for patient P10001 with doctor D10001 tomorrow at 2 PM', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-05T23:59:38.344428'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:59:40.729221",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:59:42.248943",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:59:42.261984",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "check_availability",
+  "line": 56,
+  "message": "Checking availability for doctor D10001 at 2024-06-10T14:00:00",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:59:43.596756",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:59:43.606153",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "check_availability",
+  "line": 56,
+  "message": "Checking availability for doctor D10001 at 2024-06-10 14:00",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:59:43.638188",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: check_availability | Parameters: {'doctor_id': 'D10001', 'datetime': '2024-06-10 14:00'} | Result: Doctor D10001 is not available on 2024-06-10.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:59:44.960637",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:59:44.970769",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10001 on 2024-06-10",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:59:45.005412",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-10'} | Result: No schedule found for doctor D10001 on 2024-06-10.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:59:46.384013",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-05T23:59:48.600895",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:00:48.538732",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'what are his available slots?', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:00:48.538614'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:00:48.594372",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "openai._base_client",
+  "module": "_base_client",
+  "function": "_sleep_for_retry",
+  "line": 1071,
+  "message": "Retrying request to /chat/completions in 0.429388 seconds",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:00:49.029247",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "openai._base_client",
+  "module": "_base_client",
+  "function": "_sleep_for_retry",
+  "line": 1071,
+  "message": "Retrying request to /chat/completions in 0.857801 seconds",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:31.431238",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'hi', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:01:31.431085'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:33.108997",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:34.937027",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:34.993639",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10001 on 2024-06-10",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:35.038331",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-10'} | Result: No schedule found for doctor D10001 on 2024-06-10.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:37.900786",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:37.957663",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10001 on 2024-06-11",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:38.007529",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-11'} | Result: No schedule found for doctor D10001 on 2024-06-11.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:39.475394",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:39.484233",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10001 on 2024-06-12",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:39.519726",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-12'} | Result: No schedule found for doctor D10001 on 2024-06-12.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:40.953501",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:40.969631",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10001 on 2024-06-13",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:41.027448",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-13'} | Result: No schedule found for doctor D10001 on 2024-06-13.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:42.386807",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:42.396786",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10001 on 2024-06-14",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:42.453848",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-14'} | Result: No schedule found for doctor D10001 on 2024-06-14.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:44.532250",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:01:46.282753",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:12.125418",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'yes check for the further avaibility', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:02:12.125313'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:14.988456",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:17.135370",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:17.142173",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10001 on 2024-06-17",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:17.152420",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10001 on 2024-06-20",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:17.153815",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10001 on 2024-06-19",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:17.177650",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-17'} | Result: No schedule found for doctor D10001 on 2024-06-17.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:17.155817",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10001 on 2024-06-21",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:17.154810",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10001 on 2024-06-18",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:17.256549",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-20'} | Result: No schedule found for doctor D10001 on 2024-06-20.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:17.266549",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-19'} | Result: No schedule found for doctor D10001 on 2024-06-19.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:17.273471",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-21'} | Result: No schedule found for doctor D10001 on 2024-06-21.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:17.286267",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-18'} | Result: No schedule found for doctor D10001 on 2024-06-18.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:19.789077",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:22.009984",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:43.345858",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'get any of his availbale slots', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:02:43.345750'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:45.034221",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:46.961719",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:46.969617",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10001 on 2024-06-24",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:47.001356",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-24'} | Result: No schedule found for doctor D10001 on 2024-06-24.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:48.915869",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:48.936671",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10001 on 2024-06-26",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:48.938500",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10001 on 2024-06-25",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:48.941529",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10001 on 2024-06-27",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:48.963313",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10001 on 2024-06-28",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:48.977657",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10001 on 2024-07-01",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:49.027043",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-25'} | Result: No schedule found for doctor D10001 on 2024-06-25.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:49.078428",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-26'} | Result: No schedule found for doctor D10001 on 2024-06-26.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:49.089104",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-27'} | Result: No schedule found for doctor D10001 on 2024-06-27.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:49.101885",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-28'} | Result: No schedule found for doctor D10001 on 2024-06-28.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:49.118813",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-07-01'} | Result: No schedule found for doctor D10001 on 2024-07-01.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:50.525446",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:02:52.333552",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:11.066403",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'yes please look for other options', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:03:11.066303'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:12.856283",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:14.840663",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:14.855183",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10002 on 2024-06-10",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:14.883060",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10002', 'schedule_date': '2024-06-10'} | Result: No schedule found for doctor D10002 on 2024-06-10.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:16.912232",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:16.929079",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10002 on 2024-06-11",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:16.932634",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10002 on 2024-06-12",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:16.934239",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10002 on 2024-06-13",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:16.935952",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10002 on 2024-06-14",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:17.020793",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10002', 'schedule_date': '2024-06-11'} | Result: No schedule found for doctor D10002 on 2024-06-11.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:17.028821",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10002', 'schedule_date': '2024-06-14'} | Result: No schedule found for doctor D10002 on 2024-06-14.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:17.034745",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10002', 'schedule_date': '2024-06-12'} | Result: No schedule found for doctor D10002 on 2024-06-12.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:17.050549",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10002', 'schedule_date': '2024-06-13'} | Result: No schedule found for doctor D10002 on 2024-06-13.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:20.503267",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:20.518404",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10003 on 2024-06-13",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:20.521475",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10003 on 2024-06-10",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:20.528732",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10003 on 2024-06-11",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:20.534839",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10003 on 2024-06-12",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:20.538985",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10003 on 2024-06-14",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:20.707148",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10003', 'schedule_date': '2024-06-13'} | Result: No schedule found for doctor D10003 on 2024-06-13.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:20.733635",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10003', 'schedule_date': '2024-06-10'} | Result: No schedule found for doctor D10003 on 2024-06-10.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:20.735681",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10003', 'schedule_date': '2024-06-11'} | Result: No schedule found for doctor D10003 on 2024-06-11.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:20.765661",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10003', 'schedule_date': '2024-06-14'} | Result: No schedule found for doctor D10003 on 2024-06-14.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:20.774179",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10003', 'schedule_date': '2024-06-12'} | Result: No schedule found for doctor D10003 on 2024-06-12.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:22.035490",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:22.047550",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10004 on 2024-06-10",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:22.118747",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10004', 'schedule_date': '2024-06-10'} | Result: No schedule found for doctor D10004 on 2024-06-10.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:30.656624",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:30.667013",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10004 on 2024-06-11",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:30.668941",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10004 on 2024-06-12",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:30.671132",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10004 on 2024-06-13",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:30.673649",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10004 on 2024-06-14",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:30.745025",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10004', 'schedule_date': '2024-06-11'} | Result: No schedule found for doctor D10004 on 2024-06-11.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:30.757563",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10004', 'schedule_date': '2024-06-12'} | Result: No schedule found for doctor D10004 on 2024-06-12.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:30.769068",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10004', 'schedule_date': '2024-06-13'} | Result: No schedule found for doctor D10004 on 2024-06-13.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:30.786071",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10004', 'schedule_date': '2024-06-14'} | Result: No schedule found for doctor D10004 on 2024-06-14.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:32.281144",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:32.300847",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10005 on 2024-06-10",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:33.717456",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:33.727108",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "scheduling_tools",
+  "function": "get_doctor_schedule",
+  "line": 15,
+  "message": "Getting schedule for doctor D10001 on 2024-07-08",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:33.757858",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-07-08'} | Result: No schedule found for doctor D10001 on 2024-07-08.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:35.846819",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:03:37.830137",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:16:17.070677",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'Check coverage for procedure CPT-12345 for patient P10002', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:16:17.070550'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:16:18.669179",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:16:22.691180",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:16:22.738036",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "insurance_tools",
+  "function": "check_coverage",
+  "line": 68,
+  "message": "Checking coverage for patient P10002, procedure CPT-12345",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:16:22.770823",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: check_coverage | Parameters: {'patient_id': 'P10002', 'procedure_code': 'CPT-12345'} | Result: Procedure CPT-12345 is covered for patient P10002.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:16:24.936167",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:16:27.492163",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:16:58.713060",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'What is the copay for patient P10003?', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:16:58.712927'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:17:00.409947",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:17:02.309360",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:17:02.322141",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "insurance_tools",
+  "function": "get_copay_info",
+  "line": 112,
+  "message": "Getting copay info for patient P10003",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:17:02.358631",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: get_copay_info | Parameters: {'patient_id': 'P10003'} | Result: Copay amount for patient P10003 is $0.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:17:03.900167",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:17:05.220999",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:17:44.475124",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'Export all appointments for this month', 'thread_id': '5792306b-a241-42d7-aac8-945bdc4c8ee3', 'timestamp': '2025-09-06T00:17:44.475032'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:17:46.551569",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:17:48.651512",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:17:48.660561",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "export_tools",
+  "function": "export_appointments",
+  "line": 104,
+  "message": "Exporting appointments for date range: 2024-06-01 to 2024-06-30",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:17:50.427459",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:17:50.442143",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "export_tools",
+  "function": "export_appointments",
+  "line": 104,
+  "message": "Exporting appointments for date range: 2024-06-01,2024-06-30",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:17:50.462419",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: export_appointments | Parameters: {'date_range': '2024-06-01,2024-06-30'} | Result: No appointments found between 2024-06-01 and 2024-06-30.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:17:54.168414",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:17:54.181223",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "export_tools",
+  "function": "export_appointments",
+  "line": 104,
+  "message": "Exporting appointments for date range: 2024-06-01,2024-06-30",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:17:54.200650",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_tool_execution",
+  "line": 47,
+  "message": "Tool: export_appointments | Parameters: {'date_range': '2024-06-01,2024-06-30'} | Result: No appointments found between 2024-06-01 and 2024-06-30.",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:17:56.243995",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:17:58.880426",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:19:52.626120",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing patient agent",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:19:52.627154",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"patient_agent\",\n  \"tools\": [\n    \"get_patient_info\",\n    \"update_patient_info\",\n    \"create_patient\",\n    \"search_patients\"\n  ],\n  \"timestamp\": \"2025-09-06T00:19:52.627091\"\n}",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-06T00:19:52.693640",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Patient agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:19:52.732069",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing scheduling agent",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:19:52.733058",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"scheduling_agent\",\n  \"tools\": [\n    \"get_doctor_schedule\",\n    \"check_availability\",\n    \"schedule_appointment\",\n    \"reschedule_appointment\",\n    \"cancel_appointment\",\n    \"get_appointments\"\n  ],\n  \"timestamp\": \"2025-09-06T00:19:52.732953\"\n}",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-06T00:19:52.774889",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Scheduling agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:19:52.794733",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing insurance agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:19:52.795439",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"insurance_agent\",\n  \"tools\": [\n    \"verify_insurance\",\n    \"check_coverage\",\n    \"get_copay_info\"\n  ],\n  \"timestamp\": \"2025-09-06T00:19:52.795372\"\n}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-06T00:19:52.810997",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Insurance agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:19:52.823459",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 9,
+  "message": "Initializing communication agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:19:52.824909",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T00:19:52.824806'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:19:52.839561",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 37,
+  "message": "Communication agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:19:52.858083",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 9,
+  "message": "Initializing data export agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:19:52.859439",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T00:19:52.859375'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:19:52.897328",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 37,
+  "message": "Data export agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:19:52.902145",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 27,
+  "message": "Initialized memory saver for conversation tracking",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:19:52.902727",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 79,
+  "message": "Initializing supervisor agent instance",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:19:52.902995",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 31,
+  "message": "Creating supervisor agent",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:19:52.903231",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: supervisor_creation | Details: {\n  \"model\": \"openai:gpt-4.1\",\n  \"agent_count\": 5,\n  \"timestamp\": \"2025-09-06T00:19:52.903198\"\n}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": "supervisor_creation"
+}
+{
+  "timestamp": "2025-09-06T00:19:52.904117",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 46,
+  "message": "Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:19:52.942793",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 71,
+  "message": "Supervisor agent created successfully",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:19:52.944450",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 81,
+  "message": "Supervisor agent ready for operation",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:20:42.867437",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'hey', 'thread_id': '256a134f-8622-4cd3-b847-2e3fb1ed30a1', 'timestamp': '2025-09-06T00:20:42.867321'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:20:44.153277",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:21:18.567534",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'Create a new patient named Alex Turner born on 1992-03-15', 'thread_id': '256a134f-8622-4cd3-b847-2e3fb1ed30a1', 'timestamp': '2025-09-06T00:21:18.567416'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:21:21.070301",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:21:22.082367",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:21:24.114694",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:21:25.649260",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:27:01.348675",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing patient agent",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:27:01.349189",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"patient_agent\",\n  \"tools\": [\n    \"get_patient_info\",\n    \"update_patient_info\",\n    \"create_patient\",\n    \"search_patients\"\n  ],\n  \"timestamp\": \"2025-09-06T00:27:01.349153\"\n}",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-06T00:27:01.362044",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Patient agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:27:01.375244",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing scheduling agent",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:27:01.375859",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"scheduling_agent\",\n  \"tools\": [\n    \"get_doctor_schedule\",\n    \"check_availability\",\n    \"schedule_appointment\",\n    \"reschedule_appointment\",\n    \"cancel_appointment\",\n    \"get_appointments\"\n  ],\n  \"timestamp\": \"2025-09-06T00:27:01.375803\"\n}",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-06T00:27:01.387929",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Scheduling agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:27:01.395269",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing insurance agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:27:01.395598",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"insurance_agent\",\n  \"tools\": [\n    \"verify_insurance\",\n    \"check_coverage\",\n    \"get_copay_info\"\n  ],\n  \"timestamp\": \"2025-09-06T00:27:01.395565\"\n}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-06T00:27:01.402632",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Insurance agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:27:01.407809",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 9,
+  "message": "Initializing communication agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:27:01.408515",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T00:27:01.408489'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:27:01.415020",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 37,
+  "message": "Communication agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:27:01.420412",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 9,
+  "message": "Initializing data export agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:27:01.421130",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T00:27:01.421081'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:27:01.429050",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 37,
+  "message": "Data export agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:27:01.431548",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 27,
+  "message": "Initialized memory saver for conversation tracking",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:27:01.431823",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 79,
+  "message": "Initializing supervisor agent instance",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:27:01.431970",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 31,
+  "message": "Creating supervisor agent",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:27:01.432080",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: supervisor_creation | Details: {\n  \"model\": \"openai:gpt-4.1\",\n  \"agent_count\": 5,\n  \"timestamp\": \"2025-09-06T00:27:01.432062\"\n}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": "supervisor_creation"
+}
+{
+  "timestamp": "2025-09-06T00:27:01.432527",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 46,
+  "message": "Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:27:01.447535",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 71,
+  "message": "Supervisor agent created successfully",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:27:01.447890",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 81,
+  "message": "Supervisor agent ready for operation",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:36:57.862575",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing patient agent",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:36:57.863245",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"patient_agent\",\n  \"tools\": [\n    \"get_patient_info\",\n    \"update_patient_info\",\n    \"create_patient\",\n    \"search_patients\"\n  ],\n  \"timestamp\": \"2025-09-06T00:36:57.863190\"\n}",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-06T00:37:01.409345",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Patient agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:37:01.438566",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing scheduling agent",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:37:01.441821",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"scheduling_agent\",\n  \"tools\": [\n    \"get_doctor_schedule\",\n    \"check_availability\",\n    \"schedule_appointment\",\n    \"reschedule_appointment\",\n    \"cancel_appointment\",\n    \"get_appointments\"\n  ],\n  \"timestamp\": \"2025-09-06T00:37:01.441732\"\n}",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-06T00:37:01.517239",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Scheduling agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:37:01.550284",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing insurance agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:37:01.551394",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"insurance_agent\",\n  \"tools\": [\n    \"verify_insurance\",\n    \"check_coverage\",\n    \"get_copay_info\"\n  ],\n  \"timestamp\": \"2025-09-06T00:37:01.551305\"\n}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-06T00:37:01.575982",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Insurance agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:37:01.613559",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 9,
+  "message": "Initializing communication agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:37:01.614974",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T00:37:01.614925'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:37:01.637684",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 37,
+  "message": "Communication agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:37:01.655388",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 9,
+  "message": "Initializing data export agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:37:01.656918",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T00:37:01.656852'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:37:01.675686",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 37,
+  "message": "Data export agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:37:01.682837",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 27,
+  "message": "Initialized memory saver for conversation tracking",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:37:01.683569",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 79,
+  "message": "Initializing supervisor agent instance",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:37:01.684174",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 31,
+  "message": "Creating supervisor agent",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:37:01.684952",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: supervisor_creation | Details: {\n  \"model\": \"openai:gpt-4.1\",\n  \"agent_count\": 5,\n  \"timestamp\": \"2025-09-06T00:37:01.684869\"\n}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": "supervisor_creation"
+}
+{
+  "timestamp": "2025-09-06T00:37:01.686419",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 46,
+  "message": "Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:37:01.742344",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 71,
+  "message": "Supervisor agent created successfully",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:37:01.743146",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 81,
+  "message": "Supervisor agent ready for operation",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:40:44.625989",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing patient agent",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:40:44.627264",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"patient_agent\",\n  \"tools\": [\n    \"get_patient_info\",\n    \"update_patient_info\",\n    \"create_patient\",\n    \"search_patients\"\n  ],\n  \"timestamp\": \"2025-09-06T00:40:44.627150\"\n}",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-06T00:40:44.649330",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.patient_agent",
+  "module": "patient_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Patient agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "patient_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:40:44.679182",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing scheduling agent",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:40:44.680084",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"scheduling_agent\",\n  \"tools\": [\n    \"get_doctor_schedule\",\n    \"check_availability\",\n    \"schedule_appointment\",\n    \"reschedule_appointment\",\n    \"cancel_appointment\",\n    \"get_appointments\"\n  ],\n  \"timestamp\": \"2025-09-06T00:40:44.680023\"\n}",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-06T00:40:44.700511",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.scheduling_agent",
+  "module": "scheduling_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Scheduling agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "scheduling_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:40:44.716585",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 16,
+  "message": "Initializing insurance agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:40:44.717837",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: agent_initialization | Details: {\n  \"agent_name\": \"insurance_agent\",\n  \"tools\": [\n    \"verify_insurance\",\n    \"check_coverage\",\n    \"get_copay_info\"\n  ],\n  \"timestamp\": \"2025-09-06T00:40:44.717767\"\n}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": "agent_initialization"
+}
+{
+  "timestamp": "2025-09-06T00:40:44.734294",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.insurance_agent",
+  "module": "insurance_agent",
+  "function": "<module>",
+  "line": 36,
+  "message": "Insurance agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:40:44.745745",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 9,
+  "message": "Initializing communication agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:40:44.747015",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T00:40:44.746969'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:40:44.759350",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "communication_agent",
+  "function": "create_communication_agent",
+  "line": 37,
+  "message": "Communication agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:40:44.770297",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 9,
+  "message": "Initializing data export agent",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:40:44.771581",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T00:40:44.771523'}",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:40:44.789096",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "data_export_agent",
+  "function": "create_data_export_agent",
+  "line": 37,
+  "message": "Data export agent initialized successfully",
+  "thread_id": null,
+  "agent_name": "insurance_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:40:44.794893",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 27,
+  "message": "Initialized memory saver for conversation tracking",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:40:44.795698",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 79,
+  "message": "Initializing supervisor agent instance",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:40:44.796240",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 31,
+  "message": "Creating supervisor agent",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:40:44.796807",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "logging_config",
+  "function": "log_agent_operation",
+  "line": 195,
+  "message": "Operation: supervisor_creation | Details: {\n  \"model\": \"openai:gpt-4.1\",\n  \"agent_count\": 5,\n  \"timestamp\": \"2025-09-06T00:40:44.796758\"\n}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": "supervisor_creation"
+}
+{
+  "timestamp": "2025-09-06T00:40:44.798469",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 46,
+  "message": "Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:40:44.837655",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "create_supervisor_agent",
+  "line": 71,
+  "message": "Supervisor agent created successfully",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:40:44.838681",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "agents.supervisor",
+  "module": "supervisor",
+  "function": "<module>",
+  "line": 81,
+  "message": "Supervisor agent ready for operation",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:42:46.735012",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'hey', 'thread_id': '8a1201d1-daaf-4858-8f40-7895eba33874', 'timestamp': '2025-09-06T00:42:46.734740'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:42:48.796402",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:43:12.995309",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "healthcare_scheduler",
+  "module": "logging_utils",
+  "function": "log_agent_operation",
+  "line": 43,
+  "message": "Operation: user_input | Details: {'prompt': 'help me book an appointment', 'thread_id': '8a1201d1-daaf-4858-8f40-7895eba33874', 'timestamp': '2025-09-06T00:43:12.995204'}",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:43:15.633527",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:43:18.177252",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
+{
+  "timestamp": "2025-09-06T00:43:20.135020",
+  "level": "\u001b[32mINFO\u001b[0m",
+  "logger": "httpx",
+  "module": "_client",
+  "function": "_send_single_request",
+  "line": 1025,
+  "message": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+  "thread_id": null,
+  "agent_name": "supervisor_agent",
+  "operation": null
+}
