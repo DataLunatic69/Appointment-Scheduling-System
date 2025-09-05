@@ -1,0 +1,34 @@
+# Core Dependencies
+langgraph
+langgraph-supervisor>=0.0.29
+langchain
+langchain-openai
+langchain-community
+
+# LLM and Tools
+openai
+langchain-groq
+tavily-python  # Optional for web search
+
+# Data Processing
+pandas
+openpyxl
+numpy
+
+# UI Framework
+streamlit
+streamlit-chat
+
+# Utilities
+python-dotenv
+faker
+python-dateutil
+pytz
+
+# File Processing
+pypdf
+python-multipart
+
+# Testing
+pytest
+pytest-asyncio

@@ -1,0 +1,5 @@
+{
+  "reminder": "Dear Patient,\n\nYour appointment with {doctor} is scheduled for {datetime}.\n\nPlease arrive 15 minutes early to complete any necessary paperwork.\n\nIf you need to reschedule or cancel, please contact us at least 24 hours in advance.\n\nBest regards,\nHealthcare Scheduling System",
+  "followup": "Dear Patient,\n\nThank you for your recent appointment with {doctor}.\n\nWe would appreciate it if you could take a moment to share your experience by completing our brief survey: https://example.com/survey\n\nYour feedback helps us improve our services.\n\nBest regards,\nHealthcare Scheduling System",
+  "intake": "Dear Patient,\n\nBefore your appointment, please complete our intake form at https://example.com/intake.\n\nCompleting this form in advance will help us serve you better and reduce your wait time.\n\nIf you have any questions, please don't hesitate to contact us.\n\nBest regards,\nHealthcare Scheduling System"
+}

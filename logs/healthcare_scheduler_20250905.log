@@ -1,0 +1,74 @@
+2025-09-05 16:29:12,543 | INFO | healthcare_scheduler | create_patient_agent | Initializing patient agent
+2025-09-05 16:29:12,544 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'patient_agent', 'tools': ['get_patient_info', 'update_patient_info', 'create_patient', 'search_patients'], 'timestamp': '2025-09-05T16:29:12.544355'}
+2025-09-05 16:29:13,639 | INFO | healthcare_scheduler | create_patient_agent | Patient agent initialized successfully
+2025-09-05 16:29:13,646 | INFO | healthcare_scheduler | create_scheduling_agent | Initializing scheduling agent
+2025-09-05 16:30:08,671 | INFO | healthcare_scheduler | create_insurance_agent | Initializing insurance agent
+2025-09-05 16:32:05,585 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-05 16:32:05,586 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T16:32:05.586129'}
+2025-09-05 16:32:05,596 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-05 16:32:05,601 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-05 16:32:05,601 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T16:32:05.601773'}
+2025-09-05 16:32:05,610 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-05 16:35:07,741 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'Get patient information for P10001', 'thread_id': 'c80cf3cf-37b3-4bc1-bdff-195774db0d4d', 'timestamp': '2025-09-05T16:35:07.741311'}
+2025-09-05 17:29:51,526 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-05 17:29:51,527 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T17:29:51.527034'}
+2025-09-05 17:29:51,533 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-05 17:29:51,545 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-05 17:29:51,545 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T17:29:51.545830'}
+2025-09-05 17:29:51,552 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-05 17:29:58,665 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'hello', 'thread_id': '9047c5ea-16b7-42f4-a981-573d2bc1a528', 'timestamp': '2025-09-05T17:29:58.665143'}
+2025-09-05 17:39:06,000 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'Update the phone number for patient P10002 to 555-9999', 'thread_id': '9047c5ea-16b7-42f4-a981-573d2bc1a528', 'timestamp': '2025-09-05T17:39:06.000838'}
+2025-09-05 17:39:10,980 | INFO | healthcare_scheduler | get_patient_info | Getting patient info for ID: P10002
+2025-09-05 17:39:10,986 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_patient_info | Parameters: {'patient_id': 'P10002'} | Result: [
+  {
+    "patient_id":"P10002",
+    "first_name":"Jane",
+    "last_name":"Smith",
+    "date_of_birth":"1990-08-22",
+    "phone":"555-5678",
+    "email":"jane.smith@email.com",
+    "insurance_provider":"MedCare",
+    "insurance_id":"INS1002",
+    "primary_doctor":"D10002",
+    "created_date":"2024-02-20"
+  }
+]
+2025-09-05 17:39:12,507 | INFO | healthcare_scheduler | update_patient_info | Updating patient info for ID: P10002 with updates: {'phone': '555-9999'}
+2025-09-05 17:39:12,543 | INFO | healthcare_scheduler | log_tool_execution | Tool: update_patient_info | Parameters: {'patient_id': 'P10002', 'updates': {'phone': '555-9999'}} | Result: Patient P10002 information updated successfully.
+2025-09-05 17:41:44,834 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'Create a new patient named Alex Turner born on 1992-03-15', 'thread_id': '9047c5ea-16b7-42f4-a981-573d2bc1a528', 'timestamp': '2025-09-05T17:41:44.834196'}
+2025-09-05 17:41:49,969 | INFO | healthcare_scheduler | create_patient | Creating new patient with data: {'first_name': 'Alex', 'last_name': 'Turner', 'date_of_birth': '1992-03-15'}
+2025-09-05 17:43:07,471 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'Full name: Aman Singh Date of birth: 07/07/2002 email_id: amansingh2002.ap@gmail.com', 'thread_id': '9047c5ea-16b7-42f4-a981-573d2bc1a528', 'timestamp': '2025-09-05T17:43:07.471635'}
+2025-09-05 17:43:10,806 | INFO | healthcare_scheduler | create_patient | Creating new patient with data: {'first_name': 'Aman', 'last_name': 'Singh', 'date_of_birth': '2002-07-07', 'email': 'amansingh2002.ap@gmail.com'}
+2025-09-05 17:43:37,856 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'Number: 9137835343', 'thread_id': '9047c5ea-16b7-42f4-a981-573d2bc1a528', 'timestamp': '2025-09-05T17:43:37.856468'}
+2025-09-05 17:43:40,927 | INFO | healthcare_scheduler | create_patient | Creating new patient with data: {'first_name': 'Aman', 'last_name': 'Singh', 'date_of_birth': '2002-07-07', 'email': 'amansingh2002.ap@gmail.com', 'phone': '9137835343'}
+2025-09-05 17:43:40,939 | INFO | healthcare_scheduler | log_tool_execution | Tool: create_patient | Parameters: {'patient_data': {'first_name': 'Aman', 'last_name': 'Singh', 'date_of_birth': '2002-07-07', 'email': 'amansingh2002.ap@gmail.com', 'phone': '9137835343', 'patient_id': '3017160b', 'created_date': '2025-09-05'}} | Result: Patient created successfully with ID: 3017160b
+2025-09-05 18:37:57,257 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-05 18:37:57,257 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-05T18:37:57.257535'}
+2025-09-05 18:37:57,263 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-05 18:37:57,269 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-05 18:37:57,270 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-05T18:37:57.270262'}
+2025-09-05 18:37:57,277 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-05 18:38:21,086 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'hello', 'thread_id': 'f49d9678-64b6-4744-9746-1c605c011bfa', 'timestamp': '2025-09-05T18:38:21.086350'}
+2025-09-05 18:39:16,448 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'Find all patients with last name Smit', 'thread_id': 'f49d9678-64b6-4744-9746-1c605c011bfa', 'timestamp': '2025-09-05T18:39:16.447960'}
+2025-09-05 18:39:21,258 | INFO | healthcare_scheduler | search_patients | Searching patients with query: Smit
+2025-09-05 18:39:21,266 | INFO | healthcare_scheduler | log_tool_execution | Tool: search_patients | Parameters: {'query': 'Smit'} | Result: [
+  {
+    "patient_id":"P10002",
+    "first_name":"Jane",
+    "last_name":"Smith",
+    "date_of_birth":"1990-08-22",
+    "phone":"555-9999",
+    "email":"jane.smith@email.com",
+    "insurance_provider":"MedCare",
+    "insurance_id":"INS1002",
+    "primary_doctor":"D10002",
+    "created_date":"2024-02-20"
+  }
+]
+2025-09-05 18:40:08,065 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'Schedule an appointment for patient P10001 with doctor D10001 tomorrow at 2 PM', 'thread_id': 'f49d9678-64b6-4744-9746-1c605c011bfa', 'timestamp': '2025-09-05T18:40:08.065594'}
+2025-09-05 18:40:11,015 | INFO | healthcare_scheduler | check_availability | Checking availability for doctor D10001 at 2024-06-10T14:00:00
+2025-09-05 18:40:12,458 | INFO | healthcare_scheduler | check_availability | Checking availability for doctor D10001 at 2024-06-10 14:00
+2025-09-05 18:40:12,489 | INFO | healthcare_scheduler | log_tool_execution | Tool: check_availability | Parameters: {'doctor_id': 'D10001', 'datetime': '2024-06-10 14:00'} | Result: Doctor D10001 is not available on 2024-06-10.
+2025-09-05 18:40:14,091 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10001 on 2024-06-10
+2025-09-05 18:40:14,129 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-10'} | Result: No schedule found for doctor D10001 on 2024-06-10.
+2025-09-05 18:49:03,294 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'Schedule an appointment for patient P10001 with doctor D10001 tomorrow at 2 PM', 'thread_id': 'f49d9678-64b6-4744-9746-1c605c011bfa', 'timestamp': '2025-09-05T18:49:03.294060'}

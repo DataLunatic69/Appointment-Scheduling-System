@@ -1,132 +1,172 @@
 import pandas as pd
 import json
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
 from datetime import datetime
 from typing import Dict, Any
-import os
+from langchain_core.tools import tool
+from config import EMAIL_TEMPLATES_FILE
+from utils.logging_utils import logger, log_tool_execution
+from utils.data_loader import load_patients, load_appointments, load_doctors
+from utils.email_utils import send_email, create_email_template
+from utils.validators import validate_patient_id, validate_appointment_id
 
-EMAIL_TEMPLATES_FILE = "data/templates/email_templates.json"
-
-# Email configuration - you'll need to set these as environment variables
-GMAIL_USER = os.getenv("GMAIL_USER", "your_email@gmail.com")
-GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD", "your_app_password")
-
-def send_email(to_email: str, subject: str, body: str) -> str:
-    """Send an email using Gmail SMTP server."""
-    try:
-        # Create message
-        msg = MIMEMultipart()
-        msg['From'] = GMAIL_USER
-        msg['To'] = to_email
-        msg['Subject'] = subject
-        
-        # Add body to email
-        msg.attach(MIMEText(body, 'plain'))
-        
-        # Create server
-        server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-        server.login(GMAIL_USER, GMAIL_APP_PASSWORD)
-        
-        # Send email
-        text = msg.as_string()
-        server.sendmail(GMAIL_USER, to_email, text)
-        server.quit()
-        
-        return f"Email sent successfully to {to_email}"
-    except Exception as e:
-        return f"Error sending email: {str(e)}"
-
+@tool
 def send_appointment_reminder(patient_id: str, appointment_id: str) -> str:
-    """Send appointment reminder via email."""
+    """Send appointment reminder via email. Use this when you need to send a reminder for an upcoming appointment."""
     try:
+        logger.info(f"Sending appointment reminder to patient {patient_id} for appointment {appointment_id}")
+        
+        # Validate inputs
+        if not patient_id or not isinstance(patient_id, str):
+            return "Patient ID is required and must be a string."
+        
+        if not appointment_id or not isinstance(appointment_id, str):
+            return "Appointment ID is required and must be a string."
+        
         # Get patient info
-        patients_df = pd.read_csv("data/patients.csv")
-        patient = patients_df[patients_df['patient_id'] == patient_id]
-        if patient.empty:
+        patients_df = load_patients()
+        if not validate_patient_id(patient_id, patients_df):
             return f"Patient with ID {patient_id} not found."
         
+        patient = patients_df[patients_df['patient_id'] == patient_id].iloc[0]
+        
         # Get appointment info
-        appointments_df = pd.read_excel("data/appointments.xlsx", sheet_name='Appointments')
-        appointment = appointments_df[appointments_df['appointment_id'] == appointment_id]
-        if appointment.empty:
+        appointments_df = load_appointments()
+        if not validate_appointment_id(appointment_id, appointments_df):
             return f"Appointment with ID {appointment_id} not found."
         
+        appointment = appointments_df[appointments_df['appointment_id'] == appointment_id].iloc[0]
+        
         # Get doctor info
-        doctors_df = pd.read_excel("data/appointments.xlsx", sheet_name='Doctors')
-        doctor = doctors_df[doctors_df['doctor_id'] == appointment['doctor_id'].iloc[0]]
-        doctor_name = doctor['name'].iloc[0] if not doctor.empty else "the doctor"
+        doctors_df = load_doctors()
+        doctor_id = appointment['doctor_id']
+        doctor = doctors_df[doctors_df['doctor_id'] == doctor_id].iloc[0] if doctor_id in doctors_df['doctor_id'].values else None
+        doctor_name = doctor['name'] if doctor is not None else "the doctor"
         
-        # Load email templates
-        with open(EMAIL_TEMPLATES_FILE, 'r') as f:
-            templates = json.load(f)
+        # Create and send email
+        variables = {
+            "patient_name": f"{patient['first_name']} {patient['last_name']}",
+            "doctor": doctor_name,
+            "datetime": appointment['datetime']
+        }
         
-        # Format message
-        appointment_time = appointment['datetime'].iloc[0]
-        template = templates.get('reminder', 'Your appointment with {doctor} is scheduled for {datetime}. Please arrive 15 minutes early.')
-        message = template.format(doctor=doctor_name, datetime=appointment_time)
-        
-        # Send email
-        patient_email = patient['email'].iloc[0]
+        message = create_email_template("appointment_reminder", variables)
         subject = "Appointment Reminder"
-        result = send_email(patient_email, subject, message)
         
-        return f"Reminder sent to patient {patient_id} for appointment {appointment_id}. {result}"
+        email_result = send_email(patient['email'], subject, message)
+        
+        if email_result["success"]:
+            result = f"Appointment reminder sent to patient {patient_id} for appointment {appointment_id}."
+        else:
+            result = f"Failed to send appointment reminder: {email_result['message']}"
+        
+        # Log the tool execution
+        log_tool_execution("send_appointment_reminder", {
+            "patient_id": patient_id,
+            "appointment_id": appointment_id
+        }, result)
+        
+        return result
     except Exception as e:
-        return f"Error sending reminder: {str(e)}"
+        error_msg = f"Error sending appointment reminder: {str(e)}"
+        logger.error(error_msg)
+        return error_msg
 
+@tool
 def send_followup(patient_id: str, appointment_id: str) -> str:
-    """Send follow-up message via email."""
+    """Send follow-up message via email. Use this when you need to send a follow-up after an appointment."""
     try:
-        patients_df = pd.read_csv("data/patients.csv")
-        patient = patients_df[patients_df['patient_id'] == patient_id]
-        if patient.empty:
+        logger.info(f"Sending follow-up to patient {patient_id} for appointment {appointment_id}")
+        
+        # Validate inputs
+        if not patient_id or not isinstance(patient_id, str):
+            return "Patient ID is required and must be a string."
+        
+        if not appointment_id or not isinstance(appointment_id, str):
+            return "Appointment ID is required and must be a string."
+        
+        # Get patient info
+        patients_df = load_patients()
+        if not validate_patient_id(patient_id, patients_df):
             return f"Patient with ID {patient_id} not found."
         
-        # Get appointment info
-        appointments_df = pd.read_excel("data/appointments.xlsx", sheet_name='Appointments')
-        appointment = appointments_df[appointments_df['appointment_id'] == appointment_id]
+        patient = patients_df[patients_df['patient_id'] == patient_id].iloc[0]
         
-        # Get doctor info if appointment exists
+        # Get appointment info if available
+        doctors_df = load_doctors()
         doctor_name = "the doctor"
-        if not appointment.empty:
-            doctors_df = pd.read_excel("data/appointments.xlsx", sheet_name='Doctors')
-            doctor = doctors_df[doctors_df['doctor_id'] == appointment['doctor_id'].iloc[0]]
-            doctor_name = doctor['name'].iloc[0] if not doctor.empty else "the doctor"
         
-        with open(EMAIL_TEMPLATES_FILE, 'r') as f:
-            templates = json.load(f)
+        appointments_df = load_appointments()
+        if validate_appointment_id(appointment_id, appointments_df):
+            appointment = appointments_df[appointments_df['appointment_id'] == appointment_id].iloc[0]
+            doctor_id = appointment['doctor_id']
+            doctor = doctors_df[doctors_df['doctor_id'] == doctor_id].iloc[0] if doctor_id in doctors_df['doctor_id'].values else None
+            doctor_name = doctor['name'] if doctor is not None else "the doctor"
         
-        template = templates.get('followup', 'Thank you for your appointment with {doctor}. How was your experience?')
-        message = template.format(doctor=doctor_name)
+        # Create and send email
+        variables = {
+            "patient_name": f"{patient['first_name']} {patient['last_name']}",
+            "doctor": doctor_name
+        }
         
-        patient_email = patient['email'].iloc[0]
+        message = create_email_template("follow_up", variables)
         subject = "Follow-up on Your Recent Appointment"
-        result = send_email(patient_email, subject, message)
         
-        return f"Follow-up sent to patient {patient_id}. {result}"
+        email_result = send_email(patient['email'], subject, message)
+        
+        if email_result["success"]:
+            result = f"Follow-up sent to patient {patient_id}."
+        else:
+            result = f"Failed to send follow-up: {email_result['message']}"
+        
+        # Log the tool execution
+        log_tool_execution("send_followup", {
+            "patient_id": patient_id,
+            "appointment_id": appointment_id
+        }, result)
+        
+        return result
     except Exception as e:
-        return f"Error sending follow-up: {str(e)}"
+        error_msg = f"Error sending follow-up: {str(e)}"
+        logger.error(error_msg)
+        return error_msg
 
+@tool
 def send_intake_form(patient_id: str) -> str:
-    """Send intake form via email."""
+    """Send intake form via email. Use this when you need to send an intake form to a patient."""
     try:
-        patients_df = pd.read_csv("data/patients.csv")
-        patient = patients_df[patients_df['patient_id'] == patient_id]
-        if patient.empty:
+        logger.info(f"Sending intake form to patient {patient_id}")
+        
+        # Validate input
+        if not patient_id or not isinstance(patient_id, str):
+            return "Patient ID is required and must be a string."
+        
+        # Get patient info
+        patients_df = load_patients()
+        if not validate_patient_id(patient_id, patients_df):
             return f"Patient with ID {patient_id} not found."
         
-        with open(EMAIL_TEMPLATES_FILE, 'r') as f:
-            templates = json.load(f)
+        patient = patients_df[patients_df['patient_id'] == patient_id].iloc[0]
         
-        template = templates.get('intake', 'Please fill out the intake form at https://example.com/intake.')
-        message = template
+        # Create and send email
+        variables = {
+            "patient_name": f"{patient['first_name']} {patient['last_name']}"
+        }
         
-        patient_email = patient['email'].iloc[0]
+        message = create_email_template("intake", variables)
         subject = "Patient Intake Form"
-        result = send_email(patient_email, subject, message)
         
-        return f"Intake form sent to patient {patient_id}. {result}"
+        email_result = send_email(patient['email'], subject, message)
+        
+        if email_result["success"]:
+            result = f"Intake form sent to patient {patient_id}."
+        else:
+            result = f"Failed to send intake form: {email_result['message']}"
+        
+        # Log the tool execution
+        log_tool_execution("send_intake_form", {"patient_id": patient_id}, result)
+        
+        return result
     except Exception as e:
-        return f"Error sending intake form: {str(e)}"
+        error_msg = f"Error sending intake form: {str(e)}"
+        logger.error(error_msg)
+        return error_msg
