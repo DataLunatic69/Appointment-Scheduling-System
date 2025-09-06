@@ -40,6 +40,12 @@ A comprehensive, intelligent healthcare scheduling system powered by AI agents, 
 - **Error Tracking**: Detailed error context and stack traces
 - **Performance Monitoring**: Agent operation timing and metrics
 
+## 🌐 Live Demo
+
+**🚀 [Try the live application](https://appointment-scheduling-system.streamlit.app/)**
+
+Experience the full functionality of the AI Healthcare Scheduling System with our live deployment. No installation required - just open the link and start using the system immediately!
+
 ## 🚀 Quick Start
 
 ### Prerequisites

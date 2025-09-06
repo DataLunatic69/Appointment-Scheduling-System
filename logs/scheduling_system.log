@@ -3906,3 +3906,153 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0x92 in position 2943: inval
 2025-09-06 10:41:01 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: generate_daily_schedule | Parameters: {'date': '2024-07-15'} | Result: No appointments found for 2024-07-15.
 2025-09-06 10:41:03 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-09-06 10:41:05 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:44:49 | [32mINFO[0m | agents.patient_agent | <module>       :16   | Initializing patient agent
+2025-09-06 10:44:49 | [32mINFO[0m | agents.patient_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "patient_agent",
+  "tools": [
+    "get_patient_info",
+    "update_patient_info",
+    "create_patient",
+    "search_patients"
+  ],
+  "timestamp": "2025-09-06T10:44:49.735890"
+}
+2025-09-06 10:44:53 | [32mINFO[0m | agents.patient_agent | <module>       :36   | Patient agent initialized successfully
+2025-09-06 10:44:53 | [32mINFO[0m | agents.scheduling_agent | <module>       :16   | Initializing scheduling agent
+2025-09-06 10:44:53 | [32mINFO[0m | agents.scheduling_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "scheduling_agent",
+  "tools": [
+    "get_doctor_schedule",
+    "check_availability",
+    "schedule_appointment",
+    "reschedule_appointment",
+    "cancel_appointment",
+    "get_appointments"
+  ],
+  "timestamp": "2025-09-06T10:44:53.253941"
+}
+2025-09-06 10:44:53 | [32mINFO[0m | agents.scheduling_agent | <module>       :36   | Scheduling agent initialized successfully
+2025-09-06 10:44:53 | [32mINFO[0m | agents.insurance_agent | <module>       :16   | Initializing insurance agent
+2025-09-06 10:44:53 | [32mINFO[0m | agents.insurance_agent | log_agent_operation:195  | Operation: agent_initialization | Details: {
+  "agent_name": "insurance_agent",
+  "tools": [
+    "verify_insurance",
+    "check_coverage",
+    "get_copay_info"
+  ],
+  "timestamp": "2025-09-06T10:44:53.328814"
+}
+2025-09-06 10:44:53 | [32mINFO[0m | agents.insurance_agent | <module>       :36   | Insurance agent initialized successfully
+2025-09-06 10:44:53 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:9    | Initializing communication agent
+2025-09-06 10:44:53 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T10:44:53.383108'}
+2025-09-06 10:44:53 | [32mINFO[0m | healthcare_scheduler | create_communication_agent:37   | Communication agent initialized successfully
+2025-09-06 10:44:53 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:9    | Initializing data export agent
+2025-09-06 10:44:53 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T10:44:53.423656'}
+2025-09-06 10:44:53 | [32mINFO[0m | healthcare_scheduler | create_data_export_agent:37   | Data export agent initialized successfully
+2025-09-06 10:44:53 | [32mINFO[0m | agents.supervisor    | <module>       :27   | Initialized memory saver for conversation tracking
+2025-09-06 10:44:53 | [32mINFO[0m | agents.supervisor    | <module>       :79   | Initializing supervisor agent instance
+2025-09-06 10:44:53 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:31   | Creating supervisor agent
+2025-09-06 10:44:53 | [32mINFO[0m | agents.supervisor    | log_agent_operation:195  | Operation: supervisor_creation | Details: {
+  "model": "openai:gpt-4.1",
+  "agent_count": 5,
+  "timestamp": "2025-09-06T10:44:53.454902"
+}
+2025-09-06 10:44:53 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:46   | Configured agents: ['patient_agent', 'scheduling_agent', 'insurance_agent', 'communication_agent', 'data_export_agent']
+2025-09-06 10:44:53 | [32mINFO[0m | agents.supervisor    | create_supervisor_agent:71   | Supervisor agent created successfully
+2025-09-06 10:44:53 | [32mINFO[0m | agents.supervisor    | <module>       :81   | Supervisor agent ready for operation
+2025-09-06 10:59:55 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'hey', 'thread_id': '86072c5b-effd-4e90-bc2c-243a100ef140', 'timestamp': '2025-09-06T10:59:55.885015'}
+2025-09-06 10:59:57 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:01:53 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'hey', 'thread_id': 'd6ec431a-a0cd-4a71-b015-f924da835e1a', 'timestamp': '2025-09-06T11:01:53.473119'}
+2025-09-06 11:01:55 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:02:19 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'Show me information for patient P10001', 'thread_id': 'd6ec431a-a0cd-4a71-b015-f924da835e1a', 'timestamp': '2025-09-06T11:02:19.036631'}
+2025-09-06 11:02:20 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:02:21 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:02:21 | [32mINFO[0m | healthcare_scheduler | get_patient_info:15   | Getting patient info for ID: P10001
+2025-09-06 11:02:21 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_patient_info | Parameters: {'patient_id': 'P10001'} | Result: [
+  {
+    "patient_id":"P10001",
+    "first_name":"John",
+    "last_name":"Doe",
+    "date_of_birth":"1980-05-15",
+    "phone":"555-1234",
+    "email":"john.doe@email.com",
+    "insurance_provider":"HealthPlus",
+    "insurance_id":"INS1001",
+    "primary_doctor":"D10001",
+    "created_date":"2024-01-15"
+  }
+]
+2025-09-06 11:02:22 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:02:24 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:03:05 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'Update the phone number for patient P10002 to 555-9888', 'thread_id': 'd6ec431a-a0cd-4a71-b015-f924da835e1a', 'timestamp': '2025-09-06T11:03:05.583531'}
+2025-09-06 11:03:07 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:03:08 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:03:08 | [32mINFO[0m | healthcare_scheduler | get_patient_info:15   | Getting patient info for ID: P10002
+2025-09-06 11:03:08 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_patient_info | Parameters: {'patient_id': 'P10002'} | Result: [
+  {
+    "patient_id":"P10002",
+    "first_name":"Jane",
+    "last_name":"Smith",
+    "date_of_birth":"1990-08-22",
+    "phone":"555-9967",
+    "email":"jane.smith@email.com",
+    "insurance_provider":"MedCare",
+    "insurance_id":"INS1002",
+    "primary_doctor":"D10002",
+    "created_date":"2024-02-20"
+  }
+]
+2025-09-06 11:03:09 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:03:11 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:03:13 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:03:56 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'the pateient id should be suffiecient to update', 'thread_id': 'd6ec431a-a0cd-4a71-b015-f924da835e1a', 'timestamp': '2025-09-06T11:03:56.052667'}
+2025-09-06 11:03:58 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:03:59 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:04:01 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:04:03 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:05:57 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': '555-9967 this is the phone number ', 'thread_id': 'd6ec431a-a0cd-4a71-b015-f924da835e1a', 'timestamp': '2025-09-06T11:05:57.140115'}
+2025-09-06 11:05:58 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:06:00 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:06:00 | [32mINFO[0m | healthcare_scheduler | update_patient_info:42   | Updating patient info for ID: P10002 with updates: {'phone': '555-9967'}
+2025-09-06 11:06:00 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: update_patient_info | Parameters: {'patient_id': 'P10002', 'updates': {'phone': '555-9967'}} | Result: Patient P10002 information updated successfully.
+2025-09-06 11:06:01 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:06:02 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:06:53 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'Check coverage for procedure CPT-12345 for patient P10002', 'thread_id': 'd6ec431a-a0cd-4a71-b015-f924da835e1a', 'timestamp': '2025-09-06T11:06:53.343719'}
+2025-09-06 11:06:55 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:06:56 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:06:56 | [32mINFO[0m | healthcare_scheduler | check_coverage :68   | Checking coverage for patient P10002, procedure CPT-12345
+2025-09-06 11:06:56 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: check_coverage | Parameters: {'patient_id': 'P10002', 'procedure_code': 'CPT-12345'} | Result: Procedure CPT-12345 is covered for patient P10002.
+2025-09-06 11:06:57 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:06:59 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:07:38 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'Send an appointment reminder for appointment A10001', 'thread_id': 'd6ec431a-a0cd-4a71-b015-f924da835e1a', 'timestamp': '2025-09-06T11:07:38.192685'}
+2025-09-06 11:07:39 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:07:41 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:07:41 | [32mINFO[0m | healthcare_scheduler | send_appointment_reminder:16   | Sending appointment reminder to patient P10002 for appointment A10001
+2025-09-06 11:07:46 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: send_appointment_reminder | Parameters: {'patient_id': 'P10002', 'appointment_id': 'A10001'} | Result: Appointment reminder sent to patient P10002 for appointment A10001.
+2025-09-06 11:07:47 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:07:48 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:08:40 | [32mINFO[0m | healthcare_scheduler | log_agent_operation:43   | Operation: user_input | Details: {'prompt': 'Schedule an appointment for John Doe with a cardiologist next week and send a reminder', 'thread_id': 'd6ec431a-a0cd-4a71-b015-f924da835e1a', 'timestamp': '2025-09-06T11:08:40.591065'}
+2025-09-06 11:08:42 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:08:43 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:08:43 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-10
+2025-09-06 11:08:43 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-10'} | Result: No schedule found for doctor D10001 on 2024-06-10.
+2025-09-06 11:08:45 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:08:45 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-11
+2025-09-06 11:08:45 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-11'} | Result: No schedule found for doctor D10001 on 2024-06-11.
+2025-09-06 11:08:47 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:08:47 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-12
+2025-09-06 11:08:47 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-12'} | Result: No schedule found for doctor D10001 on 2024-06-12.
+2025-09-06 11:08:48 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:08:48 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-13
+2025-09-06 11:08:48 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-13'} | Result: No schedule found for doctor D10001 on 2024-06-13.
+2025-09-06 11:08:50 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:08:50 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-14
+2025-09-06 11:08:50 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-14'} | Result: No schedule found for doctor D10001 on 2024-06-14.
+2025-09-06 11:08:51 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:08:51 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-15
+2025-09-06 11:08:51 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-15'} | Result: No schedule found for doctor D10001 on 2024-06-15.
+2025-09-06 11:08:53 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:08:53 | [32mINFO[0m | healthcare_scheduler | get_doctor_schedule:15   | Getting schedule for doctor D10001 on 2024-06-16
+2025-09-06 11:08:53 | [32mINFO[0m | healthcare_scheduler | log_tool_execution:47   | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10001', 'schedule_date': '2024-06-16'} | Result: No schedule found for doctor D10001 on 2024-06-16.
+2025-09-06 11:08:55 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:08:57 | [32mINFO[0m | httpx                | _send_single_request:1025 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
