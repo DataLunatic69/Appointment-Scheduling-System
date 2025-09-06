@@ -68,3 +68,184 @@
 2025-09-06 01:52:48,110 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
 2025-09-06 01:52:48,111 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T01:52:48.111003'}
 2025-09-06 01:52:48,117 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 08:07:55,848 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 08:07:55,848 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T08:07:55.848756'}
+2025-09-06 08:07:55,854 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 08:07:55,861 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 08:07:55,862 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T08:07:55.862068'}
+2025-09-06 08:07:55,867 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 08:30:44,963 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 08:30:44,964 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T08:30:44.964502'}
+2025-09-06 08:30:44,984 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 08:30:45,002 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 08:30:45,004 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T08:30:45.004886'}
+2025-09-06 08:30:45,023 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 09:02:02,486 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 09:02:02,493 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T09:02:02.493654'}
+2025-09-06 09:02:02,500 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 09:02:02,505 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 09:02:02,505 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T09:02:02.505738'}
+2025-09-06 09:02:02,511 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 09:02:40,300 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 09:02:40,300 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T09:02:40.300764'}
+2025-09-06 09:02:40,306 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 09:02:40,311 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 09:02:40,312 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T09:02:40.312275'}
+2025-09-06 09:02:40,317 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 09:03:24,901 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 09:03:24,901 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T09:03:24.901701'}
+2025-09-06 09:03:24,907 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 09:03:24,911 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 09:03:24,912 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T09:03:24.912447'}
+2025-09-06 09:03:24,917 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 09:44:29,867 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 09:44:29,868 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T09:44:29.868588'}
+2025-09-06 09:44:29,888 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 09:44:29,905 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 09:44:29,907 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T09:44:29.907297'}
+2025-09-06 09:44:29,925 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 09:45:11,897 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 09:45:11,898 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T09:45:11.898406'}
+2025-09-06 09:45:11,915 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 09:45:11,931 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 09:45:11,932 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T09:45:11.932546'}
+2025-09-06 09:45:11,949 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 09:45:44,906 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'hey', 'thread_id': '5caa7152-1c82-4c2c-b5f0-d870c4511bab', 'timestamp': '2025-09-06T09:45:44.906506'}
+2025-09-06 09:46:17,316 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'hey', 'thread_id': '4cfbfbd7-1186-48be-9dd5-24264af38049', 'timestamp': '2025-09-06T09:46:17.315961'}
+2025-09-06 09:48:01,612 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 09:48:01,613 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T09:48:01.613268'}
+2025-09-06 09:48:01,630 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 09:48:01,644 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 09:48:01,646 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T09:48:01.645850'}
+2025-09-06 09:48:01,669 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 09:48:18,216 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'hi', 'thread_id': '06514e05-9287-4897-8b53-6d055e5018d9', 'timestamp': '2025-09-06T09:48:18.216402'}
+2025-09-06 09:53:01,348 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 09:53:01,350 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T09:53:01.349963'}
+2025-09-06 09:53:01,367 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 09:53:01,383 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 09:53:01,385 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T09:53:01.385076'}
+2025-09-06 09:53:01,403 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 10:04:27,709 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 10:04:27,711 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T10:04:27.711133'}
+2025-09-06 10:04:27,742 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 10:04:27,760 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 10:04:27,762 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T10:04:27.762497'}
+2025-09-06 10:04:27,784 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 10:04:54,111 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 10:04:54,113 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T10:04:54.113124'}
+2025-09-06 10:04:54,135 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 10:04:54,154 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 10:04:54,156 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T10:04:54.156288'}
+2025-09-06 10:04:54,176 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 10:05:49,536 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 10:05:49,537 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T10:05:49.537335'}
+2025-09-06 10:05:49,554 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 10:05:49,567 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 10:05:49,568 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T10:05:49.568742'}
+2025-09-06 10:05:49,582 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 10:07:10,011 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 10:07:10,012 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T10:07:10.012720'}
+2025-09-06 10:07:10,038 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 10:07:10,061 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 10:07:10,063 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T10:07:10.063749'}
+2025-09-06 10:07:10,082 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 10:08:22,966 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'hey', 'thread_id': '4a8594f0-5b0f-493c-a993-eece9f5ec67a', 'timestamp': '2025-09-06T10:08:22.966380'}
+2025-09-06 10:11:49,899 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 10:11:49,900 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T10:11:49.900786'}
+2025-09-06 10:11:49,915 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 10:11:49,930 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 10:11:49,931 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T10:11:49.931883'}
+2025-09-06 10:11:49,946 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 10:15:27,349 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 10:15:27,351 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T10:15:27.351065'}
+2025-09-06 10:15:27,374 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 10:15:27,394 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 10:15:27,395 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T10:15:27.395659'}
+2025-09-06 10:15:27,418 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 10:18:44,794 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 10:18:44,795 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T10:18:44.795149'}
+2025-09-06 10:18:44,811 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 10:18:44,831 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 10:18:44,832 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T10:18:44.832877'}
+2025-09-06 10:18:44,849 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 10:21:46,347 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 10:21:46,348 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T10:21:46.348406'}
+2025-09-06 10:21:46,370 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 10:21:46,383 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 10:21:46,384 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T10:21:46.384896'}
+2025-09-06 10:21:46,404 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 10:24:22,491 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 10:24:22,492 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T10:24:22.492712'}
+2025-09-06 10:24:22,516 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 10:24:22,530 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 10:24:22,531 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T10:24:22.531586'}
+2025-09-06 10:24:22,549 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 10:24:40,630 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 10:24:40,633 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T10:24:40.633331'}
+2025-09-06 10:24:40,656 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 10:24:40,676 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 10:24:40,677 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T10:24:40.677682'}
+2025-09-06 10:24:40,700 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 10:26:24,121 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 10:26:24,123 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T10:26:24.123388'}
+2025-09-06 10:26:24,146 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 10:26:24,164 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 10:26:24,166 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T10:26:24.165860'}
+2025-09-06 10:26:24,186 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 10:29:32,743 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 10:29:32,745 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T10:29:32.745381'}
+2025-09-06 10:29:32,766 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 10:29:32,783 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 10:29:32,784 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T10:29:32.784316'}
+2025-09-06 10:29:32,802 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 10:31:04,717 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 10:31:04,718 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T10:31:04.718530'}
+2025-09-06 10:31:04,733 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 10:31:04,746 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 10:31:04,747 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T10:31:04.747341'}
+2025-09-06 10:31:04,760 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 10:31:32,804 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 10:31:32,806 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T10:31:32.806473'}
+2025-09-06 10:31:32,831 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 10:31:32,846 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 10:31:32,848 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T10:31:32.848168'}
+2025-09-06 10:31:32,868 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 10:33:29,163 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 10:33:29,165 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T10:33:29.165204'}
+2025-09-06 10:33:29,186 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 10:33:29,201 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 10:33:29,202 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T10:33:29.202784'}
+2025-09-06 10:33:29,220 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 10:36:34,174 | INFO | healthcare_scheduler | create_communication_agent | Initializing communication agent
+2025-09-06 10:36:34,175 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'communication_agent', 'tools': ['send_appointment_reminder', 'send_followup', 'send_intake_form'], 'timestamp': '2025-09-06T10:36:34.175500'}
+2025-09-06 10:36:34,196 | INFO | healthcare_scheduler | create_communication_agent | Communication agent initialized successfully
+2025-09-06 10:36:34,210 | INFO | healthcare_scheduler | create_data_export_agent | Initializing data export agent
+2025-09-06 10:36:34,213 | INFO | healthcare_scheduler | log_agent_operation | Operation: agent_initialization | Details: {'agent_name': 'data_export_agent', 'tools': ['generate_daily_schedule', 'generate_patient_report', 'export_appointments'], 'timestamp': '2025-09-06T10:36:34.213060'}
+2025-09-06 10:36:34,241 | INFO | healthcare_scheduler | create_data_export_agent | Data export agent initialized successfully
+2025-09-06 10:37:42,864 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'hey', 'thread_id': '54dbd44a-5f83-4262-af2f-f9f64c281218', 'timestamp': '2025-09-06T10:37:42.864437'}
+2025-09-06 10:38:14,270 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'Show me information for patient P10001', 'thread_id': '54dbd44a-5f83-4262-af2f-f9f64c281218', 'timestamp': '2025-09-06T10:38:14.270696'}
+2025-09-06 10:38:17,204 | INFO | healthcare_scheduler | get_patient_info | Getting patient info for ID: P10001
+2025-09-06 10:38:17,245 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_patient_info | Parameters: {'patient_id': 'P10001'} | Result: [
+  {
+    "patient_id":"P10001",
+    "first_name":"John",
+    "last_name":"Doe",
+    "date_of_birth":"1980-05-15",
+    "phone":"555-1234",
+    "email":"john.doe@email.com",
+    "insurance_provider":"HealthPlus",
+    "insurance_id":"INS1001",
+    "primary_doctor":"D10001",
+    "created_date":"2024-01-15"
+  }
+]
+2025-09-06 10:38:54,221 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': "Show me Dr. Johnson's availability next Tuesday", 'thread_id': '54dbd44a-5f83-4262-af2f-f9f64c281218', 'timestamp': '2025-09-06T10:38:54.221185'}
+2025-09-06 10:38:57,273 | INFO | healthcare_scheduler | get_doctor_schedule | Getting schedule for doctor D10002 on 2024-06-18
+2025-09-06 10:38:57,740 | INFO | healthcare_scheduler | log_tool_execution | Tool: get_doctor_schedule | Parameters: {'doctor_id': 'D10002', 'schedule_date': '2024-06-18'} | Result: No schedule found for doctor D10002 on 2024-06-18.
+2025-09-06 10:39:34,042 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'Verify insurance for patient P10001', 'thread_id': '54dbd44a-5f83-4262-af2f-f9f64c281218', 'timestamp': '2025-09-06T10:39:34.042776'}
+2025-09-06 10:40:11,604 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'Send an appointment reminder for appointment A10001', 'thread_id': '54dbd44a-5f83-4262-af2f-f9f64c281218', 'timestamp': '2025-09-06T10:40:11.604533'}
+2025-09-06 10:40:14,499 | INFO | healthcare_scheduler | send_appointment_reminder | Sending appointment reminder to patient P10001 for appointment A10001
+2025-09-06 10:40:19,334 | INFO | healthcare_scheduler | log_tool_execution | Tool: send_appointment_reminder | Parameters: {'patient_id': 'P10001', 'appointment_id': 'A10001'} | Result: Appointment reminder sent to patient P10001 for appointment A10001.
+2025-09-06 10:40:57,974 | INFO | healthcare_scheduler | log_agent_operation | Operation: user_input | Details: {'prompt': 'Generate a daily schedule report for 2024-07-15', 'thread_id': '54dbd44a-5f83-4262-af2f-f9f64c281218', 'timestamp': '2025-09-06T10:40:57.974843'}
+2025-09-06 10:41:01,368 | INFO | healthcare_scheduler | generate_daily_schedule | Generating daily schedule for 2024-07-15
+2025-09-06 10:41:01,428 | INFO | healthcare_scheduler | log_tool_execution | Tool: generate_daily_schedule | Parameters: {'date': '2024-07-15'} | Result: No appointments found for 2024-07-15.

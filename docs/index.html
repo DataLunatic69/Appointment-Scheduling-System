@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Healthcare Scheduling System - Architecture Diagrams</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+            animation: fadeInDown 1s ease;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        
+        .diagram-section {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            animation: fadeInUp 1s ease;
+        }
+        
+        .diagram-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .diagram-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .mermaid {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        
+        .nav-menu {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+        }
+        
+        .nav-menu h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .nav-link {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .legend {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+        
+        .legend h4 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+        
+        .legend p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏥 AI Healthcare Scheduling System</h1>
+            <p>Technical Architecture & Workflow Diagrams</p>
+        </div>
+        
+        <div class="nav-menu">
+            <h3>Quick Navigation</h3>
+            <div class="nav-links">
+                <a href="#arch-overview" class="nav-link">System Architecture</a>
+                <a href="#agent-hierarchy" class="nav-link">Agent Hierarchy</a>
+                <a href="#data-flow" class="nav-link">Data Flow</a>
+                <a href="#scheduling-workflow" class="nav-link">Scheduling Workflow</a>
+                <a href="#error-handling" class="nav-link">Error Handling</a>
+                <a href="#deployment" class="nav-link">Deployment</a>
+                <a href="#monitoring" class="nav-link">Monitoring</a>
+                <a href="#roadmap" class="nav-link">Roadmap</a>
+            </div>
+        </div>
+
+        <!-- 1. System Architecture Overview -->
+        <div id="arch-overview" class="diagram-section">
+            <h2 class="diagram-title">1. System Architecture Overview</h2>
+            <p class="diagram-description">
+                High-level architecture showing the complete system structure from frontend to data layer,
+                including all major components and their relationships.
+            </p>
+            <div class="mermaid">
+                graph TB
+                    subgraph "Frontend Layer"
+                        UI[Streamlit Web UI]
+                        API[FastAPI REST]
+                    end
+                    
+                    subgraph "Agent Orchestration Layer"
+                        SUP[Supervisor Agent]
+                    end
+                    
+                    subgraph "Specialized Agents"
+                        PA[Patient Agent]
+                        SA[Scheduling Agent]
+                        IA[Insurance Agent]
+                        CA[Communication Agent]
+                        DA[Data Export Agent]
+                    end
+                    
+                    subgraph "Tool Layer"
+                        PT[Patient Tools]
+                        ST[Scheduling Tools]
+                        IT[Insurance Tools]
+                        CT[Communication Tools]
+                        ET[Export Tools]
+                    end
+                    
+                    subgraph "Data Layer"
+                        CSV[CSV Files]
+                        XLSX[Excel Files]
+                        JSON[JSON Templates]
+                    end
+                    
+                    UI --> SUP
+                    API --> SUP
+                    SUP --> PA
+                    SUP --> SA
+                    SUP --> IA
+                    SUP --> CA
+                    SUP --> DA
+                    
+                    PA --> PT
+                    SA --> ST
+                    IA --> IT
+                    CA --> CT
+                    DA --> ET
+                    
+                    PT --> CSV
+                    ST --> XLSX
+                    IT --> XLSX
+                    CT --> JSON
+                    ET --> CSV
+            </div>
+        </div>
+
+        <!-- 2. Component Interaction Flow -->
+        <div class="diagram-section">
+            <h2 class="diagram-title">2. Component Interaction Sequence</h2>
+            <p class="diagram-description">
+                Detailed sequence diagram showing how components interact during a typical user request,
+                from initial query to final response.
+            </p>
+            <div class="mermaid">
+                sequenceDiagram
+                    participant U as User
+                    participant UI as Web Interface
+                    participant S as Supervisor
+                    participant A as Specialized Agent
+                    participant T as Tool
+                    participant D as Data Store
+                    
+                    U->>UI: Submit Query
+                    UI->>S: Process Request
+                    S->>S: Analyze Query
+                    S->>A: Delegate Task
+                    A->>T: Execute Tool
+                    T->>D: Read/Write Data
+                    D-->>T: Return Data
+                    T-->>A: Tool Result
+                    A-->>S: Task Complete
+                    S-->>UI: Response
+                    UI-->>U: Display Result
+            </div>
+        </div>
+
+        <!-- 3. Agent Hierarchy -->
+        <div id="agent-hierarchy" class="diagram-section">
+            <h2 class="diagram-title">3. Multi-Agent System Hierarchy</h2>
+            <p class="diagram-description">
+                The supervisor agent orchestrates five specialized agents, each with specific responsibilities
+                and capabilities for handling different aspects of healthcare scheduling.
+            </p>
+            <div class="mermaid">
+                graph TD
+                    SUP[Supervisor Agent<br/>- Query Analysis<br/>- Task Delegation<br/>- Response Synthesis]
+                    
+                    SUP --> PA[Patient Agent<br/>- Patient CRUD<br/>- Search Operations<br/>- Data Validation]
+                    
+                    SUP --> SA[Scheduling Agent<br/>- Appointment Management<br/>- Availability Check<br/>- Schedule Optimization]
+                    
+                    SUP --> IA[Insurance Agent<br/>- Coverage Verification<br/>- Copay Calculation<br/>- Plan Management]
+                    
+                    SUP --> CA[Communication Agent<br/>- Email Notifications<br/>- Reminders<br/>- Follow-ups]
+                    
+                    SUP --> DA[Data Export Agent<br/>- Report Generation<br/>- Data Analytics<br/>- Export Operations]
+            </div>
+        </div>
+
+        <!-- 4. Agent Communication State Machine -->
+        <div class="diagram-section">
+            <h2 class="diagram-title">4. Agent Communication Protocol</h2>
+            <p class="diagram-description">
+                State machine diagram showing the various states and transitions in the agent communication
+                protocol, including error handling and recovery mechanisms.
+            </p>
+            <div class="mermaid">
+                stateDiagram-v2
+                    [*] --> Idle
+                    Idle --> QueryReceived: User Input
+                    QueryReceived --> Analyzing: Supervisor Analysis
+                    Analyzing --> Delegating: Task Identified
+                    Delegating --> AgentProcessing: Agent Selected
+                    AgentProcessing --> ToolExecution: Tool Required
+                    ToolExecution --> DataOperation: Data Access
+                    DataOperation --> ResultGeneration: Process Complete
+                    ResultGeneration --> ResponseSynthesis: Agent Complete
+                    ResponseSynthesis --> ResponseDelivery: Supervisor Synthesis
+                    ResponseDelivery --> Idle: Complete
+                    
+                    AgentProcessing --> ErrorHandling: Error
+                    ToolExecution --> ErrorHandling: Error
+                    DataOperation --> ErrorHandling: Error
+                    ErrorHandling --> ResponseSynthesis: Recovery
+            </div>
+        </div>
+
+        <!-- 5. Data Flow Pipeline -->
+        <div id="data-flow" class="diagram-section">
+            <h2 class="diagram-title">5. Data Processing Pipeline</h2>
+            <p class="diagram-description">
+                Complete data flow from input processing through query analysis, task execution,
+                data operations, and response generation.
+            </p>
+            <div class="mermaid">
+                graph LR
+                    subgraph "Input Processing"
+                        NL[Natural Language Query]
+                        API_REQ[API Request]
+                    end
+                    
+                    subgraph "Query Processing"
+                        QP[Query Parser]
+                        IE[Intent Extraction]
+                        ER[Entity Recognition]
+                    end
+                    
+                    subgraph "Task Execution"
+                        TS[Task Scheduler]
+                        AE[Agent Executor]
+                        TE[Tool Executor]
+                    end
+                    
+                    subgraph "Data Operations"
+                        RO[Read Operations]
+                        WO[Write Operations]
+                        VO[Validation Operations]
+                    end
+                    
+                    subgraph "Response Generation"
+                        RG[Result Generator]
+                        FO[Format Output]
+                        CA[Cache Results]
+                    end
+                    
+                    NL --> QP
+                    API_REQ --> QP
+                    QP --> IE
+                    IE --> ER
+                    ER --> TS
+                    TS --> AE
+                    AE --> TE
+                    TE --> RO
+                    TE --> WO
+                    TE --> VO
+                    RO --> RG
+                    WO --> RG
+                    VO --> RG
+                    RG --> FO
+                    FO --> CA
+            </div>
+        </div>
+
+        <!-- 6. Database Schema -->
+        <div class="diagram-section">
+            <h2 class="diagram-title">6. Data Model & Relationships</h2>
+            <p class="diagram-description">
+                Entity-Relationship diagram showing the complete data model including patients, appointments,
+                doctors, schedules, insurance, and communications.
+            </p>
+            <div class="mermaid">
+                erDiagram
+                    PATIENTS ||--o{ APPOINTMENTS : has
+                    DOCTORS ||--o{ APPOINTMENTS : conducts
+                    PATIENTS ||--|| INSURANCE : has
+                    DOCTORS ||--o{ SCHEDULES : has
+                    APPOINTMENTS ||--|| COMMUNICATIONS : triggers
+                    
+                    PATIENTS {
+                        string patient_id PK
+                        string first_name
+                        string last_name
+                        date date_of_birth
+                        string phone
+                        string email
+                        string insurance_provider
+                        string insurance_id FK
+                        string primary_doctor FK
+                        date created_date
+                    }
+                    
+                    APPOINTMENTS {
+                        string appointment_id PK
+                        string patient_id FK
+                        string doctor_id FK
+                        datetime appointment_time
+                        string status
+                        string notes
+                    }
+                    
+                    DOCTORS {
+                        string doctor_id PK
+                        string name
+                        string specialization
+                        string contact_info
+                    }
+                    
+                    SCHEDULES {
+                        string schedule_id PK
+                        string doctor_id FK
+                        date date
+                        string time_slots
+                    }
+                    
+                    INSURANCE {
+                        string insurance_id PK
+                        string provider_name
+                        string plan_name
+                        string coverage_details
+                        string verification_status
+                        float copay_amount
+                    }
+                    
+                    COMMUNICATIONS {
+                        string comm_id PK
+                        string appointment_id FK
+                        string type
+                        datetime sent_at
+                        string template_used
+                    }
+            </div>
+        </div>
+
+        <!-- 7. Appointment Scheduling Workflow -->
+        <div id="scheduling-workflow" class="diagram-section">
+            <h2 class="diagram-title">7. Appointment Scheduling Workflow</h2>
+            <p class="diagram-description">
+                Complete workflow for scheduling an appointment, including patient validation,
+                doctor availability checks, insurance verification, and confirmation.
+            </p>
+            <div class="mermaid">
+                flowchart TD
+                    Start([User Request]) --> Parse[Parse Request]
+                    Parse --> Check{Valid Patient?}
+                    Check -->|No| CreatePatient[Create Patient Record]
+                    Check -->|Yes| CheckDoctor{Doctor Available?}
+                    CreatePatient --> CheckDoctor
+                    CheckDoctor -->|No| SuggestAlternative[Suggest Alternatives]
+                    CheckDoctor -->|Yes| CheckInsurance{Insurance Valid?}
+                    CheckInsurance -->|No| RequestInsurance[Request Insurance Info]
+                    CheckInsurance -->|Yes| BookAppointment[Book Appointment]
+                    RequestInsurance --> UpdateInsurance[Update Insurance]
+                    UpdateInsurance --> BookAppointment
+                    BookAppointment --> SendConfirmation[Send Confirmation]
+                    SendConfirmation --> UpdateCalendar[Update Calendar]
+                    UpdateCalendar --> End([Complete])
+                    SuggestAlternative --> End
+            </div>
+        </div>
+
+        <!-- 8. Error Handling Flow -->
+        <div id="error-handling" class="diagram-section">
+            <h2 class="diagram-title">8. Error Handling & Recovery</h2>
+            <p class="diagram-description">
+                Comprehensive error handling state machine showing how the system captures, classifies,
+                and recovers from various types of errors.
+            </p>
+            <div class="mermaid">
+                stateDiagram-v2
+                    [*] --> Normal: System Start
+                    Normal --> Error: Exception Occurs
+                    
+                    state Error {
+                        [*] --> Capture
+                        Capture --> Classify
+                        Classify --> Log
+                        Log --> Analyze
+                        
+                        state Analyze {
+                            [*] --> Recoverable
+                            [*] --> NonRecoverable
+                        }
+                    }
+                    
+                    Error --> Recovery: Recoverable
+                    Error --> Failover: NonRecoverable
+                    
+                    Recovery --> Retry: Transient Error
+                    Recovery --> Compensate: Business Error
+                    Retry --> Normal: Success
+                    Retry --> Failover: Max Retries
+                    Compensate --> Normal: Compensated
+                    
+                    Failover --> Alert: System Alert
+                    Alert --> Manual: Manual Intervention
+                    Manual --> Normal: Resolved
+            </div>
+        </div>
+
+        <!-- 9. Deployment Pipeline -->
+        <div id="deployment" class="diagram-section">
+            <h2 class="diagram-title">9. CI/CD Deployment Pipeline</h2>
+            <p class="diagram-description">
+                Complete deployment pipeline from development through testing, staging, and production environments.
+            </p>
+            <div class="mermaid">
+                flowchart LR
+                    subgraph "Development"
+                        Dev[Local Development<br/>- Code Changes<br/>- Unit Tests]
+                    end
+                    
+                    subgraph "CI/CD"
+                        CI[Continuous Integration<br/>- Automated Tests<br/>- Code Quality]
+                        CD[Continuous Deployment<br/>- Build Artifacts<br/>- Deploy Scripts]
+                    end
+                    
+                    subgraph "Environments"
+                        Test[Testing<br/>- Integration Tests<br/>- UAT]
+                        Stage[Staging<br/>- Performance Tests<br/>- Security Scan]
+                        Prod[Production<br/>- Monitoring<br/>- Backup]
+                    end
+                    
+                    Dev --> CI
+                    CI --> CD
+                    CD --> Test
+                    Test --> Stage
+                    Stage --> Prod
+            </div>
+        </div>
+
+        <!-- 10. Monitoring Stack -->
+        <div id="monitoring" class="diagram-section">
+            <h2 class="diagram-title">10. Monitoring & Observability Stack</h2>
+            <p class="diagram-description">
+                Complete monitoring architecture showing metrics collection, processing, and visualization
+                for application, system, and business metrics.
+            </p>
+            <div class="mermaid">
+                graph TB
+                    subgraph "Metrics Collection"
+                        AM[Application Metrics<br/>- Response Time<br/>- Error Rate<br/>- Throughput]
+                        SM[System Metrics<br/>- CPU Usage<br/>- Memory<br/>- Disk I/O]
+                        BM[Business Metrics<br/>- Appointments<br/>- User Activity<br/>- Agent Performance]
+                    end
+                    
+                    subgraph "Processing"
+                        TS[Time Series DB]
+                        AP[Alert Processor]
+                        AGG[Aggregator]
+                    end
+                    
+                    subgraph "Visualization"
+                        DASH[Dashboard<br/>- Real-time Metrics<br/>- Historical Trends]
+                        ALERT[Alerting<br/>- Email<br/>- SMS<br/>- Slack]
+                        REP[Reports<br/>- Daily<br/>- Weekly<br/>- Monthly]
+                    end
+                    
+                    AM --> TS
+                    SM --> TS
+                    BM --> TS
+                    
+                    TS --> AP
+                    TS --> AGG
+                    
+                    AGG --> DASH
+                    AP --> ALERT
+                    AGG --> REP
+            </div>
+        </div>
+
+        <!-- 11. Security Architecture -->
+        <div class="diagram-section">
+            <h2 class="diagram-title">11. Security Architecture</h2>
+            <p class="diagram-description">
+                Multi-layered security architecture showing authentication, validation, encryption,
+                and access control mechanisms.
+            </p>
+            <div class="mermaid">
+                graph TB
+                    subgraph "Security Layers"
+                        AL[Authentication Layer<br/>- API Key Management<br/>- Session Management]
+                        VL[Validation Layer<br/>- Input Sanitization<br/>- Data Validation]
+                        EL[Encryption Layer<br/>- Data at Rest<br/>- Data in Transit]
+                        LL[Logging Layer<br/>- Audit Trail<br/>- Error Tracking]
+                    end
+                    
+                    subgraph "Security Controls"
+                        AC[Access Control<br/>- Role-based Access<br/>- Resource Permissions]
+                        DLP[Data Loss Prevention<br/>- PII Masking<br/>- Data Classification]
+                        IM[Identity Management<br/>- User Authentication<br/>- Token Management]
+                    end
+                    
+                    AL --> AC
+                    VL --> DLP
+                    EL --> IM
+                    LL --> AC
+            </div>
+        </div>
+
+        <!-- 12. Scaling Strategy -->
+        <div class="diagram-section">
+            <h2 class="diagram-title">12. Scaling Strategy Evolution</h2>
+            <p class="diagram-description">
+                Progressive scaling strategy from single instance through vertical scaling,
+                horizontal scaling, and eventual microservices architecture.
+            </p>
+            <div class="mermaid">
+                graph TB
+                    subgraph "Current Architecture"
+                        Single[Single Instance<br/>- Streamlit UI<br/>- Local Storage<br/>- Memory Cache]
+                    end
+                    
+                    subgraph "Phase 1: Vertical Scaling"
+                        Vertical[Enhanced Instance<br/>- More CPU/RAM<br/>- SSD Storage<br/>- Redis Cache]
+                    end
+                    
+                    subgraph "Phase 2: Horizontal Scaling"
+                        Horizontal[Multiple Instances<br/>- Load Balancer<br/>- Distributed Cache<br/>- Database Migration]
+                    end
+                    
+                    subgraph "Phase 3: Microservices"
+                        Micro[Service Decomposition<br/>- Agent Services<br/>- API Gateway<br/>- Message Queue]
+                    end
+                    
+                    Single --> Vertical
+                    Vertical --> Horizontal
+                    Horizontal --> Micro
+            </div>
+        </div>
+
+        <!-- 13. Development Roadmap -->
+        <div id="roadmap" class="diagram-section">
+            <h2 class="diagram-title">13. Development Roadmap</h2>
+            <p class="diagram-description">
+                Project timeline showing completed, active, and planned development phases
+                from core functionality through enterprise features.
+            </p>
+            <div class="legend">
+                <h4>📊 Timeline Legend</h4>
+                <p>The Gantt chart below shows the development timeline with completed phases (dark), 
+                active development (highlighted), and planned future work.</p>
+            </div>
+            <div class="mermaid">
+                gantt
+                    title Development Roadmap
+                    dateFormat  YYYY-MM-DD
+                    section Phase 1
+                    Core Functionality           :done,    des1, 2024-01-01, 2024-06-30
+                    Multi-Agent System          :done,    des2, 2024-04-01, 2024-08-31
+                    Web Interface              :done,    des3, 2024-06-01, 2024-09-30
+                    
+                    section Phase 2
+                    Database Integration        :active,  des4, 2024-10-01, 2025-03-31
+                    Advanced Analytics         :         des5, 2025-01-01, 2025-06-30
+                    Mobile Application         :         des6, 2025-04-01, 2025-09-30
+                    
+                    section Phase 3
+                    AI Optimization            :         des7, 2025-07-01, 2025-12-31
+                    Multi-tenant Support       :         des8, 2025-10-01, 2026-03-31
+                    Enterprise Features        :         des9, 2026-01-01, 2026-06-30
+            </div>
+        </div>
+
+        <!-- 14. External Integration -->
+        <div class="diagram-section">
+            <h2 class="diagram-title">14. External System Integration</h2>
+            <p class="diagram-description">
+                Integration architecture showing connections to external healthcare systems including
+                EHR, payment gateways, calendar systems, SMS gateways, and lab systems.
+            </p>
+            <div class="mermaid">
+                graph LR
+                    subgraph "Healthcare System"
+                        Core[Core System]
+                    end
+                    
+                    subgraph "External Systems"
+                        EHR[EHR Systems<br/>- HL7 FHIR<br/>- API Integration]
+                        PAY[Payment Gateway<br/>- Stripe/Square<br/>- PCI Compliance]
+                        CAL[Calendar Systems<br/>- Google Calendar<br/>- Outlook]
+                        SMS[SMS Gateway<br/>- Twilio<br/>- SMS Notifications]
+                        LAB[Lab Systems<br/>- Result Integration<br/>- Order Management]
+                    end
+                    
+                    Core <--> EHR
+                    Core <--> PAY
+                    Core <--> CAL
+                    Core <--> SMS
+                    Core <--> LAB
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Initialize Mermaid
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            themeVariables: {
+                primaryColor: '#667eea',
+                primaryTextColor: '#fff',
+                primaryBorderColor: '#5a67d8',
+                lineColor: '#5a67d8',
+                secondaryColor: '#764ba2',
+                tertiaryColor: '#f7fafc',
+                background: '#ffffff',
+                mainBkg: '#667eea',
+                secondBkg: '#764ba2',
+                tertiaryBkg: '#f7fafc',
+                primaryBorderColor: '#5a67d8',
+                secondaryBorderColor: '#553c9a',
+                tertiaryBorderColor: '#e2e8f0',
+                fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
+                fontSize: '14px'
+            },
+            flowchart: {
+                curve: 'basis',
+                padding: 20
+            },
+            gantt: {
+                numberSectionStyles: 4,
+                axisFormat: '%m/%d',
+                fontFamily: 'Segoe UI'
+            }
+        });
+    </script>
+</body>
+</html>

@@ -17,49 +17,52 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Enhanced Modern Healthcare CSS with improved chat interface
+# Modern Professional Healthcare Chat Interface CSS
 st.markdown("""
 <style>
     /* Import Google Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
     
-    /* Root variables for consistent theming */
+    /* Root variables for modern professional theming */
     :root {
-        --primary-color: #3b82f6;
+        --primary-color: #2563eb;
         --primary-dark: #1d4ed8;
-        --secondary-color: #10b981;
-        --accent-color: #8b5cf6;
+        --primary-light: #3b82f6;
+        --secondary-color: #059669;
+        --accent-color: #7c3aed;
         --success-color: #10b981;
         --warning-color: #f59e0b;
         --error-color: #ef4444;
         --info-color: #06b6d4;
-        --text-primary: #111827;
-        --text-secondary: #374151;
-        --text-muted: #6b7280;
+        --text-primary: #0f172a;
+        --text-secondary: #475569;
+        --text-muted: #64748b;
         --text-white: #ffffff;
         --bg-primary: #ffffff;
-        --bg-secondary: #f9fafb;
-        --bg-tertiary: #f3f4f6;
-        --bg-dark: #1f2937;
-        --bg-darker: #111827;
-        --border-color: #e5e7eb;
-        --border-light: #f3f4f6;
+        --bg-secondary: #f8fafc;
+        --bg-tertiary: #f1f5f9;
+        --bg-dark: #1e293b;
+        --bg-darker: #0f172a;
+        --border-color: #e2e8f0;
+        --border-light: #f1f5f9;
         --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         --radius-sm: 0.375rem;
         --radius-md: 0.5rem;
         --radius-lg: 0.75rem;
         --radius-xl: 1rem;
         --radius-2xl: 1.5rem;
+        --radius-3xl: 2rem;
     }
     
     /* Global styles */
     .stApp {
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
         line-height: 1.6;
+        min-height: 100vh;
     }
     
     /* Hide default Streamlit elements */
@@ -67,40 +70,55 @@ st.markdown("""
         display: none;
     }
     
-    /* Main header styling */
+    /* Main header styling - Modern and clean */
     .main-header {
-        font-size: 2.5rem;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.75rem;
         font-weight: 700;
         text-align: center;
-        margin-bottom: 2rem;
-        letter-spacing: -0.025em;
+        margin-bottom: 3rem;
+        letter-spacing: -0.02em;
         background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        position: relative;
     }
     
-    /* Welcome container - Initially centered */
+    .main-header::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 4px;
+        background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        border-radius: 2px;
+    }
+    
+    /* Welcome container - Modern centered design */
     .welcome-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 60vh;
+        min-height: 70vh;
         margin: 2rem 0;
+        padding: 2rem;
     }
     
     .welcome-card {
         background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-        border-radius: var(--radius-2xl);
-        padding: 3rem;
+        border-radius: var(--radius-3xl);
+        padding: 4rem 3rem;
         box-shadow: var(--shadow-xl);
         border: 1px solid var(--border-color);
         text-align: center;
-        max-width: 600px;
+        max-width: 700px;
         width: 100%;
         position: relative;
         overflow: hidden;
+        backdrop-filter: blur(10px);
     }
     
     .welcome-card::before {
@@ -109,14 +127,15 @@ st.markdown("""
         top: 0;
         left: 0;
         right: 0;
-        height: 4px;
+        height: 5px;
         background: linear-gradient(90deg, var(--primary-color), var(--accent-color), var(--secondary-color));
     }
     
     .welcome-title {
-        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.5rem;
         font-weight: 700;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -124,10 +143,11 @@ st.markdown("""
     }
     
     .welcome-subtitle {
-        font-size: 1.125rem;
+        font-size: 1.25rem;
         color: var(--text-secondary);
-        margin-bottom: 2rem;
-        opacity: 0.8;
+        margin-bottom: 2.5rem;
+        opacity: 0.9;
+        font-weight: 400;
     }
     
     .feature-grid {
@@ -164,35 +184,40 @@ st.markdown("""
         font-size: 0.875rem;
     }
     
-    /* Chat container - Improved positioning */
+    /* Chat container - Modern professional design */
     .chat-container {
         background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-        border-radius: var(--radius-2xl);
-        margin: 1rem 0;
+        border-radius: var(--radius-3xl);
+        margin: 2rem 0;
         border: 1px solid var(--border-color);
         box-shadow: var(--shadow-xl);
         display: flex;
         flex-direction: column;
         position: relative;
         overflow: hidden;
-        transition: all 0.3s ease;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        backdrop-filter: blur(10px);
     }
     
     .chat-container.has-messages {
-        height: 70vh;
+        height: 75vh;
         position: fixed;
         bottom: 2rem;
         left: 50%;
         transform: translateX(-50%);
         width: calc(100% - 4rem);
-        max-width: 1200px;
+        max-width: 1400px;
         z-index: 1000;
+        border: 1px solid rgba(37, 99, 235, 0.1);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     }
     
     .chat-container.welcome-mode {
         position: relative;
         height: auto;
-        min-height: 500px;
+        min-height: 600px;
+        max-width: 1000px;
+        margin: 2rem auto;
     }
     
     /* Chat header */
@@ -360,9 +385,9 @@ st.markdown("""
     /* Chat input area */
     .chat-input-area {
         background: var(--bg-secondary);
-        padding: 1.25rem 1.5rem;
+        padding: 2.25rem 3.5rem;
         border-top: 1px solid var(--border-color);
-        border-radius: 0 0 var(--radius-2xl) var(--radius-2xl);
+        border-radius: 0 0 var(--radius-4xl) var(--radius-2xl);
     }
     
     /* Enhanced input styling */
@@ -893,7 +918,7 @@ with st.sidebar:
 st.markdown("<h1 class='main-header'>AI Healthcare Scheduling System</h1>", unsafe_allow_html=True)
 
 # Create tabs for different functionalities
-tab1, tab2, tab3 = st.tabs(["💬 Chat", "📊 Statistics", "🔧 Tools"])
+tab1, tab2 = st.tabs(["💬 Chat", "📊 Statistics"])
 
 with tab1:
     # Check if there are messages to determine chat container style
@@ -909,39 +934,39 @@ with tab1:
         
         with col2:
             # Simple welcome header
-            st.markdown("<div style='text-align: center; font-size: 64px; margin: 24px 0;'>🏥</div>", unsafe_allow_html=True)
-            st.markdown("<h1 style='text-align: center; color: #3b82f6; margin-bottom: 16px;'>Healthcare Assistant</h1>", unsafe_allow_html=True)
-            st.markdown("<p style='text-align: center; color: #6b7280; font-size: 18px; margin-bottom: 32px;'>Your intelligent healthcare scheduling companion</p>", unsafe_allow_html=True)
+            # st.markdown("<div style='text-align: center; font-size: 96px; margin: 32px 0;'>🏥</div>", unsafe_allow_html=True)
+            # st.markdown("<h1 style='text-align: center; color: #3b82f6; margin-bottom: 24px; font-size: 3.5rem; font-weight: 700;'>Healthcare Assistant</h1>", unsafe_allow_html=True)
+            # st.markdown("<p style='text-align: center; color: #6b7280; font-size: 24px; margin-bottom: 48px; font-weight: 500;'>Your intelligent healthcare scheduling companion</p>", unsafe_allow_html=True)
             
             # Feature cards using Streamlit columns
-            st.markdown("### Quick Access")
+            st.markdown("<h2 style='text-align: center; color: #374151; font-size: 2rem; font-weight: 600; margin: 32px 0 24px 0;'>Quick Access</h2>", unsafe_allow_html=True)
             
             feat_col1, feat_col2 = st.columns(2)
             
             with feat_col1:
-                st.markdown("<div style='text-align: center; padding: 20px; background: #f9fafb; border-radius: 12px; margin-bottom: 16px; border: 1px solid #e5e7eb;'><div style='font-size: 32px; margin-bottom: 8px;'>📅</div><strong>Appointments</strong></div>", unsafe_allow_html=True)
-                st.markdown("<div style='text-align: center; padding: 20px; background: #f9fafb; border-radius: 12px; margin-bottom: 16px; border: 1px solid #e5e7eb;'><div style='font-size: 32px; margin-bottom: 8px;'>👨‍⚕️</div><strong>Doctors</strong></div>", unsafe_allow_html=True)
+                st.markdown("<div style='text-align: center; padding: 40px 30px; background: #f9fafb; border-radius: 20px; margin-bottom: 24px; border: 2px solid #e5e7eb; box-shadow: 0 4px 8px rgba(0,0,0,0.1);'><div style='font-size: 64px; margin-bottom: 16px;'>📅</div><strong style='color: black; font-size: 24px; font-weight: 700;'>Appointments</strong></div>", unsafe_allow_html=True)
+                st.markdown("<div style='text-align: center; padding: 40px 30px; background: #f9fafb; border-radius: 20px; margin-bottom: 24px; border: 2px solid #e5e7eb; box-shadow: 0 4px 8px rgba(0,0,0,0.1);'><div style='font-size: 64px; margin-bottom: 16px;'>👨‍⚕️</div><strong style='color: black; font-size: 24px; font-weight: 700;'>Doctors</strong></div>", unsafe_allow_html=True)
             
             with feat_col2:
-                st.markdown("<div style='text-align: center; padding: 20px; background: #f9fafb; border-radius: 12px; margin-bottom: 16px; border: 1px solid #e5e7eb;'><div style='font-size: 32px; margin-bottom: 8px;'>👥</div><strong>Patients</strong></div>", unsafe_allow_html=True)
-                st.markdown("<div style='text-align: center; padding: 20px; background: #f9fafb; border-radius: 12px; margin-bottom: 16px; border: 1px solid #e5e7eb;'><div style='font-size: 32px; margin-bottom: 8px;'>📊</div><strong>Analytics</strong></div>", unsafe_allow_html=True)
+                st.markdown("<div style='text-align: center; padding: 40px 30px; background: #f9fafb; border-radius: 20px; margin-bottom: 24px; border: 2px solid #e5e7eb; box-shadow: 0 4px 8px rgba(0,0,0,0.1);'><div style='font-size: 64px; margin-bottom: 16px;'>👥</div><strong style='color: black; font-size: 24px; font-weight: 700;'>Patients</strong></div>", unsafe_allow_html=True)
+                st.markdown("<div style='text-align: center; padding: 40px 30px; background: #f9fafb; border-radius: 20px; margin-bottom: 24px; border: 2px solid #e5e7eb; box-shadow: 0 4px 8px rgba(0,0,0,0.1);'><div style='font-size: 64px; margin-bottom: 16px;'>📊</div><strong style='color: black; font-size: 24px; font-weight: 700;'>Analytics</strong></div>", unsafe_allow_html=True)
             
             st.markdown("<p style='text-align: center; margin-top: 32px; color: #6b7280; font-style: italic;'>Start a conversation or use the quick actions in the sidebar</p>", unsafe_allow_html=True)
         
         st.markdown("<br><br>", unsafe_allow_html=True)
     
     # Chat container
-    st.markdown(f"""
-    <div class='{container_class}'>
-        <div class='chat-header'>
-            <h3 class='chat-title'>💬 Healthcare Assistant</h3>
-            <div class='chat-status'>
-                <div class='status-dot'></div>
-                <span>Online</span>
-            </div>
-        </div>
-        <div class='chat-messages'>
-    """, unsafe_allow_html=True)
+    # st.markdown(f"""
+    # <div class='{container_class}'>
+    #     <div class='chat-header'>
+    #         <h3 class='chat-title'>💬 Healthcare Assistant</h3>
+    #         <div class='chat-status'>
+    #             <div class='status-dot'></div>
+    #             <span>Online</span>
+    #         </div>
+    #     </div>
+    #     <div class='chat-messages'>
+    # """, unsafe_allow_html=True)
     
     # Display messages if they exist
     if has_messages:
@@ -964,20 +989,20 @@ with tab1:
                     </div>
                 </div>
                 """, unsafe_allow_html=True)
-    else:
-        # Welcome message in chat area
-        st.markdown("""
-        <div style='text-align: center; padding: 2rem; color: var(--text-muted);'>
-            <p style='font-size: 1.1rem; font-style: italic;'>
-                Welcome! How can I help you with healthcare scheduling today?
-            </p>
-        </div>
-        """, unsafe_allow_html=True)
+    # else:
+    #     # Welcome message in chat area
+    #     st.markdown("""
+    #     <div style='text-align: center; padding: 2rem; color: var(--text-muted);'>
+    #         <p style='font-size: 1.1rem; font-style: italic;'>
+    #             Welcome! How can I help you with healthcare scheduling today?
+    #         </p>
+    #     </div>
+    #     """, unsafe_allow_html=True)
     
-    st.markdown("""
-        </div>
-        <div class='chat-input-area'>
-    """, unsafe_allow_html=True)
+    # st.markdown("""
+    #     </div>
+    #     <div class='chat-input-area'>
+    # """, unsafe_allow_html=True)
     
     # Chat input at the bottom
     if prompt := st.chat_input("How can I help with healthcare scheduling today?"):
@@ -1145,92 +1170,6 @@ with tab2:
     except Exception as e:
         st.markdown(f"<div class='custom-alert alert-error'>Error loading statistics: {str(e)}</div>", unsafe_allow_html=True)
 
-with tab3:
-    st.markdown("<h3 class='section-header'>🔧 Tools & Settings</h3>", unsafe_allow_html=True)
-    
-    # Tools grid
-    st.markdown("""
-    <div class='tool-grid'>
-        <div class='tool-card'>
-            <span class='tool-icon'>🔄</span>
-            <h5 class='tool-title'>Generate Sample Data</h5>
-            <p class='tool-description'>Create sample patient and appointment data for testing</p>
-        </div>
-        <div class='tool-card'>
-            <span class='tool-icon'>📋</span>
-            <h5 class='tool-title'>Export Reports</h5>
-            <p class='tool-description'>Export all appointment reports and analytics</p>
-        </div>
-        <div class='tool-card'>
-            <span class='tool-icon'>📖</span>
-            <h5 class='tool-title'>Documentation</h5>
-            <p class='tool-description'>View system documentation and help guides</p>
-        </div>
-        <div class='tool-card'>
-            <span class='tool-icon'>⚙️</span>
-            <h5 class='tool-title'>System Settings</h5>
-            <p class='tool-description'>Configure system preferences and options</p>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-    
-    col1, col2 = st.columns(2)
-    
-    with col1:
-        st.markdown("<div class='content-card'>", unsafe_allow_html=True)
-        st.markdown("<h5>🛠️ System Tools</h5>", unsafe_allow_html=True)
-        
-        if st.button("🔄 Generate Sample Data", use_container_width=True):
-            st.session_state.messages.append({"role": "user", "content": "Generate sample data for the system"})
-            st.rerun()
-        
-        if st.button("📋 Export Reports", use_container_width=True):
-            st.session_state.messages.append({"role": "user", "content": "Export all appointment reports"})
-            st.rerun()
-        
-        if st.button("📖 Documentation", use_container_width=True):
-            st.session_state.messages.append({"role": "user", "content": "Show me the system documentation and help"})
-            st.rerun()
-        
-        st.markdown("</div>", unsafe_allow_html=True)
-    
-    with col2:
-        st.markdown("<div class='content-card'>", unsafe_allow_html=True)
-        st.markdown("<h5>⚙️ Settings</h5>", unsafe_allow_html=True)
-        
-        # Theme selection
-        theme = st.selectbox("Color Theme", ["Light", "Dark", "Auto"])
-        
-        # Notification preferences
-        notifs = st.checkbox("Enable notifications", value=True)
-        email_notifs = st.checkbox("Email notifications", value=False)
-        
-        if st.button("💾 Save Settings", use_container_width=True):
-            st.markdown("<div class='custom-alert alert-success'>Settings saved successfully!</div>", unsafe_allow_html=True)
-        
-        st.markdown("</div>", unsafe_allow_html=True)
-    
-    # Recent activity
-    st.markdown("<div class='content-card'>", unsafe_allow_html=True)
-    st.markdown("<h5>🕒 Recent Activity</h5>", unsafe_allow_html=True)
-    
-    if st.session_state.conversation_history:
-        for i, item in enumerate(reversed(st.session_state.conversation_history[-5:])):
-            st.markdown(f"""
-            <div class='activity-item'>
-                <div style='display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;'>
-                    <span class='activity-time'>🕒 {datetime.fromisoformat(item['timestamp']).strftime('%H:%M')}</span>
-                    <span style='color: var(--text-muted); font-size: 0.875rem;'>#{len(st.session_state.conversation_history) - i}</span>
-                </div>
-                <div class='activity-query'>
-                    <strong>💬 Query:</strong> {item['query']}
-                </div>
-            </div>
-            """, unsafe_allow_html=True)
-    else:
-        st.markdown("<div class='custom-alert alert-info'>No recent activity to display.</div>", unsafe_allow_html=True)
-    
-    st.markdown("</div>", unsafe_allow_html=True)
 
 # Add a function to log tool executions
 def log_tool_execution(tool_name: str, parameters: dict, result: str):
