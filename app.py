@@ -17,7 +17,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Modern Healthcare CSS with improved chat interface
+# Enhanced Modern Healthcare CSS with improved chat interface
 st.markdown("""
 <style>
     /* Import Google Fonts */
@@ -25,116 +25,216 @@ st.markdown("""
     
     /* Root variables for consistent theming */
     :root {
-        --primary-color: #1a73e8;
-        --primary-dark: #0d47a1;
-        --secondary-color: #2e7d32;
-        --accent-color: #7b1fa2;
-        --success-color: #388e3c;
-        --warning-color: #f57c00;
-        --error-color: #d32f2f;
-        --info-color: #0288d1;
-        --text-primary: #212121;
-        --text-secondary: #546e7a;
-        --text-muted: #78909c;
+        --primary-color: #3b82f6;
+        --primary-dark: #1d4ed8;
+        --secondary-color: #10b981;
+        --accent-color: #8b5cf6;
+        --success-color: #10b981;
+        --warning-color: #f59e0b;
+        --error-color: #ef4444;
+        --info-color: #06b6d4;
+        --text-primary: #111827;
+        --text-secondary: #374151;
+        --text-muted: #6b7280;
+        --text-white: #ffffff;
         --bg-primary: #ffffff;
-        --bg-secondary: #f5f7fa;
-        --bg-tertiary: #eceff1;
-        --border-color: #cfd8dc;
-        --border-light: #e2e8f0;
-        --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-        --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-        --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
-        --radius-sm: 6px;
-        --radius-md: 8px;
-        --radius-lg: 12px;
-        --radius-xl: 16px;
+        --bg-secondary: #f9fafb;
+        --bg-tertiary: #f3f4f6;
+        --bg-dark: #1f2937;
+        --bg-darker: #111827;
+        --border-color: #e5e7eb;
+        --border-light: #f3f4f6;
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        --radius-sm: 0.375rem;
+        --radius-md: 0.5rem;
+        --radius-lg: 0.75rem;
+        --radius-xl: 1rem;
+        --radius-2xl: 1.5rem;
     }
     
     /* Global styles */
     .stApp {
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        background-color: var(--bg-secondary);
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
         line-height: 1.6;
+    }
+    
+    /* Hide default Streamlit elements */
+    .stDeployButton {
+        display: none;
     }
     
     /* Main header styling */
     .main-header {
         font-size: 2.5rem;
         font-weight: 700;
-        color: var(--primary-color);
         text-align: center;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
         letter-spacing: -0.025em;
+        background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    /* Welcome container - Initially centered */
+    .welcome-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 60vh;
+        margin: 2rem 0;
+    }
+    
+    .welcome-card {
+        background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+        border-radius: var(--radius-2xl);
+        padding: 3rem;
+        box-shadow: var(--shadow-xl);
+        border: 1px solid var(--border-color);
+        text-align: center;
+        max-width: 600px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .welcome-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--primary-color), var(--accent-color), var(--secondary-color));
+    }
+    
+    .welcome-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
         background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
     
-    .sub-header {
-        font-size: 1.25rem;
-        font-weight: 600;
-        color: var(--text-primary);
-        margin-bottom: 1rem;
-        padding-bottom: 0.5rem;
-        border-bottom: 2px solid var(--border-color);
+    .welcome-subtitle {
+        font-size: 1.125rem;
+        color: var(--text-secondary);
+        margin-bottom: 2rem;
+        opacity: 0.8;
     }
     
-    /* Chat container - Modern redesign */
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 2rem 0;
+    }
+    
+    .feature-card {
+        background: var(--bg-secondary);
+        padding: 1.5rem;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--border-color);
+        transition: all 0.2s ease;
+        cursor: pointer;
+    }
+    
+    .feature-card:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+        border-color: var(--primary-color);
+    }
+    
+    .feature-icon {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+    
+    .feature-title {
+        font-weight: 600;
+        color: var(--text-primary);
+        font-size: 0.875rem;
+    }
+    
+    /* Chat container - Improved positioning */
     .chat-container {
         background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-        padding: 0;
-        border-radius: var(--radius-xl);
-        margin-bottom: 1.5rem;
-        height: 70vh;
-        overflow: hidden;
-        border: 1px solid #e2e8f0;
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        border-radius: var(--radius-2xl);
+        margin: 1rem 0;
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow-xl);
         display: flex;
         flex-direction: column;
         position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+    
+    .chat-container.has-messages {
+        height: 70vh;
+        position: fixed;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 4rem);
+        max-width: 1200px;
+        z-index: 1000;
+    }
+    
+    .chat-container.welcome-mode {
+        position: relative;
+        height: auto;
+        min-height: 500px;
     }
     
     /* Chat header */
     .chat-header {
         background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
         color: white;
-        padding: 1rem 1.5rem;
-        border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+        padding: 1.25rem 1.5rem;
+        border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     
-    .chat-header h3 {
+    .chat-title {
         margin: 0;
-        font-size: 1.1rem;
+        font-size: 1.125rem;
         font-weight: 600;
         display: flex;
         align-items: center;
-        gap: 0.5rem;
+        gap: 0.75rem;
     }
     
     .chat-status {
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        font-size: 0.85rem;
+        font-size: 0.875rem;
         opacity: 0.9;
     }
     
     .status-dot {
         width: 8px;
         height: 8px;
-        background: #10b981;
+        background: var(--secondary-color);
         border-radius: 50%;
         animation: pulse 2s infinite;
     }
     
     @keyframes pulse {
         0%, 100% { opacity: 1; }
-        50% { opacity: 0.5; }
+        50% { opacity: 0.6; }
     }
     
     /* Chat messages area */
@@ -142,32 +242,43 @@ st.markdown("""
         flex: 1;
         padding: 1.5rem;
         overflow-y: auto;
-        background: #ffffff;
+        background: var(--bg-primary);
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        min-height: 300px;
     }
     
-    /* Chat input area */
-    .chat-input-area {
-        background: #f8fafc;
-        padding: 1rem 1.5rem;
-        border-top: 1px solid #e2e8f0;
-        border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+    .chat-messages::-webkit-scrollbar {
+        width: 6px;
     }
     
-    /* Message styling - Improved with better layout */
+    .chat-messages::-webkit-scrollbar-track {
+        background: var(--bg-tertiary);
+        border-radius: var(--radius-sm);
+    }
+    
+    .chat-messages::-webkit-scrollbar-thumb {
+        background: var(--border-color);
+        border-radius: var(--radius-sm);
+    }
+    
+    .chat-messages::-webkit-scrollbar-thumb:hover {
+        background: var(--text-muted);
+    }
+    
+    /* Message styling */
     .message-container {
         display: flex;
-        margin-bottom: 1.25rem;
+        margin-bottom: 1rem;
         width: 100%;
-        animation: fadeInUp 0.3s ease-out;
+        animation: slideInUp 0.3s ease-out;
     }
     
-    @keyframes fadeInUp {
+    @keyframes slideInUp {
         from {
             opacity: 0;
-            transform: translateY(10px);
+            transform: translateY(20px);
         }
         to {
             opacity: 1;
@@ -184,180 +295,256 @@ st.markdown("""
     }
     
     .user-message {
-        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-        padding: 1.25rem;
-        border-radius: 1.25rem;
-        border-bottom-right-radius: 0.5rem;
-        max-width: 75%;
-        box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+        background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
         color: white;
-        line-height: 1.6;
+        padding: 1rem 1.25rem;
+        border-radius: var(--radius-xl);
+        border-bottom-right-radius: var(--radius-sm);
+        max-width: 70%;
+        box-shadow: var(--shadow-md);
         margin-left: 2rem;
-        backdrop-filter: blur(10px);
+        position: relative;
+    }
+    
+    .user-message::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: -8px;
+        width: 0;
+        height: 0;
+        border-left: 8px solid var(--primary-dark);
+        border-bottom: 8px solid transparent;
     }
     
     .assistant-message {
         background: linear-gradient(135deg, #ffffff, #f8fafc);
-        padding: 1.25rem;
-        border-radius: 1.25rem;
-        border-bottom-left-radius: 0.5rem;
-        max-width: 75%;
-        border: 1px solid #e2e8f0;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         color: var(--text-primary);
-        line-height: 1.7;
+        padding: 1rem 1.25rem;
+        border-radius: var(--radius-xl);
+        border-bottom-left-radius: var(--radius-sm);
+        max-width: 70%;
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow-sm);
         margin-right: 2rem;
+        position: relative;
+    }
+    
+    .assistant-message::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -8px;
+        width: 0;
+        height: 0;
+        border-right: 8px solid #ffffff;
+        border-bottom: 8px solid transparent;
     }
     
     .message-header {
         display: flex;
         align-items: center;
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.5rem;
         font-weight: 600;
-        color: rgba(255, 255, 255, 0.9);
-        font-size: 0.8rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        opacity: 0.8;
+    }
+    
+    .message-content {
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+    
+    /* Chat input area */
+    .chat-input-area {
+        background: var(--bg-secondary);
+        padding: 1.25rem 1.5rem;
+        border-top: 1px solid var(--border-color);
+        border-radius: 0 0 var(--radius-2xl) var(--radius-2xl);
+    }
+    
+    /* Enhanced input styling */
+    .stChatInput > div > div > div > div > div > input {
+        background: var(--bg-primary) !important;
+        border: 2px solid var(--border-color) !important;
+        border-radius: var(--radius-xl) !important;
+        padding: 1rem 1.25rem !important;
+        font-size: 1rem !important;
+        transition: all 0.2s ease !important;
+        box-shadow: var(--shadow-sm) !important;
+    }
+    
+    .stChatInput > div > div > div > div > div > input:focus {
+        border-color: var(--primary-color) !important;
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+        transform: translateY(-1px) !important;
+    }
+    
+    .stChatInput > div > div > div > div > div > input::placeholder {
+        color: var(--text-muted) !important;
+        font-style: italic !important;
+    }
+    
+    /* Tab styling improvements */
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 0.5rem;
+        background: var(--bg-secondary);
+        padding: 0.5rem;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--border-color);
+        margin-bottom: 1.5rem;
+    }
+    
+    .stTabs [data-baseweb="tab"] {
+        background: transparent;
+        border-radius: var(--radius-md);
+        color: var(--text-secondary);
+        font-weight: 500;
+        padding: 0.75rem 1.5rem;
+        transition: all 0.2s ease;
+    }
+    
+    .stTabs [aria-selected="true"] {
+        background: var(--primary-color) !important;
+        color: white !important;
+        box-shadow: var(--shadow-sm);
+    }
+    
+    /* Statistics and Tools sections - Fixed font colors */
+    .metric-card {
+        background: var(--bg-primary);
+        padding: 1.5rem;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow-sm);
+        margin-bottom: 1rem;
+        transition: all 0.2s ease;
+    }
+    
+    .metric-card:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+    }
+    
+    .metric-card h3, .metric-card p, .metric-card div, .metric-card span {
+        color: var(--text-primary) !important;
+    }
+    
+    .metric-card .metric-value {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--primary-color) !important;
+    }
+    
+    .metric-card .metric-label {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--text-secondary) !important;
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
     
-    .assistant-message .message-header {
-        color: var(--text-secondary);
-    }
-    
-    /* Welcome message styling */
-    .welcome-message {
-        text-align: center;
-        padding: 2rem;
-        color: var(--text-secondary);
-        font-style: italic;
-        margin: auto;
-    }
-    
-    /* Sidebar styling */
-    .sidebar-section {
-        margin-bottom: 1.5rem;
-        padding: 1.25rem;
-        background: var(--bg-primary);
-        border-radius: var(--radius-lg);
-        border: 1px solid var(--border-color);
-        box-shadow: var(--shadow-sm);
-    }
-    
-    .sidebar-title {
-        font-size: 1.125rem;
+    /* Section headers */
+    .section-header {
+        font-size: 1.25rem;
         font-weight: 600;
-        color: var(--text-primary);
+        color: var(--text-primary) !important;
         margin-bottom: 1rem;
         padding-bottom: 0.5rem;
         border-bottom: 2px solid var(--border-color);
     }
     
-    /* Status indicators */
-    .status-indicator {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        margin-right: 0.5rem;
-    }
-    
-    .status-online { background-color: var(--success-color); }
-    .status-offline { background-color: var(--error-color); }
-    .status-pending { background-color: var(--warning-color); }
-    
-    /* Button styling */
-    .stButton > button {
-        background: var(--primary-color);
-        color: white;
-        border: none;
-        border-radius: var(--radius-md);
-        padding: 0.5rem 1rem;
-        font-weight: 500;
-        transition: all 0.2s ease;
+    /* Content cards for stats and tools */
+    .content-card {
+        background: var(--bg-primary);
+        padding: 1.5rem;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--border-color);
         box-shadow: var(--shadow-sm);
-        width: 100%;
+        margin-bottom: 1rem;
     }
     
-    .stButton > button:hover {
-        background: var(--primary-dark);
-        transform: translateY(-1px);
+    .content-card h4, .content-card h5, .content-card h6,
+    .content-card p, .content-card div, .content-card span,
+    .content-card strong, .content-card em {
+        color: var(--text-primary) !important;
+    }
+    
+    .content-card .text-secondary {
+        color: var(--text-secondary) !important;
+    }
+    
+    .content-card .text-muted {
+        color: var(--text-muted) !important;
+    }
+    
+    /* Appointment cards */
+    .appointment-card {
+        background: var(--bg-primary);
+        padding: 1rem 1.25rem;
+        border-radius: var(--radius-md);
+        border-left: 4px solid var(--primary-color);
+        margin-bottom: 0.75rem;
+        box-shadow: var(--shadow-sm);
+        transition: all 0.2s ease;
+    }
+    
+    .appointment-card:hover {
+        transform: translateX(4px);
         box-shadow: var(--shadow-md);
     }
     
-    /* Input styling - Enhanced for chat */
-    .stTextInput > div > div > input {
-        border-radius: var(--radius-md);
-        border: 1px solid var(--border-color);
-        padding: 0.75rem;
+    .appointment-card h6, .appointment-card p, .appointment-card div,
+    .appointment-card span, .appointment-card strong {
+        color: var(--text-primary) !important;
+    }
+    
+    .appointment-card .appointment-time {
+        font-weight: 600;
+        color: var(--primary-color) !important;
         font-size: 1rem;
-        transition: all 0.2s ease;
     }
     
-    .stTextInput > div > div > input:focus {
-        border-color: var(--primary-color);
-        box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.1);
+    .appointment-card .appointment-details {
+        color: var(--text-secondary) !important;
+        font-size: 0.875rem;
     }
     
-    /* Chat input specific styling */
-    .chat-input-area .stTextInput > div > div > input {
-        border-radius: 1.5rem;
-        border: 2px solid #e2e8f0;
-        padding: 1rem 1.25rem;
-        font-size: 1rem;
-        background: white;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        transition: all 0.2s ease;
-    }
-    
-    .chat-input-area .stTextInput > div > div > input:focus {
-        border-color: var(--primary-color);
-        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-        transform: translateY(-1px);
-    }
-    
-    .chat-input-area .stTextInput > div > div > input::placeholder {
-        color: #9ca3af;
-        font-style: italic;
-    }
-    
-    /* Scrollbar styling */
-    .chat-container::-webkit-scrollbar {
-        width: 8px;
-    }
-    
-    .chat-container::-webkit-scrollbar-track {
-        background: var(--bg-tertiary);
+    .appointment-card .appointment-status {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
         border-radius: var(--radius-sm);
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-top: 0.5rem;
     }
     
-    .chat-container::-webkit-scrollbar-thumb {
-        background: var(--border-color);
-        border-radius: var(--radius-sm);
+    .status-confirmed {
+        background: rgba(16, 185, 129, 0.1);
+        color: var(--success-color) !important;
+        border: 1px solid rgba(16, 185, 129, 0.2);
     }
     
-    .chat-container::-webkit-scrollbar-thumb:hover {
-        background: var(--text-muted);
+    .status-pending {
+        background: rgba(245, 158, 11, 0.1);
+        color: var(--warning-color) !important;
+        border: 1px solid rgba(245, 158, 11, 0.2);
     }
     
-    /* Improved text contrast */
-    .stMarkdown {
-        color: var(--text-primary);
-    }
-    
-    /* Welcome banner */
-    .welcome-banner {
-        background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-        color: white;
-        padding: 1.5rem;
-        border-radius: var(--radius-lg);
-        margin-bottom: 1.5rem;
-        text-align: center;
+    .status-scheduled {
+        background: rgba(59, 130, 246, 0.1);
+        color: var(--info-color) !important;
+        border: 1px solid rgba(59, 130, 246, 0.2);
     }
     
     /* Sidebar styling - Dark theme with better visibility */
     .css-1d391kg {
-        background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
-        border-right: 2px solid #334155;
+        background: linear-gradient(180deg, var(--bg-darker) 0%, var(--bg-dark) 100%);
+        border-right: 2px solid #374151;
     }
     
     .sidebar-section {
@@ -372,193 +559,224 @@ st.markdown("""
     .sidebar-title {
         font-size: 1rem;
         font-weight: 600;
-        color: #ffffff !important;
+        color: var(--text-white) !important;
         margin-bottom: 1rem;
         padding-bottom: 0.5rem;
-        border-bottom: 2px solid #3b82f6;
+        border-bottom: 2px solid var(--primary-color);
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
     
-    /* Sidebar text styling - ALL WHITE for better visibility */
-    .sidebar-section p, .sidebar-section div, .sidebar-section span, .sidebar-section label {
-        color: #ffffff !important;
-    }
-    
-    .sidebar-section strong {
-        color: #ffffff !important;
-        font-weight: 600;
-    }
-    
-    .sidebar-section small {
-        color: #e2e8f0 !important;
-    }
-    
-    .sidebar-section code {
-        color: #10b981 !important;
-        background: rgba(0, 0, 0, 0.3) !important;
-        padding: 0.25rem 0.5rem !important;
-        border-radius: 0.25rem !important;
-        font-family: 'Fira Code', monospace !important;
-    }
-    
     /* Force all sidebar text to be white */
-    .css-1d391kg * {
-        color: #ffffff !important;
-    }
-    
-    .css-1d391kg p, .css-1d391kg div, .css-1d391kg span, .css-1d391kg label, .css-1d391kg h1, .css-1d391kg h2, .css-1d391kg h3, .css-1d391kg h4, .css-1d391kg h5, .css-1d391kg h6 {
-        color: #ffffff !important;
+    .css-1d391kg *, .sidebar-section * {
+        color: var(--text-white) !important;
     }
     
     /* Sidebar buttons */
     .sidebar-section .stButton > button {
-        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-        color: white;
+        background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+        color: white !important;
         border: none;
         border-radius: var(--radius-md);
         padding: 0.75rem 1rem;
         font-weight: 500;
         transition: all 0.2s ease;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: var(--shadow-sm);
         width: 100%;
         margin-bottom: 0.5rem;
     }
     
     .sidebar-section .stButton > button:hover {
-        background: linear-gradient(135deg, #1d4ed8, #1e40af);
+        background: linear-gradient(135deg, var(--primary-dark), #1e40af);
         transform: translateY(-1px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        box-shadow: var(--shadow-md);
     }
     
     /* Sidebar input fields */
     .sidebar-section .stTextInput > div > div > input {
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: var(--radius-md);
-        padding: 0.75rem;
-        color: #f1f5f9;
-        font-size: 0.9rem;
+        background: rgba(255, 255, 255, 0.1) !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        border-radius: var(--radius-md) !important;
+        padding: 0.75rem !important;
+        color: var(--text-white) !important;
+        font-size: 0.9rem !important;
     }
     
     .sidebar-section .stTextInput > div > div > input:focus {
-        border-color: #3b82f6;
-        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
-        background: rgba(255, 255, 255, 0.15);
+        border-color: var(--primary-color) !important;
+        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2) !important;
+        background: rgba(255, 255, 255, 0.15) !important;
     }
     
     .sidebar-section .stTextInput > div > div > input::placeholder {
-        color: #94a3b8;
+        color: #9ca3af !important;
     }
     
-    /* Sidebar code blocks */
-    .sidebar-section .stCode {
-        background: rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: var(--radius-sm);
-        padding: 0.5rem;
-        color: #10b981;
-        font-family: 'Fira Code', monospace;
-        font-size: 0.8rem;
+    /* Button styling for main content */
+    .stButton > button {
+        background: var(--primary-color);
+        color: white;
+        border: none;
+        border-radius: var(--radius-md);
+        padding: 0.75rem 1.5rem;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        box-shadow: var(--shadow-sm);
     }
     
-    /* Sidebar alerts - improved visibility */
-    .sidebar-section .stAlert {
-        background: rgba(16, 185, 129, 0.15) !important;
-        border: 1px solid rgba(16, 185, 129, 0.4) !important;
-        border-radius: var(--radius-md) !important;
-        color: #10b981 !important;
-        font-weight: 500 !important;
+    .stButton > button:hover {
+        background: var(--primary-dark);
+        transform: translateY(-1px);
+        box-shadow: var(--shadow-md);
     }
     
-    .sidebar-section .stAlert[data-testid="alert-warning"] {
-        background: rgba(245, 158, 11, 0.15) !important;
-        border: 1px solid rgba(245, 158, 11, 0.4) !important;
-        color: #f59e0b !important;
+    /* Tool section styling */
+    .tool-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        margin-bottom: 2rem;
     }
     
-    .sidebar-section .stAlert[data-testid="alert-error"] {
-        background: rgba(239, 68, 68, 0.15) !important;
-        border: 1px solid rgba(239, 68, 68, 0.4) !important;
-        color: #ef4444 !important;
-    }
-    
-    /* Ensure all text in sidebar is visible */
-    .sidebar-section * {
-        color: inherit !important;
-    }
-    
-    /* Status indicators */
-    .status-indicator {
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        margin-right: 0.5rem;
-    }
-    
-    .status-online { background-color: #10b981; }
-    .status-offline { background-color: #ef4444; }
-    .status-pending { background-color: #f59e0b; }
-    
-    /* Message styling improvements */
-    .message-container {
-        margin-bottom: 1rem;
-    }
-    
-    .user-message-container {
-        display: flex;
-        justify-content: flex-end;
-    }
-    
-    .assistant-message-container {
-        display: flex;
-        justify-content: flex-start;
-    }
-    
-    .message-header {
-        font-weight: 600;
-        font-size: 0.875rem;
-        margin-bottom: 0.5rem;
-        color: var(--text-secondary);
-    }
-    
-    .message-content {
-        line-height: 1.6;
-        font-size: 1rem;
-    }
-    
-    .welcome-message {
-        text-align: center;
-        padding: 2rem;
-        color: var(--text-secondary);
-        background: var(--bg-tertiary);
+    .tool-card {
+        background: var(--bg-primary);
+        padding: 1.5rem;
         border-radius: var(--radius-lg);
-        border: 2px dashed var(--border-color);
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow-sm);
+        transition: all 0.2s ease;
+        text-align: center;
     }
     
-    .welcome-message h3 {
-        color: var(--primary-color);
+    .tool-card:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+        border-color: var(--primary-color);
+    }
+    
+    .tool-card h5, .tool-card p, .tool-card div {
+        color: var(--text-primary) !important;
+    }
+    
+    .tool-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        display: block;
+    }
+    
+    .tool-title {
+        font-weight: 600;
+        color: var(--text-primary) !important;
+        margin-bottom: 0.5rem;
+    }
+    
+    .tool-description {
+        color: var(--text-secondary) !important;
+        font-size: 0.875rem;
         margin-bottom: 1rem;
     }
     
-    /* Remove any unwanted white elements */
-    .stTextInput > div > div > input:not(:focus) {
-        background-color: var(--bg-primary) !important;
+    /* Activity log styling */
+    .activity-item {
+        background: var(--bg-primary);
+        padding: 1rem;
+        border-radius: var(--radius-md);
+        border: 1px solid var(--border-color);
+        margin-bottom: 0.75rem;
+        transition: all 0.2s ease;
     }
     
-    /* Improve chat input visibility */
-    .stChatInput > div > div > div > div > div > input {
-        background-color: var(--bg-primary) !important;
-        border: 2px solid var(--border-color) !important;
-        border-radius: var(--radius-lg) !important;
-        padding: 1rem !important;
-        font-size: 1rem !important;
+    .activity-item:hover {
+        transform: translateX(4px);
+        box-shadow: var(--shadow-sm);
     }
     
-    .stChatInput > div > div > div > div > div > input:focus {
-        border-color: var(--primary-color) !important;
-        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+    .activity-item h6, .activity-item p, .activity-item div,
+    .activity-item span, .activity-item strong {
+        color: var(--text-primary) !important;
+    }
+    
+    .activity-time {
+        font-weight: 600;
+        color: var(--primary-color) !important;
+        font-size: 0.875rem;
+    }
+    
+    .activity-query {
+        color: var(--text-secondary) !important;
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+    }
+    
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .feature-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .tool-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .chat-container.has-messages {
+            width: calc(100% - 2rem);
+            left: 1rem;
+            transform: none;
+        }
+        
+        .user-message, .assistant-message {
+            max-width: 85%;
+        }
+    }
+    
+    /* Loading states */
+    .loading-dots {
+        display: inline-block;
+    }
+    
+    .loading-dots::after {
+        content: '';
+        animation: dots 1.5s infinite;
+    }
+    
+    @keyframes dots {
+        0%, 20% { content: ''; }
+        40% { content: '.'; }
+        60% { content: '..'; }
+        80%, 100% { content: '...'; }
+    }
+    
+    /* Custom alerts */
+    .custom-alert {
+        padding: 1rem 1.25rem;
+        border-radius: var(--radius-md);
+        margin-bottom: 1rem;
+        border: 1px solid;
+        font-weight: 500;
+    }
+    
+    .alert-success {
+        background: rgba(16, 185, 129, 0.1);
+        border-color: rgba(16, 185, 129, 0.2);
+        color: var(--success-color) !important;
+    }
+    
+    .alert-warning {
+        background: rgba(245, 158, 11, 0.1);
+        border-color: rgba(245, 158, 11, 0.2);
+        color: var(--warning-color) !important;
+    }
+    
+    .alert-error {
+        background: rgba(239, 68, 68, 0.1);
+        border-color: rgba(239, 68, 68, 0.2);
+        color: var(--error-color) !important;
+    }
+    
+    .alert-info {
+        background: rgba(6, 182, 212, 0.1);
+        border-color: rgba(6, 182, 212, 0.2);
+        color: var(--info-color) !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -583,8 +801,8 @@ if "api_key_configured" not in st.session_state:
 with st.sidebar:
     # Header
     st.markdown("<div class='sidebar-section'>", unsafe_allow_html=True)
-    st.markdown("<h2 style='text-align: center; color: #f1f5f9; margin-bottom: 0; font-size: 1.5rem;'>🏥 Healthcare AI</h2>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align: center; color: #cbd5e1; margin: 0.5rem 0 0 0; font-size: 0.9rem;'>Multi-Agent System</p>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center; color: #ffffff; margin-bottom: 0; font-size: 1.5rem;'>🏥 Healthcare AI</h2>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; color: #e2e8f0; margin: 0.5rem 0 0 0; font-size: 0.9rem;'>Multi-Agent System</p>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
     
     # OpenAI API Key Configuration
@@ -674,17 +892,49 @@ with st.sidebar:
 # Main content area
 st.markdown("<h1 class='main-header'>AI Healthcare Scheduling System</h1>", unsafe_allow_html=True)
 
-# Removed welcome banner to eliminate white rectangle
-
 # Create tabs for different functionalities
 tab1, tab2, tab3 = st.tabs(["💬 Chat", "📊 Statistics", "🔧 Tools"])
 
 with tab1:
-    # Modern chat interface
-    st.markdown("""
-    <div class='chat-container'>
+    # Check if there are messages to determine chat container style
+    has_messages = len(st.session_state.messages) > 0
+    container_class = "chat-container has-messages" if has_messages else "chat-container welcome-mode"
+    
+    if not has_messages:
+        # Show welcome screen using pure Streamlit components
+        st.markdown("<br><br>", unsafe_allow_html=True)
+        
+        # Create centered container using columns
+        col1, col2, col3 = st.columns([1, 2, 1])
+        
+        with col2:
+            # Simple welcome header
+            st.markdown("<div style='text-align: center; font-size: 64px; margin: 24px 0;'>🏥</div>", unsafe_allow_html=True)
+            st.markdown("<h1 style='text-align: center; color: #3b82f6; margin-bottom: 16px;'>Healthcare Assistant</h1>", unsafe_allow_html=True)
+            st.markdown("<p style='text-align: center; color: #6b7280; font-size: 18px; margin-bottom: 32px;'>Your intelligent healthcare scheduling companion</p>", unsafe_allow_html=True)
+            
+            # Feature cards using Streamlit columns
+            st.markdown("### Quick Access")
+            
+            feat_col1, feat_col2 = st.columns(2)
+            
+            with feat_col1:
+                st.markdown("<div style='text-align: center; padding: 20px; background: #f9fafb; border-radius: 12px; margin-bottom: 16px; border: 1px solid #e5e7eb;'><div style='font-size: 32px; margin-bottom: 8px;'>📅</div><strong>Appointments</strong></div>", unsafe_allow_html=True)
+                st.markdown("<div style='text-align: center; padding: 20px; background: #f9fafb; border-radius: 12px; margin-bottom: 16px; border: 1px solid #e5e7eb;'><div style='font-size: 32px; margin-bottom: 8px;'>👨‍⚕️</div><strong>Doctors</strong></div>", unsafe_allow_html=True)
+            
+            with feat_col2:
+                st.markdown("<div style='text-align: center; padding: 20px; background: #f9fafb; border-radius: 12px; margin-bottom: 16px; border: 1px solid #e5e7eb;'><div style='font-size: 32px; margin-bottom: 8px;'>👥</div><strong>Patients</strong></div>", unsafe_allow_html=True)
+                st.markdown("<div style='text-align: center; padding: 20px; background: #f9fafb; border-radius: 12px; margin-bottom: 16px; border: 1px solid #e5e7eb;'><div style='font-size: 32px; margin-bottom: 8px;'>📊</div><strong>Analytics</strong></div>", unsafe_allow_html=True)
+            
+            st.markdown("<p style='text-align: center; margin-top: 32px; color: #6b7280; font-style: italic;'>Start a conversation or use the quick actions in the sidebar</p>", unsafe_allow_html=True)
+        
+        st.markdown("<br><br>", unsafe_allow_html=True)
+    
+    # Chat container
+    st.markdown(f"""
+    <div class='{container_class}'>
         <div class='chat-header'>
-            <h3>💬 Healthcare Assistant</h3>
+            <h3 class='chat-title'>💬 Healthcare Assistant</h3>
             <div class='chat-status'>
                 <div class='status-dot'></div>
                 <span>Online</span>
@@ -693,7 +943,8 @@ with tab1:
         <div class='chat-messages'>
     """, unsafe_allow_html=True)
     
-    if st.session_state.messages:
+    # Display messages if they exist
+    if has_messages:
         for message in st.session_state.messages:
             if message["role"] == "user":
                 st.markdown(f"""
@@ -714,31 +965,12 @@ with tab1:
                 </div>
                 """, unsafe_allow_html=True)
     else:
-        # Modern welcome message
+        # Welcome message in chat area
         st.markdown("""
-        <div style='text-align: center; padding: 3rem 2rem; color: var(--text-secondary);'>
-            <div style='font-size: 3rem; margin-bottom: 1rem;'>🏥</div>
-            <h3 style='color: var(--primary-color); margin-bottom: 1rem; font-size: 1.5rem;'>Welcome to Healthcare Assistant</h3>
-            <p style='font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.8;'>Your intelligent healthcare scheduling companion</p>
-            <div style='display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; max-width: 400px; margin: 0 auto;'>
-                <div style='background: #f8fafc; padding: 1rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;'>
-                    <div style='font-size: 1.5rem; margin-bottom: 0.5rem;'>📅</div>
-                    <div style='font-weight: 600; color: var(--text-primary);'>Appointments</div>
-                </div>
-                <div style='background: #f8fafc; padding: 1rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;'>
-                    <div style='font-size: 1.5rem; margin-bottom: 0.5rem;'>👥</div>
-                    <div style='font-weight: 600; color: var(--text-primary);'>Patients</div>
-                </div>
-                <div style='background: #f8fafc; padding: 1rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;'>
-                    <div style='font-size: 1.5rem; margin-bottom: 0.5rem;'>👨‍⚕️</div>
-                    <div style='font-weight: 600; color: var(--text-primary);'>Doctors</div>
-                </div>
-                <div style='background: #f8fafc; padding: 1rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;'>
-                    <div style='font-size: 1.5rem; margin-bottom: 0.5rem;'>📊</div>
-                    <div style='font-weight: 600; color: var(--text-primary);'>Analytics</div>
-                </div>
-            </div>
-            <p style='margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;'>Start a conversation or use the quick actions in the sidebar</p>
+        <div style='text-align: center; padding: 2rem; color: var(--text-muted);'>
+            <p style='font-size: 1.1rem; font-style: italic;'>
+                Welcome! How can I help you with healthcare scheduling today?
+            </p>
         </div>
         """, unsafe_allow_html=True)
     
@@ -804,7 +1036,7 @@ with tab1:
     """, unsafe_allow_html=True)
 
 with tab2:
-    st.markdown("<h3 class='sub-header'>📊 System Statistics</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 class='section-header'>📊 System Statistics</h3>", unsafe_allow_html=True)
     
     try:
         # Create sample data for demonstration
@@ -825,78 +1057,128 @@ with tab2:
         patients_df = pd.DataFrame(sample_patients)
         appointments_df = pd.DataFrame(sample_appointments)
         
+        # Metrics cards
         col1, col2, col3, col4 = st.columns(4)
         
         with col1:
-            st.markdown("<div class='metric-card'>", unsafe_allow_html=True)
-            st.metric("👥 Total Patients", len(patients_df), delta=None)
-            st.markdown("</div>", unsafe_allow_html=True)
+            st.markdown(f"""
+            <div class='metric-card'>
+                <div class='metric-label'>👥 Total Patients</div>
+                <div class='metric-value'>{len(patients_df)}</div>
+            </div>
+            """, unsafe_allow_html=True)
         
         today = datetime.now().date()
         today_appointments = appointments_df[appointments_df['datetime'].str.startswith(str(today))]
         
         with col2:
-            st.markdown("<div class='metric-card'>", unsafe_allow_html=True)
-            st.metric("📅 Today's Appointments", len(today_appointments), delta=None)
-            st.markdown("</div>", unsafe_allow_html=True)
+            st.markdown(f"""
+            <div class='metric-card'>
+                <div class='metric-label'>📅 Today's Appointments</div>
+                <div class='metric-value'>{len(today_appointments)}</div>
+            </div>
+            """, unsafe_allow_html=True)
         
         with col3:
-            st.markdown("<div class='metric-card'>", unsafe_allow_html=True)
-            st.metric("📋 Total Appointments", len(appointments_df), delta=None)
-            st.markdown("</div>", unsafe_allow_html=True)
+            st.markdown(f"""
+            <div class='metric-card'>
+                <div class='metric-label'>📋 Total Appointments</div>
+                <div class='metric-value'>{len(appointments_df)}</div>
+            </div>
+            """, unsafe_allow_html=True)
         
         with col4:
-            st.markdown("<div class='metric-card'>", unsafe_allow_html=True)
-            st.metric("✅ Confirmed", len(appointments_df[appointments_df['status'] == 'confirmed']), delta=None)
-            st.markdown("</div>", unsafe_allow_html=True)
+            st.markdown(f"""
+            <div class='metric-card'>
+                <div class='metric-label'>✅ Confirmed</div>
+                <div class='metric-value'>{len(appointments_df[appointments_df['status'] == 'confirmed'])}</div>
+            </div>
+            """, unsafe_allow_html=True)
         
-        # Display upcoming appointments
-        st.markdown("#### 📅 Upcoming Appointments")
+        # Upcoming appointments
+        st.markdown("<h4 class='section-header'>📅 Upcoming Appointments</h4>", unsafe_allow_html=True)
         
         if not appointments_df.empty:
             for _, appt in appointments_df.iterrows():
                 status = appt.get('status', 'scheduled')
-                status_color = "var(--success-color)" if status == "confirmed" else "var(--warning-color)" if status == "pending" else "var(--info-color)"
+                status_class = f"status-{status}"
+                
                 st.markdown(f"""
-                <div style='background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-md); margin-bottom: 0.5rem; border-left: 4px solid {status_color}'>
-                    <strong>📅 {appt['datetime']}</strong><br>
-                    Patient {appt['patient_id']} with {appt['doctor']}<br>
-                    <small style='color: {status_color};'>Status: {status}</small>
+                <div class='appointment-card'>
+                    <div class='appointment-time'>📅 {appt['datetime']}</div>
+                    <div class='appointment-details'>Patient {appt['patient_id']} with {appt['doctor']}</div>
+                    <span class='appointment-status {status_class}'>{status}</span>
                 </div>
                 """, unsafe_allow_html=True)
         else:
-            st.info("No appointments found")
+            st.markdown("<div class='custom-alert alert-info'>No appointments found</div>", unsafe_allow_html=True)
         
         # System health metrics
-        st.markdown("#### 🏥 System Health")
+        st.markdown("<h4 class='section-header'>🏥 System Health</h4>", unsafe_allow_html=True)
+        
         health_col1, health_col2, health_col3 = st.columns(3)
         
         with health_col1:
-            st.markdown("<div class='metric-card'>", unsafe_allow_html=True)
-            st.metric("🤖 Active Agents", "4", delta=None)
-            st.markdown("</div>", unsafe_allow_html=True)
+            st.markdown("""
+            <div class='metric-card'>
+                <div class='metric-label'>🤖 Active Agents</div>
+                <div class='metric-value'>6</div>
+            </div>
+            """, unsafe_allow_html=True)
         
         with health_col2:
-            st.markdown("<div class='metric-card'>", unsafe_allow_html=True)
-            st.metric("💬 Messages Today", len(st.session_state.messages), delta=None)
-            st.markdown("</div>", unsafe_allow_html=True)
+            st.markdown(f"""
+            <div class='metric-card'>
+                <div class='metric-label'>💬 Messages Today</div>
+                <div class='metric-value'>{len(st.session_state.messages)}</div>
+            </div>
+            """, unsafe_allow_html=True)
         
         with health_col3:
-            st.markdown("<div class='metric-card'>", unsafe_allow_html=True)
-            st.metric("🔄 System Uptime", "100%", delta=None)
-            st.markdown("</div>", unsafe_allow_html=True)
+            st.markdown("""
+            <div class='metric-card'>
+                <div class='metric-label'>🔄 System Uptime</div>
+                <div class='metric-value'>100%</div>
+            </div>
+            """, unsafe_allow_html=True)
             
     except Exception as e:
-        st.error(f"Error loading statistics: {str(e)}")
+        st.markdown(f"<div class='custom-alert alert-error'>Error loading statistics: {str(e)}</div>", unsafe_allow_html=True)
 
 with tab3:
-    st.markdown("<h3 class='sub-header'>🔧 Tools & Settings</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 class='section-header'>🔧 Tools & Settings</h3>", unsafe_allow_html=True)
+    
+    # Tools grid
+    st.markdown("""
+    <div class='tool-grid'>
+        <div class='tool-card'>
+            <span class='tool-icon'>🔄</span>
+            <h5 class='tool-title'>Generate Sample Data</h5>
+            <p class='tool-description'>Create sample patient and appointment data for testing</p>
+        </div>
+        <div class='tool-card'>
+            <span class='tool-icon'>📋</span>
+            <h5 class='tool-title'>Export Reports</h5>
+            <p class='tool-description'>Export all appointment reports and analytics</p>
+        </div>
+        <div class='tool-card'>
+            <span class='tool-icon'>📖</span>
+            <h5 class='tool-title'>Documentation</h5>
+            <p class='tool-description'>View system documentation and help guides</p>
+        </div>
+        <div class='tool-card'>
+            <span class='tool-icon'>⚙️</span>
+            <h5 class='tool-title'>System Settings</h5>
+            <p class='tool-description'>Configure system preferences and options</p>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
     
     col1, col2 = st.columns(2)
     
     with col1:
-        st.markdown("<div class='sidebar-section'>", unsafe_allow_html=True)
-        st.markdown("<div class='sidebar-title'>🛠️ System Tools</div>", unsafe_allow_html=True)
+        st.markdown("<div class='content-card'>", unsafe_allow_html=True)
+        st.markdown("<h5>🛠️ System Tools</h5>", unsafe_allow_html=True)
         
         if st.button("🔄 Generate Sample Data", use_container_width=True):
             st.session_state.messages.append({"role": "user", "content": "Generate sample data for the system"})
@@ -913,8 +1195,8 @@ with tab3:
         st.markdown("</div>", unsafe_allow_html=True)
     
     with col2:
-        st.markdown("<div class='sidebar-section'>", unsafe_allow_html=True)
-        st.markdown("<div class='sidebar-title'>⚙️ Settings</div>", unsafe_allow_html=True)
+        st.markdown("<div class='content-card'>", unsafe_allow_html=True)
+        st.markdown("<h5>⚙️ Settings</h5>", unsafe_allow_html=True)
         
         # Theme selection
         theme = st.selectbox("Color Theme", ["Light", "Dark", "Auto"])
@@ -924,29 +1206,29 @@ with tab3:
         email_notifs = st.checkbox("Email notifications", value=False)
         
         if st.button("💾 Save Settings", use_container_width=True):
-            st.success("Settings saved successfully!")
+            st.markdown("<div class='custom-alert alert-success'>Settings saved successfully!</div>", unsafe_allow_html=True)
         
         st.markdown("</div>", unsafe_allow_html=True)
     
     # Recent activity
-    st.markdown("<div class='sidebar-section'>", unsafe_allow_html=True)
-    st.markdown("<div class='sidebar-title'>🕒 Recent Activity</div>", unsafe_allow_html=True)
+    st.markdown("<div class='content-card'>", unsafe_allow_html=True)
+    st.markdown("<h5>🕒 Recent Activity</h5>", unsafe_allow_html=True)
     
     if st.session_state.conversation_history:
         for i, item in enumerate(reversed(st.session_state.conversation_history[-5:])):
             st.markdown(f"""
-            <div style='margin-bottom: 1rem; padding: 0.75rem; background: var(--bg-tertiary); border-radius: var(--radius-md);'>
+            <div class='activity-item'>
                 <div style='display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;'>
-                    <strong>🕒 {datetime.fromisoformat(item['timestamp']).strftime('%H:%M')}</strong>
-                    <span style='color: var(--text-secondary); font-size: 0.875rem;'>#{len(st.session_state.conversation_history) - i}</span>
+                    <span class='activity-time'>🕒 {datetime.fromisoformat(item['timestamp']).strftime('%H:%M')}</span>
+                    <span style='color: var(--text-muted); font-size: 0.875rem;'>#{len(st.session_state.conversation_history) - i}</span>
                 </div>
-                <div style='margin-bottom: 0.5rem; font-size: 0.9rem;'>
+                <div class='activity-query'>
                     <strong>💬 Query:</strong> {item['query']}
                 </div>
             </div>
             """, unsafe_allow_html=True)
     else:
-        st.markdown("<div style='text-align: center; color: var(--text-muted); padding: 1rem; font-style: italic;'>No recent activity to display.</div>", unsafe_allow_html=True)
+        st.markdown("<div class='custom-alert alert-info'>No recent activity to display.</div>", unsafe_allow_html=True)
     
     st.markdown("</div>", unsafe_allow_html=True)
 
